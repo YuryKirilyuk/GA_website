@@ -1,0 +1,36 @@
+@mixin gradient($aside,$aside-invert,$color1,$color2) {
+  background: -moz-linear-gradient($aside, $color1 0%, $color2 100%);
+	background: -webkit-linear-gradient($aside, $color1 0%,$color2 100%);
+	background: -o-linear-gradient($aside, $color1 0%,$color2 100%);
+	background: -ms-linear-gradient($aside, $color1 0%,$color2 100%);
+	background: linear-gradient(to $aside-invert, $color1 0%,$color2 100%);	
+}
+
+@mixin font($font-c, $font-s, $font-w, $font-h) {
+  color: $font-c;
+  font-size: $font-s;
+  font-weight: $font-w;
+  line-height: $font-h;
+}
+@mixin hover($color) {
+  background-color: $color;
+  &:hover {background-color: darken($color, 5%);}
+}
+@mixin truncate($arg) {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  -webkit-text-overflow: $arg;
+  -ms-text-overflow: $arg;
+  -o-text-overflow: $arg;
+  text-overflow: $arg;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }
+}

@@ -1,0 +1,17 @@
+.section-reviews { padding: 17rem 0 11rem; }
+
+.section-reviews .slide-arrows { margin: 8.5rem 0 7rem; }
+
+.section-reviews .slide-arrows .icon-arrow { cursor: pointer; margin: 0 1.3rem; }
+
+.section-reviews .slide-arrows .arrow-left .icon-arrow { -webkit-transform: rotateZ(180deg); -ms-transform: rotate(180deg); transform: rotateZ(180deg); }
+
+.section-reviews .review-image { margin-bottom: 2.5rem; }
+
+.section-reviews .review-image img { margin: auto; }
+
+.section-reviews .review-text { margin: 5rem 0 1rem; }
+
+.section-reviews .review-title { color: #8800f6; font-size: 2rem; font-weight: 600; letter-spacing: .2rem; margin-top: 1.7rem; text-transform: uppercase; }
+
+/*# sourceMappingURL=section-reviews.css.map */

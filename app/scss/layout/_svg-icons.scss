@@ -1,0 +1,45 @@
+svg {
+  transition: $default-transition;
+}
+svg.icon-arrow {
+  height: 1rem;
+  width: 9rem;
+}
+svg.icon-facebook {
+  height: 19px;
+  width: 10px;
+}
+svg.icon-twitter {
+  height: 16px;
+  width: 21px;
+}
+svg.icon-linked-in {
+  height: 18px;
+  width: 20px;
+}
+svg.icon-instagram {
+  height: 18px;
+  width: 18px;
+}
+svg.icon-pinterest {
+  height: 24px;
+  width: 18px;
+}
+svg.icon-google {
+  height: 17px;
+  width: 27px;
+}
+
+
+svg.icon-logo-header {
+  height: 1.7rem;
+  width: 14.1rem;
+}
+svg.icon-logo-footer {
+  height: 5rem;
+}
+
+[class*="service-icon"] {
+  height: 24.2rem;
+  width: 24.2rem;
+}

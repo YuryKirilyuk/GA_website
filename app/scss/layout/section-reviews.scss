@@ -1,0 +1,34 @@
+.section-reviews {
+  padding: 17rem 0 11rem;
+
+  .slide-arrows {
+    margin: 8.5rem 0 7rem;
+
+    .icon-arrow {
+      cursor: pointer;
+      margin: 0 1.3rem;
+    }
+    .arrow-left {
+      .icon-arrow {
+        transform: rotateZ(180deg);
+      }
+    }
+
+  }//.slide-arrows
+
+  .review-image {
+    margin-bottom: 2.5rem;
+    img {margin: auto;}
+  }
+  .review-text {
+    margin: 5rem 0 1rem;
+  }
+  .review-title {
+    color: #8800f6;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    margin-top: 1.7rem;
+    text-transform: uppercase;
+  }
+}//.section-reviews

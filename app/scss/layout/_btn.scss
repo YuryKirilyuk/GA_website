@@ -1,0 +1,69 @@
+.button {
+  background: #8800f6;
+  border: none;
+  color: #fff;
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  height: 7.7rem;
+  line-height: 7.7rem;
+  letter-spacing: 2px;
+  max-width: 51rem;
+  min-width: 32rem;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  &:hover {
+    background: $pink;
+    color: #fff;
+  }
+  .icon-arrow {
+    bottom: 0;
+    margin: auto 0 auto 2rem;
+    position: absolute;
+    top: 0;
+  }
+}//.button
+
+
+.navigation-button {
+  cursor: pointer;
+  position: relative;
+
+  &,
+  &::before,
+  &::after {
+    background-color: #fff;
+    display: inline-block;
+    height: 2px;
+    width: 5.1rem;
+  }
+  &::before,
+  &::after {
+    content: "";
+    left: 0;
+    position: absolute;
+    transition: all .2s;
+    width: 4.2rem;
+  }
+  &::before { top: -.8rem; }
+  &::after { top: .8rem; }
+
+  nav:hover &:before {top: -1rem;}
+  nav:hover &:after {top: 1rem;}
+
+  nav &.active {
+    background-color: transparent;
+  }
+
+  nav &.active:before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  nav &.active:after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+
+}//.navigation-button

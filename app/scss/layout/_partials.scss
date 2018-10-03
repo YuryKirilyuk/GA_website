@@ -1,0 +1,70 @@
+.section-title {
+	@include font($title-color, 6rem, $title-font-weight, initial);
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.section-number {
+	font-size: 24rem;
+	font-weight: 900;
+	line-height: initial;
+	padding: 0 2rem;
+	text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.truncate {
+	@include truncate(ellipsis);
+	width: 100%;
+}
+.tooltip {position: relative;}
+.tooltip:before {
+	background: inherit;
+	border: inherit;
+	border-right: 0;
+	border-bottom: 0;
+	content: '';
+	padding: .35em;
+	position: absolute;
+	top: -.4em; left: 1em;
+	transform: rotate(45deg);
+}
+.caret {
+	border-top: 4px solid;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	display: inline-block;
+	height: 0;
+	margin-left: .2rem;
+	vertical-align: middle;
+	width: 0;
+}

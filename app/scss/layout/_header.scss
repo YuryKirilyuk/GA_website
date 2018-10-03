@@ -1,0 +1,38 @@
+header{
+	background: transparent;
+	height: $headerHeight;
+	margin-bottom: -$headerHeight;
+	min-width: $min-width;
+	order: 1;
+	//position: fixed;
+	width: 100%;
+	z-index: 999;
+	.wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+		&:after {content: none;}
+	}
+
+	.site-menu {
+		display: flex;
+	}
+	.contact-link {
+		border-bottom: 1px solid;
+		color: #fff;
+		font-weight: 600;
+		letter-spacing: 2px;
+		margin-right: 3.5rem;
+		padding: 1.5rem 0;
+		text-transform: uppercase;
+	}
+
+	nav {
+		align-items: center;
+		cursor: pointer;
+		display: flex;
+		ul {display: none;}
+	}
+
+}//header

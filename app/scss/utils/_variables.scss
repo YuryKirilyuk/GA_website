@@ -1,0 +1,74 @@
+/* colors */
+
+$white: #fff;
+$black: #1f2d3d;
+$red: #df2f4a;
+$green: #1C6E5C;
+
+$pink: #fc486b;
+$grey: #636363;
+$grey-dark: #404040;
+$blue: #3c34f4;
+$violet: #520596;
+$violet-light: #8800f6;
+$violet-dark: #200238;
+
+$main-color: $grey;
+$link-color: $main-color;
+
+/* main variables */
+
+$min-width: 320px;
+$max-width: 1410px;
+$base-bg: $white;
+$base-font-size: 1.4rem;
+$mobile-font-size: 1.4rem;
+$base-line-height: 2.2rem;
+$base-font-family: 'Montserrat', sans-serif;
+$custom-font-family: 'Playfair Display', serif;
+$form-font-family: 'Open Sans', sans-serif;
+
+//text, titles
+$text-color: $main-color;
+$title-color: $violet;
+//$title-font-family: 'Vollkorn', serif;
+$title-font-weight: 900;
+
+$font-size-h1: 5rem;
+$line-height-h1: 6rem;
+
+$font-size-h2: 3.6rem;
+$line-height-h2: 4.4rem;
+
+$font-size-h3: 2.4rem;
+$line-height-h3: 2.9rem;
+
+$font-size-h4: 1.6rem;
+$line-height-h4: 6rem;
+
+
+$headerHeight: 10rem;
+$headerHeightMobile: 7.2rem;
+$footerHeight: 7rem;
+
+$default-transition: all .2s linear;
+
+
+
+
+
+/* Grid */
+$vertical-gutter: 2rem;
+$horizontal-gutter: 2rem;
+
+						//.col-2-of-3
+@function grid($col, $numOfCol){
+	$numOfGutters: $numOfCol - 1; //number of gutters between columns in a row
+	$addGutter: ($col - 1) * $horizontal-gutter; //number of gutters, width of which should be added to column
+	
+	$width: calc( 
+		(((100% - #{$horizontal-gutter} * #{$numOfGutters}) / #{$numOfCol}) * #{$col}) + #{$addGutter}							
+	);
+
+	@return $width;
+}
