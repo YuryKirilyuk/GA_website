@@ -36,7 +36,9 @@ $(function(){
         var target = $(this).attr('href');
         $(this).parent().siblings().removeClass('current');
         $(this).parent().addClass('current');
-        $('html, body').animate({scrollTop: $(target).offset().top}, 300);
+        $('html, body').animate(
+            {scrollTop: $(target).offset().top -100}, 300
+        );
         console.log(target);
         return false;
     });
