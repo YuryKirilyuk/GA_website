@@ -20,27 +20,51 @@
 
 
 	<header>
+		<div class="blur"></div>
 		<div class="wrapper">
+
 			<div class="logo">
 				<a href="/">
 					<svg class="icon-logo-header">
-						<use xlink:href="img/sprite.svg#logo"></use>
+						<use xlink:href="img/sprite.svg#logo-header"></use>
 					</svg>
 				</a>
-			</div>
+			</div><!-- //.logo -->
+
 			<div class="site-menu">
-				<a href="#" class="contact-link">Get in touch</a>
 				<nav>
-					<span class="navigation-button"></span>
 					<ul>
-						<li><a href="#">Main</a></li>
-						<li><a href="#">Projects</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Contact Us</a></li>
+						<li><a href="#header">Main</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#aboutUs">About Us</a></li>
+						<li><a href="#contactUs">Contact Us</a></li>
 					</ul>
 				</nav>
+				<div class="socials">
+					<a class="fb" href="#">
+						<svg class="icon-facebook">
+							<use xlink:href="img/sprite.svg#facebook"></use>
+						</svg>
+					</a>
+					<a class="in" href="#">
+						<svg class="icon-instagram">
+							<use xlink:href="img/sprite.svg#instagram"></use>
+						</svg>
+					</a>
+					<a class="li" href="#">
+						<svg class="icon-linked-in">
+							<use xlink:href="img/sprite.svg#linked-in"></use>
+						</svg>
+					</a>
+				</div><!-- //.socials -->
 			</div><!-- //.site-menu -->
+
+			<a href="#" class="contact-button">Get in touch</a>
+
+			<div class="actions">
+				<span class="navigation-button"></span>
+			</div>
 
 		</div>
 	</header>
@@ -50,14 +74,16 @@
 	<main class="content">
 
 		<!-- SECTION HEADER -->
-		<section class="section-header">
+		<section class="section-header" id="header">
 			<div class="wrapper">
 				<h2 class="section-title text-white text-left">Web Dev &<br/>Design Agency</h2>
 				<div class="section-body">
-					<div class="video-wrapper">
+					<div class="video-container text-center">
+						<div class="video-wrapper">
 
+						</div>
+						<button class="button button-sm button-white video-title">Play Video</button>
 					</div>
-					<div class="video-title">Play Video</div>
 				</div>
 				<div class="section-footer">
 					<div class="section-number text-white">01</div>
@@ -66,7 +92,7 @@
 		</section><!-- //.section-header -->
 
 		<!-- SECTION PROJECTS -->
-		<section class="section-projects">
+		<section class="section-projects" id="projects">
 			<div class="wrapper">
 				<h2 class="section-title">PROJECTS</h2>
 
@@ -74,8 +100,11 @@
 
 					<a href="#" class="button">
 						veiw all projets
-						<svg class="icon-arrow">
+						<svg class="icon-arrow white">
 							<use xlink:href="img/sprite.svg#arrow-white"></use>
+						</svg>
+						<svg class="icon-arrow violet">
+							<use xlink:href="img/sprite.svg#arrow-violet"></use>
 						</svg>
 					</a>
 
@@ -90,7 +119,7 @@
 
 
 		<!-- SECTION SERVICES -->
-		<section class="section-services gray-bg">
+		<section class="section-services gray-bg" id="services">
 			<div class="wrapper">
 				<h2 class="section-title">Services</h2>
 				<div class="section-body">
@@ -160,7 +189,7 @@
 
 
 		<!-- SECTION REVIEWS -->
-		<section class="section-reviews text-center">
+		<section class="section-reviews text-center" id="reviews">
 			<div class="wrapper">
 				<h2 class="section-title mb-45">Reviews</h2>
 
@@ -185,6 +214,9 @@
 							<div class="review-image">
 								<img src="img/reviews1.png" alt="" />
 							</div>
+							<div class="review-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+							</div>
 							<div class="review-title">intel</div>
 						</div>
 
@@ -201,6 +233,9 @@
 						<div>
 							<div class="review-image">
 								<img src="img/reviews3.png" alt="" />
+							</div>
+							<div class="review-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 							</div>
 							<div class="review-title">burger king</div>
 						</div>
@@ -209,6 +244,9 @@
 							<div class="review-image">
 								<img src="img/reviews1.png" alt="" />
 							</div>
+							<div class="review-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+							</div>
 							<div class="review-title">intel</div>
 						</div>
 
@@ -225,6 +263,9 @@
 						<div>
 							<div class="review-image">
 								<img src="img/reviews3.png" alt="" />
+							</div>
+							<div class="review-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 							</div>
 							<div class="review-title">burger king</div>
 						</div>
@@ -322,7 +363,7 @@
 
 
 		<!-- SECTION TEAM -->
-		<section class="section-team">
+		<section class="section-team" id="aboutUs">
 			<div class="wrapper">
 				<h2 class="section-title">About us</h2>
 				<div class="section-body">
@@ -401,11 +442,11 @@
 			</a>
 			<nav class="text-center">
 				<ul>
-					<li class="active"><a href="">MAin</a></li>
-					<li><a href="">projects</a></li>
-					<li><a href="">services</a></li>
-					<li><a href="">about us</a></li>
-					<li><a href="">contact us</a></li>
+					<li class="active"><a href="#header">MAin</a></li>
+					<li><a href="#projects">projects</a></li>
+					<li><a href="#services">services</a></li>
+					<li><a href="#aboutUs">about us</a></li>
+					<li><a href="#contactUs">contact us</a></li>
 				</ul>
 			</nav>
 		</section><!-- //.section-nav -->
@@ -426,14 +467,19 @@
 								<use xlink:href="img/sprite.svg#facebook"></use>
 							</svg>
 						</a>
-						<a class="tw" href="#">
-							<svg class="icon-twitter">
-								<use xlink:href="img/sprite.svg#twitter"></use>
+						<a class="in" href="#">
+							<svg class="icon-instagram">
+								<use xlink:href="img/sprite.svg#instagram"></use>
 							</svg>
 						</a>
 						<a class="li" href="#">
 							<svg class="icon-linked-in">
 								<use xlink:href="img/sprite.svg#linked-in"></use>
+							</svg>
+						</a>
+						<!--a class="tw" href="#">
+							<svg class="icon-twitter">
+								<use xlink:href="img/sprite.svg#twitter"></use>
 							</svg>
 						</a>
 						<a class="gp" href="#">
@@ -445,12 +491,7 @@
 							<svg class="icon-pinterest">
 								<use xlink:href="img/sprite.svg#pinterest"></use>
 							</svg>
-						</a>
-						<a class="in" href="#">
-							<svg class="icon-instagram">
-								<use xlink:href="img/sprite.svg#instagram"></use>
-							</svg>
-						</a>
+						</a-->
 					</div>
 				</div><!-- //.row -->
 

@@ -10,20 +10,20 @@
   .section-title {
     text-shadow: 0 5px 32px rgba(255,255,255,.5);
   }
-  .video-wrapper {
-    background: $violet;
-    height: 30rem;
+
+  .video-container {
     margin: 0 auto 4rem;
     max-width: 53.5rem;
-    box-shadow: -5px 14px 32px -12px #fb476c;
+  }
+  .video-wrapper {
+    background: $violet;
+    box-shadow: 0px 40px 30px -5px #fb476c;
+    height: 30rem;
+    margin-bottom: 3rem;
     width: 100%;
   }
-  .video-title {
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-align: center;
-    text-transform: uppercase;
+  button {
+    margin: auto;
   }
 
   .section-footer {

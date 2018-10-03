@@ -38,6 +38,12 @@
         opacity: 0;
         visibility: hidden;
       }
+      .review-text {
+        //display: block;
+        transition: max-height .7s ease .2s, opacity .5s ease .3s;
+        max-height: 100%;
+        opacity: 1;
+      }
       .review-title {color: #fff;}
     }
   }//.slick-slider
@@ -104,10 +110,15 @@
     img {margin: auto;}
   }
   .review-text {
-    margin: 5rem auto 1rem;
+    //display: none;
+    margin: 2rem auto 1rem;
+    max-height: 0;
     max-width: 26rem;
+    opacity: 0;
+    overflow: hidden;
     padding: 0 1rem;
     position: relative;
+    //transition: max-height .5s, opacity .5s;
     z-index: 1;
   }
   .review-title {

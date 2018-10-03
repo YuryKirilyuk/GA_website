@@ -3,11 +3,12 @@
   border: 3px solid #8A00F4;
   color: #fff;
   display: block;
+  font-family: $base-font-family;
   font-size: 1.4rem;
   font-weight: 600;
-  height: 7.7rem;
-  line-height: 7.7rem;
-  letter-spacing: 2px;
+  height: 7.5rem;
+  line-height: 7.5rem;
+  letter-spacing: 2.5px;
   max-width: 51rem;
   min-width: 32rem;
   position: relative;
@@ -21,6 +22,15 @@
       &.violet {opacity: 1;}
       &.white {opacity: 0;}
     }
+  }//&:hover
+  &.button-white {
+    background: white;
+    border-color: #fff;
+    color: #8A00F4;
+    &:hover {
+      background: transparent;
+      color: #fff;
+    }
   }
   .icon-arrow {
     bottom: 0;
@@ -29,8 +39,21 @@
     top: 0;
     &.violet {opacity: 0;}
   }
+  &.button-sm {
+    height: 5rem;
+    line-height: 5rem;
+    min-width: 21rem;
+  }
 }//.button
 
+.contact-button {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-right: 3.5rem;
+  padding: 1.5rem 0;
+  text-transform: uppercase;
+}
 
 .navigation-button {
   cursor: pointer;
@@ -55,19 +78,19 @@
   &::before { top: -.8rem; }
   &::after { top: .8rem; }
 
-  nav:hover &:before {top: -1rem;}
-  nav:hover &:after {top: 1rem;}
+  .actions:hover &:before {top: -1rem;}
+  .actions:hover &:after {top: 1rem;}
 
-  nav &.active {
+  .actions &.active {
     background-color: transparent;
   }
 
-  nav &.active:before {
+  .actions &.active:before {
     top: 0;
     transform: rotate(135deg);
   }
 
-  nav &.active:after {
+  .actions &.active:after {
     top: 0;
     transform: rotate(-135deg);
   }
