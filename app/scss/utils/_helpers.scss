@@ -1,7 +1,7 @@
 /*************************
    Text color
 *************************/
-.text-violet {color: #8800f6;}
+.text-violet {color: $violet;}
 .text-blue { color: #4FC1F0;}
 .text-white { color: #fff !important;}
 .text-black { color: #363636; }
@@ -95,6 +95,7 @@
 .mb-30 { margin-bottom: 30px }
 .mb-35 { margin-bottom: 35px }
 .mb-40 { margin-bottom: 40px }
+.mb-45 { margin-bottom: 45px }
 .mb-50 { margin-bottom: 50px }
 .mb-60 { margin-bottom: 60px }
 .mb-70 { margin-bottom: 70px }

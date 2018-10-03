@@ -1,7 +1,7 @@
 .section-services {
 
   @media screen and (max-width: 1400px) {
-    padding-bottom: 5rem;
+    //padding-bottom: 5rem;
   }
 
   .section-title {
@@ -24,7 +24,7 @@
   .section-body {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 0;
+    margin-bottom: -7rem;
     @media screen and (max-width: 1400px) {
       margin-bottom: -20rem;
     }

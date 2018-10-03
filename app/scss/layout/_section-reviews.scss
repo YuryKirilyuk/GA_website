@@ -1,0 +1,123 @@
+.section-reviews {
+  padding: 13rem 0 0;
+
+  .section-body {
+    position: relative;
+  }
+
+  .slick-slider {
+    border: 1px solid #EDECEC;
+    margin: 0 auto 1rem;
+    max-width: 130.8rem;
+    .slick-slide {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 59rem;
+      position: relative;
+      transition: all .5s ease 0s;
+      width: 40rem;
+      &:before {
+        background: #fff;
+        content: '';
+        display: block;
+        height: 100%;
+        opacity: 1;
+        position: absolute;
+        transition: all .7s ease .1s;
+        width: 100%;
+        z-index: 0;
+      }
+    }//.slick-slide
+    .slick-slide.slick-current {
+      background-image: -webkit-linear-gradient(33deg, $pink 0%, $violet 70%);
+      background-image: linear-gradient(33deg, $pink 0%, $violet 70%);
+      color: #fff;
+      &:before {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .review-title {color: #fff;}
+    }
+  }//.slick-slider
+
+  .slide-arrows {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: 1;
+
+    .icon-arrow {
+      cursor: pointer;
+      margin: 0 1.3rem;
+    }
+    .arrow-right {
+      transition: $default-transition;
+      &:hover {transform: translateX(.5rem);}
+    }
+    .arrow-left {
+      transition: $default-transition;
+      &:hover {transform: translateX(-.5rem);}
+      .icon-arrow {
+        transform: rotateZ(180deg);
+      }
+    }//.arrow-left
+
+  }//.slide-arrows
+
+  .slick-dots {
+    bottom: -9rem;
+    height: 3.2rem;
+    position: absolute;
+    width: 100%;
+    li {
+      align-items: flex-end;
+      cursor: pointer;
+      display: inline-flex;
+      font-size: 0;
+      height: 100%;
+      vertical-align: bottom;
+      button {
+        border: 1px solid #8A00F4;
+        display: inline-block;
+        height: 1.6rem;
+        margin: 0 .5rem;
+        transition: $default-transition;
+        vertical-align: bottom;
+      }
+      &.slick-active {
+        button {height: 3.2rem !important;}
+      }
+      &:hover {
+        button {height: 2rem;}
+      }
+    }//li
+  }//.slick-dots
+
+  .review-image {
+    margin-bottom: 2.5rem;
+    position: relative;
+    z-index: 1;
+    img {margin: auto;}
+  }
+  .review-text {
+    margin: 5rem auto 1rem;
+    max-width: 26rem;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 1;
+  }
+  .review-title {
+    color: #8800f6;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    margin-top: 1.7rem;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+}//.section-reviews

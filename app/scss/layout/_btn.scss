@@ -1,6 +1,6 @@
 .button {
-  background: #8800f6;
-  border: none;
+  background: #8A00F4;
+  border: 3px solid #8A00F4;
   color: #fff;
   display: block;
   font-size: 1.4rem;
@@ -13,15 +13,21 @@
   position: relative;
   text-align: center;
   text-transform: uppercase;
+  transition: $default-transition;
   &:hover {
-    background: $pink;
-    color: #fff;
+    background: transparent;
+    color: #8A00F4;
+    .icon-arrow {
+      &.violet {opacity: 1;}
+      &.white {opacity: 0;}
+    }
   }
   .icon-arrow {
     bottom: 0;
     margin: auto 0 auto 2rem;
     position: absolute;
     top: 0;
+    &.violet {opacity: 0;}
   }
 }//.button
 

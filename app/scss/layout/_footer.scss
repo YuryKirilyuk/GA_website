@@ -4,11 +4,9 @@
 ================================================================================
 */
 footer {
-	background: $violet-dark;
-	//height: $footerHeight;
+	background: #2A0E42;
 	min-width: $min-width;
 	order: 3;
-	padding-top: 8rem;
 	width: 100%;
 
 	ul {
@@ -44,38 +42,40 @@ footer {
 
 	.footer-social {
 		align-items: center;
-		border-top: 1px solid #1e0235;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-evenly;
-		height: 8.4rem;
-		margin-top: 7rem;
+		float: none;
+		justify-content: space-between;
+		margin: 8rem auto 0;
+		max-width: 65rem;
+		padding-bottom: 6.5rem;
 		text-align: center;
 		a {
 			display: inline-block;
 			&:hover {
 				svg {fill: $white;}
 			}
-			svg {fill: $grey-dark;}
+			svg {fill: $violet;}
 		}
 	}//.footer-social
 
 
 	.copyright {
-		border-top: 1px solid #1e0235;
+		border-top: 2px solid $violet;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		color: $grey-dark;
+		color: $violet;
 		height: 9rem;
-		font-size: 1rem;
+		font-size: 1.4rem;
+		font-weight: 600;
 		letter-spacing: 2px;
 		line-height: 9rem;
 		text-transform: uppercase;
 		span {
 			position: relative;
 			&:before, &:after {
-				background: $grey-dark;
+				background: $violet;
 				border-radius: 50%;
 				height: 3px;
 				content: '';

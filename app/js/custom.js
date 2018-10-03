@@ -57,14 +57,15 @@ $(function(){
 
     $('.slick-slider').slick({
 		arrows: false,
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 300,
+        centerMode: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 769,
                 settings: {
                     slidesToShow: 2,
                     infinite: false

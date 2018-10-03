@@ -14,8 +14,8 @@
   }//.section-title
 
   .left {
-    background: -webkit-linear-gradient(33deg, #520596 30%, #fc486b 75%);
-    background: linear-gradient(33deg, #520596 30%, #fc486b 75%);
+    background: -webkit-linear-gradient(33deg, $violet 0%, $pink 70%);
+    background: linear-gradient(33deg, $violet 0%, $pink 70%);
     padding: 1rem 3rem;
     text-align: right;
     width: 40.4255%;
@@ -46,7 +46,6 @@
       width: 100%;
     }
     .button {
-      padding-right: 4rem;
       @media screen and (max-width: 768px) {
         margin-left: auto;
         margin-right: auto;

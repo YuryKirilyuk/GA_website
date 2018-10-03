@@ -18,7 +18,7 @@ form {
     border-bottom: 1px solid;
     border-radius: 0;
     box-shadow: none;
-    color: #636363;
+    color: $grey;
     outline: none;
     &:focus {
       background: none;
@@ -53,7 +53,7 @@ form {
       display: none;
       &:checked + label {
         &:before {
-          background: $blue;
+          background: #8A00F4;
           content: 'on';
           padding-left: 0;
           padding-right: 2rem;
@@ -68,7 +68,7 @@ form {
       position: relative;
       white-space: nowrap;
       &:before {
-        background: #fa456f;
+        background: $pink;
         border-radius: 3rem;
         color: #fff;
         content: 'off';
@@ -134,12 +134,12 @@ form {
   }
 
   .ui-slider-range {
-    background: -webkit-linear-gradient(to right, #520596 30%, #fc486b 75%);
-    background: linear-gradient(to right, #520596 30%, #fc486b 75%);
+    background: -webkit-linear-gradient(to right, $violet 0%, $pink 75%);
+    background: linear-gradient(to right, $violet 0%, $pink 75%);
     border-radius: 5px;
   }
   .ui-slider-handle {
-    background: #fc486b;
+    background: $pink;
     border: none;
     border-radius: 1.3rem;
     cursor: pointer;

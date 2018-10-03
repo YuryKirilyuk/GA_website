@@ -1,10 +1,10 @@
 .section-team {
-  padding: 16.5rem 0 3.5rem;
+  padding: 10rem 0 8.5rem;
 
   .section-title {
-    margin-bottom: 100px;
+    margin-bottom: 19rem;
     &:after {
-      background: #edecec;
+      background: $violet;
       content: '';
       height: .7rem;
       left: 0;
@@ -12,7 +12,7 @@
       position: absolute;
       margin: auto;
       width: 6rem;
-      bottom: -4rem;
+      bottom: -8rem;
     }
   }//.section-title
 
@@ -29,14 +29,14 @@
     font-weight: 600;
     flex-wrap: wrap;
     list-style: none;
-    margin-bottom: 4rem;
+    margin-bottom: 0;
     text-align: center;
     text-transform: uppercase;
     &:after {
       content: '';
-      width: 270px;
+      width: 27.2rem;
     }
-    li:nth-child(3n + 1) {
+    /*li:nth-child(3n + 1) {
       .member-image {background-color: $violet-light;}
     }
     li:nth-child(3n + 2) {
@@ -44,25 +44,25 @@
     }
     li:nth-child(3n + 3) {
       .member-image {background-color: $pink;}
-    }
+    }*/
     @media screen and (max-width: 826px) {
       justify-content: space-evenly;
     }
 
-    li {margin-bottom: 2rem;}
+    li {margin-bottom: 9rem;}
 
   }//.member-list
 
   .member-image {
-    background-color: #ccc;
+    background-color: $grey-light;
     border-radius: 2rem;
-    height: 27rem;
-    margin-bottom: 2.5rem;
-    width: 27rem;
+    height: 27.2rem;
+    margin-bottom: 2rem;
+    width: 27.2rem;
   }
   .member-name {
-    color: #8800f6;
-    margin-bottom: .8rem;
+    color: #931BF6;
+    margin-bottom: .9rem;
   }
   .member-position {color: $grey-dark;}
 
@@ -84,7 +84,7 @@
   }
 
   .section-number {
-    text-shadow: 5px 5px 20px #8800f6;
+    line-height: 22rem;
   }
 
 }//.section-team
