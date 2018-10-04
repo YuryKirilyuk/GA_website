@@ -6,18 +6,38 @@ header{
 	position: fixed;
 	width: 100%;
 	z-index: 999;
+	&.active {
+		.blur,
+		.site-menu {
+			visibility: visible;
+			opacity: 1;
+		}
+	}//&.active
+
 	.blur {
 		background: rgba(255,255,255,.4);
+		//background: #fff url(../img/header_bg.png) no-repeat center top;
 		height: 100%;
-		position: absolute;
 		filter: blur(2px);
+		opacity: 0;
+		position: absolute;
+		transition: $default-transition;
+		visibility: hidden;
 		width: 100%;
 		z-index: 0;
-	}
+		&:before {
+			background: rgba(255,255,255,.6);
+			background: #fff url(../img/header_bg.png) no-repeat center top;
+			content: none;
+			height: 100%;
+			position: absolute;
+			width: 100%;
+		}
+	}//.blur
 	.wrapper {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: space-around;
 		height: 100%;
 		padding: 0 1.2rem;
 		position: relative;
@@ -27,8 +47,10 @@ header{
 
 	.site-menu {
 		display: flex;
-		flex: 1;
+		//flex: 1;
+		opacity: 0;
 		padding: 0 1.5rem;
+		visibility: hidden;
 	}
 
 	nav {
@@ -38,6 +60,7 @@ header{
 		justify-content: space-evenly;
 		ul {
 			list-style: none;
+			margin-bottom: 0;
 			li {
 				display: inline-block;
 				padding: 0 2rem;
@@ -57,13 +80,24 @@ header{
 		}//ul
 	}//nav
 
+	.socials {
+		a {
+			fill: $violet;
+			margin: 0 1rem;
+			&:hover {fill: white;}
+		}
+	}//.socials
+
 	.button.button-sm {
 		height: 4.2rem;
 		line-height: 4rem;
-		margin-right: 3.5rem;
+		//margin-right: 2rem;
 		min-width: 17.6rem;
 	}
 
-	.actions {height: 3rem;}
+	.actions {
+		cursor: pointer;
+		height: 3rem;
+	}
 
 }//header

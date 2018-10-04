@@ -19,6 +19,7 @@
     background: transparent;
     color: #8A00F4;
     .icon-arrow {
+      transform: translateX(2rem);
       &.violet {opacity: 1;}
       &.white {opacity: 0;}
     }
@@ -30,18 +31,27 @@
     &:hover {
       background: transparent;
       color: #fff;
+      .icon-arrow {
+        &.violet {opacity: 0;}
+        &.white {opacity: 1;}
+      }
     }
-  }
+    .icon-arrow {
+      &.violet {opacity: 1;}
+    }
+  }//&.button-white
+
   .icon-arrow {
     bottom: 0;
     margin: auto 0 auto 2rem;
     position: absolute;
     top: 0;
+    transition: $default-transition;
     &.violet {opacity: 0;}
   }
   &.button-sm {
     height: 5rem;
-    line-height: 5rem;
+    line-height: 4.4rem;
     min-width: 21rem;
   }
 }//.button
@@ -56,7 +66,7 @@
     background-color: #fff;
     display: inline-block;
     height: 2px;
-    width: 5.1rem;
+    width: 3.9rem;
   }
   &::before,
   &::after {
@@ -64,7 +74,7 @@
     left: 0;
     position: absolute;
     transition: all .2s;
-    width: 4.2rem;
+    width: 3.2rem;
   }
   &::before { top: -.8rem; }
   &::after { top: .8rem; }

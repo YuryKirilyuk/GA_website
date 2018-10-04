@@ -1,7 +1,143 @@
 .section-projects {
 
-  padding: 17rem 0 5rem;
+  padding: 17rem 0 23rem;
+
+  .section-title {margin-bottom: 18rem;}
+
+  .projects-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 120rem;
+    margin: 0 auto 4.5rem;
+    max-width: 124rem;
+
+    .project {
+      margin-bottom: 3rem;
+      position: relative;
+      width: 39rem;
+
+      &-image {
+
+      }
+
+      &-info {
+        align-items: center;
+        background-image: url(../img/path_5.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 26.3rem;
+        left: 0;
+        padding: 0 3rem 3rem;
+        position: absolute;
+        width: 100%;
+      }
+      &-brand {
+        color: #fff;
+        letter-spacing: 3px;
+        margin-bottom: .8rem;
+        position: relative;
+        text-transform: uppercase;
+        &:before {
+          background: #fff;
+          content: '';
+          height: 1px;
+          left: 0;
+          margin: auto;
+          position: absolute;
+          right: 0;
+          top: -1rem;
+          width: 5.3rem;
+        }
+      }
+      &-title {
+        align-items: center;
+        color: #fff;
+        display: flex;
+        font-size: 1.8rem;
+        font-weight: 900;
+        height: 7rem;
+        line-height: 2.3rem;
+        max-width: 24.5rem;
+        text-align: center;
+      }
+
+      .button {
+        margin: 1rem 0 0;
+        width: 100%;
+        svg {
+          transition: position 0s, opacity linear .2s, transform linear .2s;}
+        .icon-arrow.violet {position: static;}
+        .icon-arrow.white {
+          position: absolute;
+          visibility: hidden;
+          opacity: 0;
+        }
+        &:hover {
+          .icon-arrow.white {
+            position: static;
+            visibility: visible;
+            opacity: 1;
+          }
+          .icon-arrow.violet {
+            position: absolute;
+            visibility: hidden;
+            opacity: 0;
+          }
+        }
+      }//.button
+
+      &:first-child {
+        height: 56.4rem;
+        order: 1;
+        //.project-info {background-image: url(../img/path_1.png);}
+      }
+      &:nth-child(2) {
+        height: 43.9rem;
+        order: 3;
+        //.project-info {background-image: url(../img/path_2.png);}
+      }
+      &:nth-child(3) {
+        height: 61.4rem;
+        order: 5;
+        //.project-info {background-image: url(../img/path_3.png);}
+      }
+      &:nth-child(4) {
+        height: 56.4rem;
+        order: 2;
+        //.project-info {background-image: url(../img/path_4.png);}
+      }
+      &:nth-child(5) {
+        height: 61.4rem;
+        order: 4;
+        //.project-info {background-image: url(../img/path_5.png);}
+      }
+      &:nth-child(6) {
+        height: 43.9rem;
+        order: 6;
+        //.project-info {background-image: url(../img/path_6.png);}
+      }
+
+      @media screen and (max-width: 1024px) {
+        &:nth-child(5) {display: none;}
+        &:last-child {display: none;}
+      }
+
+    }//.project
+
+  }//.projects-list
 
   .button {margin: auto;}
+
+  .section-footer {
+    position: absolute;
+    right: 0;
+    bottom: -13rem;
+  }
 
 }//.section-projects

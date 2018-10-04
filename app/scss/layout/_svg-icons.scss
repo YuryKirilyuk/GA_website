@@ -5,31 +5,60 @@ svg.icon-arrow {
   height: 1rem;
   width: 9rem;
 }
-svg.icon-facebook {
-  height: 24px;
-  width: 13px;
-}
-svg.icon-twitter {
-  height: 24px;
-  width: 29px;
-}
-svg.icon-linked-in {
-  height: 24px;
-  width: 24px;
-}
-svg.icon-instagram {
-  height: 24px;
-  width: 24px;
-}
-svg.icon-pinterest {
-  height: 24px;
-  width: 18px;
-}
-svg.icon-google {
-  height: 24px;
-  width: 34px;
+
+header {
+  svg.icon-facebook {
+    height: 12px;
+    width: 7px;
+  }
+  svg.icon-twitter {
+    height: 12px;
+    width: 15px;
+  }
+  svg.icon-google {
+    height: 12px;
+    width: 19px;
+  }
+  svg.icon-instagram {
+    height: 12px;
+    width: 12px;
+  }
+  svg.icon-linked-in {
+    height: 12px;
+    width: 12px;
+  }
+  svg.icon-pinterest {
+    height: 12px;
+    width: 10px;
+  }
 }
 
+footer {
+  svg.icon-facebook {
+    height: 24px;
+    width: 13px;
+  }
+  svg.icon-twitter {
+    height: 24px;
+    width: 29px;
+  }
+  svg.icon-linked-in {
+    height: 24px;
+    width: 24px;
+  }
+  svg.icon-instagram {
+    height: 24px;
+    width: 24px;
+  }
+  svg.icon-pinterest {
+    height: 24px;
+    width: 18px;
+  }
+  svg.icon-google {
+    height: 24px;
+    width: 34px;
+  }
+}
 
 svg.icon-logo-header {
   fill: #fff;

@@ -32,7 +32,7 @@ $(window).on('load', function () {
 $(function(){
 
 
-    $('a[href^="#"]').click(function(){
+    $('nav a[href^="#"]').click(function(){
         var target = $(this).attr('href');
         $(this).parent().siblings().removeClass('current');
         $(this).parent().addClass('current');
@@ -45,7 +45,7 @@ $(function(){
 
 	$('header .actions').click(function(){
 		$(this).find('.navigation-button').toggleClass('active'),
-		$('.main-nav-list').slideToggle(); 
+		$('header').toggleClass('active');
 		return false;
 	});
 
