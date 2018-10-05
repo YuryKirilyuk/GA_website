@@ -37,7 +37,7 @@ $(function(){
         $(this).parent().siblings().removeClass('current');
         $(this).parent().addClass('current');
         $('html, body').animate(
-            {scrollTop: $(target).offset().top -100}, 300
+            {scrollTop: $(target).offset().top -100}, 500
         );
         console.log(target);
         return false;

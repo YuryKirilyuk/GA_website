@@ -7,7 +7,10 @@ header{
 	width: 100%;
 	z-index: 999;
 	@media screen and (max-width: 1024px) {
-		height: $headerHeightMobile;
+		height: $headerHeightDesktop;
+	}
+	@media screen and (max-width: 768px) {
+		height: $headerHeightTablet;
 	}
 	&.active {
 		.blur,
@@ -46,6 +49,9 @@ header{
 		position: relative;
 		z-index: 1;
 		&:after {content: none;}
+		@media screen and (max-width: 768px) {
+			justify-content: space-between;
+		}
 	}
 
 	.site-menu {
@@ -53,6 +59,9 @@ header{
 		opacity: 0;
 		padding: 0 1.5rem;
 		visibility: hidden;
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
 	}//.site-menu
 
 	.logo {height: 2.5rem;}
@@ -103,8 +112,10 @@ header{
 	.button.button-sm {
 		height: 4.2rem;
 		line-height: 4rem;
-		//margin-right: 2rem;
 		min-width: 17.6rem;
+		@media screen and (max-width: 768px) {
+			//margin-right: 2rem;
+		}
 	}
 
 	.actions {
