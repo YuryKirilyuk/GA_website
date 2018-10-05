@@ -6,7 +6,7 @@
 
   .section-title {
     @media screen and (max-width: 1024px) {
-      font-size: 5rem;
+      font-size: 3.6rem;
     }
     @media screen and (max-width: 768px) {
       font-size: 4rem;
@@ -28,7 +28,7 @@
     }
   }//.left
   .right {
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
     width: 59.5744%;
     @media screen and (max-width: 767px) {
       width: 100%;
@@ -40,6 +40,11 @@
     max-width: 84rem;
     padding-left: 10%;
     width: 80%;
+    @media screen and (max-width: 1024px) {
+      padding-left: 7%;
+      padding-right: 7%;
+      width: 100%;
+    }
     @media screen and (max-width: 768px) {
       padding-left: 1rem;
       padding-right: 1rem;

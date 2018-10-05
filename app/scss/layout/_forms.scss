@@ -1,17 +1,28 @@
 form {
   font-family: $form-font-family;
   padding-top: 4.3rem;
-
-  label {
-    font-weight: normal;
+  @media screen and (max-width: 1024px) {
+    padding-top: 4rem;
   }
+
+  label {font-weight: normal;}
+
   .form-title {
     font-family: $base-font-family;
     font-size: 1.8rem;
     font-weight: 600;
     text-transform: uppercase;
-  }
+    @media screen and (max-width: 1024px) {
+      &.mt-15 {margin-top: 4.5rem;}
+    }
+  }//.form-title
 
+  .form-group {
+    margin-bottom: 7rem;
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 3rem;
+    }
+  }
   .form-control {
     background: none;
     border: none;
@@ -28,14 +39,19 @@ form {
     }
     + label {
       padding: 1rem 1.2rem 0;
+      position: absolute;
       transition: $default-transition;
+      @media screen and (max-width: 1024px) {
+        font-size: 1.2rem;
+        padding-top: .5rem;
+      }
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { //IE10, IE11
         visibility: hidden;
       }
       @supports (display:-ms-grid) { //MICROSOFT EDGE
         visibility: hidden;
       }
-    }
+    }//+ label
     &:placeholder-shown + label {
       opacity: 0;
       transform: translateY(-2.8rem);

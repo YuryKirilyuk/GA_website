@@ -7,7 +7,7 @@
   font-size: 1.4rem;
   font-weight: 600;
   height: 7.5rem;
-  line-height: 7.5rem;
+  line-height: 7.1rem;
   letter-spacing: 2.5px;
   max-width: 51rem;
   min-width: 32rem;
@@ -15,6 +15,10 @@
   text-align: center;
   text-transform: uppercase;
   transition: $default-transition;
+  @media screen and (max-width: 1024px) {
+    height: 5rem;
+    line-height: 4.6rem;
+  }
   &:hover {
     background: transparent;
     color: #8A00F4;

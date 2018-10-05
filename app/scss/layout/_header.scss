@@ -6,6 +6,9 @@ header{
 	position: fixed;
 	width: 100%;
 	z-index: 999;
+	@media screen and (max-width: 1024px) {
+		height: $headerHeightMobile;
+	}
 	&.active {
 		.blur,
 		.site-menu {
@@ -47,11 +50,12 @@ header{
 
 	.site-menu {
 		display: flex;
-		//flex: 1;
 		opacity: 0;
 		padding: 0 1.5rem;
 		visibility: hidden;
-	}
+	}//.site-menu
+
+	.logo {height: 2.5rem;}
 
 	nav {
 		align-items: center;
@@ -64,6 +68,9 @@ header{
 			li {
 				display: inline-block;
 				padding: 0 2rem;
+				@media screen and (max-width: 1024px) {
+					padding: 0 1rem;
+				}
 				a {
 					color: #fff;
 					font-weight: 600;
@@ -74,13 +81,18 @@ header{
 						color: #fff;
 						opacity: 1;
 					}
-				}
+					@media screen and (max-width: 1024px) {
+						font-size: .9rem;
+					}
+				}//a
 				&.current a {opacity: 1;}
 			}//li
 		}//ul
 	}//nav
 
 	.socials {
+		display: flex;
+		align-items: center;
 		a {
 			fill: $violet;
 			margin: 0 1rem;

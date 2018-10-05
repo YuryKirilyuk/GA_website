@@ -1,6 +1,8 @@
 .section-projects {
-
   padding: 17rem 0 23rem;
+  @media screen and (max-width: 1024px) {
+    padding: 9rem 0 5rem;
+  }
 
   .section-title {margin-bottom: 18rem;}
 
@@ -12,11 +14,18 @@
     height: 120rem;
     margin: 0 auto 4.5rem;
     max-width: 124rem;
+    @media screen and (max-width: 1170px) {
+      align-items: center;
+      max-width: 83rem;
+    }
 
     .project {
       margin-bottom: 3rem;
       position: relative;
       width: 39rem;
+      @media screen and (max-width: 1024px) {
+        //margin: 0 2rem 3rem;
+      }
 
       &-image {
 
@@ -70,6 +79,10 @@
       .button {
         margin: 1rem 0 0;
         width: 100%;
+        @media screen and (max-width: 1024px) {
+          height: 7.5rem;
+          line-height: 7.1rem;
+        }
         svg {
           transition: position 0s, opacity linear .2s, transform linear .2s;}
         .icon-arrow.violet {position: static;}
@@ -96,43 +109,63 @@
         height: 56.4rem;
         order: 1;
         //.project-info {background-image: url(../img/path_1.png);}
+        @media screen and (max-width: 1024px) {
+          //order: 1;
+        }
       }
       &:nth-child(2) {
         height: 43.9rem;
         order: 3;
         //.project-info {background-image: url(../img/path_2.png);}
+        @media screen and (max-width: 1024px) {
+          //order: 3;
+        }
       }
       &:nth-child(3) {
         height: 61.4rem;
         order: 5;
         //.project-info {background-image: url(../img/path_3.png);}
+        @media screen and (max-width: 1024px) {
+          //order: 2;
+        }
       }
       &:nth-child(4) {
         height: 56.4rem;
         order: 2;
         //.project-info {background-image: url(../img/path_4.png);}
+        @media screen and (max-width: 1024px) {
+          //order: 4;
+        }
       }
       &:nth-child(5) {
         height: 61.4rem;
         order: 4;
         //.project-info {background-image: url(../img/path_5.png);}
+        @media screen and (max-width: 1170px) {
+          display: none;
+        }
       }
       &:nth-child(6) {
         height: 43.9rem;
         order: 6;
         //.project-info {background-image: url(../img/path_6.png);}
+        @media screen and (max-width: 1170px) {
+          display: none;
+        }
       }
 
-      @media screen and (max-width: 1024px) {
-        &:nth-child(5) {display: none;}
-        &:last-child {display: none;}
-      }
 
     }//.project
 
   }//.projects-list
 
-  .button {margin: auto;}
+  .button {
+    margin: auto;
+    @media screen and (max-width: 1024px) {
+      //max-width: 85rem;
+      //width: 100%;
+    }
+  }
 
   .section-footer {
     position: absolute;

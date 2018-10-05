@@ -1,9 +1,20 @@
 .section-reviews {
   padding: 13rem 0 0;
+  @media screen and (max-width: 1024px) {
+    padding: 4rem 0 10.5rem;
+  }
+
+  .section-title {
+    margin-bottom: 4.5rem;
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 1.2rem;
+    }
+  }
 
   .section-body {
     position: relative;
   }
+
 
   .slick-slider {
     border: 1px solid #EDECEC;
@@ -28,6 +39,10 @@
         transition: all .7s ease .1s;
         width: 100%;
         z-index: 0;
+      }
+      @media screen and (max-width: 1024px) {
+        height: 43rem;
+        width: 24rem;
       }
     }//.slick-slide
     .slick-slide.slick-current {
@@ -79,6 +94,9 @@
     height: 3.2rem;
     position: absolute;
     width: 100%;
+    @media screen and (max-width: 1024px) {
+      bottom: -8rem;
+    }
     li {
       align-items: flex-end;
       cursor: pointer;
@@ -107,6 +125,9 @@
     margin-bottom: 2.5rem;
     position: relative;
     z-index: 1;
+    @media screen and (max-width: 1024px) {
+      width: 16.2rem;
+    }
     img {margin: auto;}
   }
   .review-text {
@@ -120,6 +141,9 @@
     position: relative;
     //transition: max-height .5s, opacity .5s;
     z-index: 1;
+    @media screen and (max-width: 1024px) {
+      font-size: 1.2rem;
+    }
   }
   .review-title {
     color: #8800f6;
@@ -130,5 +154,8 @@
     position: relative;
     text-transform: uppercase;
     z-index: 1;
+    @media screen and (max-width: 1024px) {
+      font-size: 1.8rem;
+    }
   }
 }//.section-reviews

@@ -13,13 +13,20 @@
       display: inline-block;
       margin: 0 2rem;
       text-transform: uppercase;
-      &.active a {color: $violet;}
+      &.active a {
+        color: $violet;
+        opacity: 1;
+      }
       a {
         color: $grey;
         font-weight: 600;
         letter-spacing: 2px;
-        &:hover {color: $violet;}
+        opacity: .5;
+        &:hover {
+          color: $violet;
+          opacity: 1;
+        }
       }
-    }
+    }//li
   }//ul
 }//.section-nav
