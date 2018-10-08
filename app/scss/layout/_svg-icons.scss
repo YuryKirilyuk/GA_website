@@ -6,32 +6,25 @@ svg.icon-arrow {
   width: 9rem;
 }
 
-header {
-  svg.icon-facebook {
-    height: 12px;
-    width: 7px;
+header svg {
+  height: 12px;
+  &.icon-facebook {width: 7px;}
+  &.icon-twitter {width: 15px;}
+  &.icon-google {width: 19px;}
+  &.icon-instagram {width: 12px;}
+  &.icon-linked-in {width: 12px;}
+  &.icon-pinterest {width: 10px;}
+  @media screen and (max-width: 768px) {
+    display: block;
+    height: 2.1rem;
+    &.icon-facebook {width: 11px;}
+    &.icon-twitter {width: 25px;}
+    &.icon-google {width: 33px;}
+    &.icon-instagram {width: 21px;}
+    &.icon-linked-in {width: 21px;}
+    &.icon-pinterest {width: 19px;}
   }
-  svg.icon-twitter {
-    height: 12px;
-    width: 15px;
-  }
-  svg.icon-google {
-    height: 12px;
-    width: 19px;
-  }
-  svg.icon-instagram {
-    height: 12px;
-    width: 12px;
-  }
-  svg.icon-linked-in {
-    height: 12px;
-    width: 12px;
-  }
-  svg.icon-pinterest {
-    height: 12px;
-    width: 10px;
-  }
-}
+}//header
 
 footer {
   svg.icon-facebook {

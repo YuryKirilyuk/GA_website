@@ -1,15 +1,19 @@
 .section-venture {
   display: flex;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
+    background: transparent !important;
     flex-direction: column;
+    padding-bottom: 9rem;
   }
 
   .section-title {
+    max-width: 57rem;
+    display: inline-block;
     @media screen and (max-width: 1024px) {
       font-size: 3.6rem;
     }
     @media screen and (max-width: 768px) {
-      font-size: 4rem;
+      margin-bottom: 2rem;
     }
   }//.section-title
 
@@ -19,21 +23,27 @@
     padding: 1rem 3rem;
     text-align: right;
     width: 40.4255%;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
+      background: transparent;
+      border-top: 1px solid #fff;
+      margin: auto;
+      max-width: 81.25%;
+      padding: 4.5rem 0 1rem;
+      text-align: left;
       width: 100%;
-    }
-    .section-title {
-      max-width: 57rem;
-      display: inline-block;
     }
   }//.left
   .right {
     padding-bottom: 4rem;
     width: 59.5744%;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
+      background: #F0EEEE;
+      margin: auto;
+      max-width: 81.25%;
+      padding-bottom: 2rem;
       width: 100%;
     }
-  }
+  }//.right
 
   form {
     display: inline-block;
@@ -46,16 +56,18 @@
       width: 100%;
     }
     @media screen and (max-width: 768px) {
-      padding-left: 1rem;
-      padding-right: 1rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
       width: 100%;
     }
     .button {
       max-width: 39rem;
       width: 100%;
       @media screen and (max-width: 768px) {
+        height: 7.5rem;
         margin-left: auto;
         margin-right: auto;
+        max-width: 30rem;
       }
     }
   }//form

@@ -15,7 +15,12 @@
 	@media screen and (max-width: 1024px) {display: none;}
 }
 
-
+.section-group {
+	@media screen and (max-width: 768px) {
+		background-image: -webkit-linear-gradient(33deg, $violet 0%, $pink 70%);
+		background-image: linear-gradient(33deg, $violet 0%, $pink 70%);
+	}
+}//.section-group
 
 
 

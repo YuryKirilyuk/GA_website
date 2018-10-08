@@ -60,7 +60,11 @@ header{
 		padding: 0 1.5rem;
 		visibility: hidden;
 		@media screen and (max-width: 768px) {
-			display: none;
+			flex: 1;
+			justify-content: flex-end;
+			opacity: 1;
+			visibility: visible;
+			nav {display: none;}
 		}
 	}//.site-menu
 
@@ -106,6 +110,7 @@ header{
 			fill: $violet;
 			margin: 0 1rem;
 			&:hover {fill: white;}
+
 		}
 	}//.socials
 
@@ -114,7 +119,16 @@ header{
 		line-height: 4rem;
 		min-width: 17.6rem;
 		@media screen and (max-width: 768px) {
-			//margin-right: 2rem;
+			background: none;
+			border: none;
+			border-bottom: 1px solid;
+			color: #fff;
+			min-width: 15.4rem;
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: 10rem;
 		}
 	}
 

@@ -72,6 +72,7 @@ footer {
 		letter-spacing: 2px;
 		line-height: 9rem;
 		text-transform: uppercase;
+		@media screen and (max-width: 768px) {height: 13rem;}
 		span {
 			position: relative;
 			&:before, &:after {

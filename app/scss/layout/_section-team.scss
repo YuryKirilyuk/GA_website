@@ -3,11 +3,17 @@
   @media screen and (max-width: 1024px) {
     padding: 6rem 0 8.5rem;
   }
+  @media screen and (max-width: 768px) {
+    padding: 3rem 0 4rem;
+  }
 
   .section-title {
     margin-bottom: 19rem;
     @media screen and (max-width: 1024px) {
       margin-bottom: 16rem;
+    }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 14rem;
     }
     &:after {
       background: $violet;
@@ -58,11 +64,18 @@
     @media screen and (max-width: 826px) {
       justify-content: space-evenly;
     }
+    @media screen and (max-width: 768px) {
+      justify-content: space-between;
+      max-width: 56rem;
+    }
 
     li {
       margin-bottom: 9rem;
       @media screen and (max-width: 1024px) {
         margin-bottom: 8rem;
+      }
+      @media screen and (max-width: 768px) {
+        margin-bottom: 4rem;
       }
     }
 
@@ -78,7 +91,12 @@
       height: 24.3rem;
       width: 23.5rem;
     }
-  }
+    @media screen and (max-width: 768px) {
+      height: 15rem;
+      width: 15rem;
+    }
+  }//.member-image
+
   .member-name {
     color: #931BF6;
     margin-bottom: .9rem;
@@ -109,7 +127,15 @@
 
   .button {
     margin: auto;
-  }
+    @media screen and (max-width: 768px) {
+      height: 7.5rem;
+      line-height: 7.1rem;
+      max-width: 30rem;
+      .icon-arrow {
+        width: 5.5rem;
+      }
+    }
+  }//.button
 
   .section-number {
     line-height: 22rem;

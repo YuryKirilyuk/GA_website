@@ -10,6 +10,7 @@
     padding-top: $headerHeightDesktop;
   }
   @media screen and (max-width: 768px) {
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
     height: 54rem;
     padding-top: $headerHeightTablet;
   }
@@ -20,6 +21,10 @@
       font-size: 4.8rem;
       margin: 1rem 0 2rem;
     }
+    @media screen and (max-width: 768px) {
+      font-size: 3.6rem;
+      //margin: 1rem 0 2rem;
+    }
   }//.section-title
 
   .video-container {
@@ -28,17 +33,27 @@
     @media screen and (max-width: 1024px) {
       max-width: 46rem;
     }
-  }
+    @media screen and (max-width: 768px) {
+      max-width: 35rem;
+    }
+  }//.video-container
+
   .video-wrapper {
     background: $violet;
     box-shadow: 0px 40px 30px -5px #fb476c;
     height: 30rem;
     margin-bottom: 3rem;
     width: 100%;
+    @media screen and (max-width: 768px) {
+      height: 23rem;
+    }
   }
   button {
     margin: auto;
-  }
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }//button
 
   .section-footer {
     position: absolute;

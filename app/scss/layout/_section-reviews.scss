@@ -3,16 +3,26 @@
   @media screen and (max-width: 1024px) {
     padding: 4rem 0 10.5rem;
   }
+  @media screen and (max-width: 768px) {
+    padding: 4rem 0;
+  }
 
   .section-title {
     margin-bottom: 4.5rem;
     @media screen and (max-width: 1024px) {
       margin-bottom: 1.2rem;
     }
-  }
+    @media screen and (max-width: 768px) {
+      color: #fff;
+    }
+  }//.section-title
 
   .section-body {
     position: relative;
+    @media screen and (max-width: 768px) {
+      max-width: 54rem;
+      margin: auto;
+    }
   }
 
 
@@ -20,6 +30,9 @@
     border: 1px solid #EDECEC;
     margin: 0 auto 1rem;
     max-width: 130.8rem;
+    @media screen and (max-width: 768px) {
+      border: none;
+    }
     .slick-slide {
       align-items: center;
       display: flex;
@@ -39,16 +52,23 @@
         transition: all .7s ease .1s;
         width: 100%;
         z-index: 0;
+        @media screen and (max-width: 768px) {
+          background: transparent;
+        }
       }
       @media screen and (max-width: 1024px) {
         height: 43rem;
         width: 24rem;
       }
     }//.slick-slide
+
     .slick-slide.slick-current {
       background-image: -webkit-linear-gradient(33deg, $pink 0%, $violet 70%);
       background-image: linear-gradient(33deg, $pink 0%, $violet 70%);
       color: #fff;
+      @media screen and (max-width: 768px) {
+        background: transparent;
+      }
       &:before {
         opacity: 0;
         visibility: hidden;
@@ -60,7 +80,8 @@
         opacity: 1;
       }
       .review-title {color: #fff;}
-    }
+    }//
+
   }//.slick-slider
 
   .slide-arrows {
@@ -74,6 +95,12 @@
     .icon-arrow {
       cursor: pointer;
       margin: 0 1.3rem;
+      &.white {
+        @media screen and (min-width: 769px) {display: none;}
+      }
+      &.violet {
+        @media screen and (max-width: 768px) {display: none;}
+      }
     }
     .arrow-right {
       transition: $default-transition;
@@ -97,6 +124,9 @@
     @media screen and (max-width: 1024px) {
       bottom: -8rem;
     }
+    @media screen and (max-width: 768px) {
+      bottom: -4rem;
+    }
     li {
       align-items: flex-end;
       cursor: pointer;
@@ -111,6 +141,9 @@
         margin: 0 .5rem;
         transition: $default-transition;
         vertical-align: bottom;
+        @media screen and (max-width: 768px) {
+          border-color: #fff;
+        }
       }
       &.slick-active {
         button {height: 3.2rem !important;}
@@ -131,20 +164,21 @@
     img {margin: auto;}
   }
   .review-text {
-    //display: none;
     margin: 2rem auto 1rem;
-    max-height: 0;
+    //max-height: 0;
     max-width: 26rem;
-    opacity: 0;
+    //opacity: 0;
     overflow: hidden;
     padding: 0 1rem;
     position: relative;
-    //transition: max-height .5s, opacity .5s;
     z-index: 1;
     @media screen and (max-width: 1024px) {
       font-size: 1.2rem;
     }
-  }
+    @media screen and (max-width: 768px) {
+      max-height: 100%;
+    }
+  }//.review-text
   .review-title {
     color: #8800f6;
     font-size: 2rem;

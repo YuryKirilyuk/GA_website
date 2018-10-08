@@ -3,8 +3,16 @@
   @media screen and (max-width: 1024px) {
     padding: 9rem 0 5rem;
   }
+  @media screen and (max-width: 768px) {
+    padding: 1.8rem 0 3rem;
+  }
 
-  .section-title {margin-bottom: 18rem;}
+  .section-title {
+    margin-bottom: 18rem;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 5rem;
+    }
+  }
 
   .projects-list {
     display: flex;
@@ -18,13 +26,16 @@
       align-items: center;
       max-width: 83rem;
     }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 1.5rem;
+    }
 
     .project {
       margin-bottom: 3rem;
       position: relative;
       width: 39rem;
-      @media screen and (max-width: 1024px) {
-        //margin: 0 2rem 3rem;
+      @media screen and (max-width: 768px) {
+        width: 35.5rem;
       }
 
       &-image {
@@ -161,9 +172,10 @@
 
   .button {
     margin: auto;
-    @media screen and (max-width: 1024px) {
-      //max-width: 85rem;
-      //width: 100%;
+    @media screen and (max-width: 768px) {
+      height: 10rem;
+      line-height: 9.4rem;
+      max-width: 100%;
     }
   }
 
