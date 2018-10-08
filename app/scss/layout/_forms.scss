@@ -15,6 +15,9 @@ form {
     @media screen and (max-width: 1024px) {
       &.mt-15 {margin-top: 4.5rem;}
     }
+    @media screen and (max-width: 375px) {
+      display: none;
+    }
   }//.form-title
 
   .form-group {
@@ -22,7 +25,11 @@ form {
     @media screen and (max-width: 1024px) {
       margin-bottom: 3rem;
     }
-  }
+    @media screen and (max-width: 425px) {
+      margin-bottom: 0;
+    }
+  }//.form-group
+
   .form-control {
     background: none;
     border: none;

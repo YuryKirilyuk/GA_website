@@ -57,6 +57,7 @@ footer {
 			}
 			svg {fill: $violet;}
 		}
+		@media screen and (max-width: 375px) {display: none;}
 	}//.footer-social
 
 
@@ -73,6 +74,10 @@ footer {
 		line-height: 9rem;
 		text-transform: uppercase;
 		@media screen and (max-width: 768px) {height: 13rem;}
+		@media screen and (max-width: 375px) {
+			height: 12rem;
+			line-height: initial;
+		}
 		span {
 			position: relative;
 			&:before, &:after {

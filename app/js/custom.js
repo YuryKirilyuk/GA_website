@@ -71,8 +71,12 @@ $(function(){
                 }
             },
             {
-                breakpoint: 600,
-                settings: "unslick"
+                breakpoint: 376,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false,
+                    infinite: false
+                }
             }
         ]
     });

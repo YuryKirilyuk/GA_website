@@ -6,13 +6,19 @@
   @media screen and (max-width: 768px) {
     padding: 1.8rem 0 3rem;
   }
+  @media screen and (max-width: 768px) {
+    padding-bottom: 0;
+  }
 
   .section-title {
     margin-bottom: 18rem;
     @media screen and (max-width: 768px) {
       margin-bottom: 5rem;
     }
-  }
+    @media screen and (max-width: 320px) {
+      margin-bottom: 3rem;
+    }
+  }//.section-title
 
   .projects-list {
     display: flex;
@@ -29,6 +35,9 @@
     @media screen and (max-width: 768px) {
       margin-bottom: 1.5rem;
     }
+    @media screen and (max-width: 739px) {
+      height: auto;
+    }
 
     .project {
       margin-bottom: 3rem;
@@ -36,6 +45,11 @@
       width: 39rem;
       @media screen and (max-width: 768px) {
         width: 35.5rem;
+      }
+      @media screen and (max-width: 425px) {
+        margin-bottom: 2rem;
+        max-width: 32rem;
+        width: 100%;
       }
 
       &-image {
@@ -94,6 +108,11 @@
           height: 7.5rem;
           line-height: 7.1rem;
         }
+        @media screen and (max-width: 425px) {
+          height: 6rem;
+          line-height: 5.4rem;
+          min-width: 0;
+        }
         svg {
           transition: position 0s, opacity linear .2s, transform linear .2s;}
         .icon-arrow.violet {position: static;}
@@ -136,16 +155,16 @@
         height: 61.4rem;
         order: 5;
         //.project-info {background-image: url(../img/path_3.png);}
-        @media screen and (max-width: 1024px) {
-          //order: 2;
+        @media screen and (max-width: 375px) {
+          display: none;
         }
       }
       &:nth-child(4) {
         height: 56.4rem;
         order: 2;
         //.project-info {background-image: url(../img/path_4.png);}
-        @media screen and (max-width: 1024px) {
-          //order: 4;
+        @media screen and (max-width: 375px) {
+          display: none;
         }
       }
       &:nth-child(5) {
@@ -177,6 +196,15 @@
       line-height: 9.4rem;
       max-width: 100%;
     }
+    @media screen and (max-width: 375px) {
+      font-size: 1.2rem;
+      height: 7rem;
+      line-height: 6.4rem;
+    }
+  }//.button
+
+  .section-body > .button {
+    svg {display: none;}
   }
 
   .section-footer {

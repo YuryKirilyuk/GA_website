@@ -14,6 +14,13 @@
     height: 54rem;
     padding-top: $headerHeightTablet;
   }
+  @media screen and (max-width: 320px) {
+    background-image: -webkit-linear-gradient(60deg, $pink 0%, $violet 100%);
+    background-image: linear-gradient(60deg, $pink 0%, $violet 100%);
+    clip-path: none;
+    height: 40rem;
+    padding-top: $headerHeightMobile;
+  }
 
   .wrapper {height: 100%;}
   .section-title {
@@ -23,7 +30,10 @@
     }
     @media screen and (max-width: 768px) {
       font-size: 3.6rem;
-      //margin: 1rem 0 2rem;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
     }
   }//.section-title
 
@@ -46,6 +56,10 @@
     width: 100%;
     @media screen and (max-width: 768px) {
       height: 23rem;
+    }
+    @media screen and (max-width: 320px) {
+      height: 20rem;
+      margin: 0 -1.2rem;
     }
   }
   button {

@@ -6,6 +6,9 @@
   @media screen and (max-width: 768px) {
     padding: 4rem 0;
   }
+  @media screen and (max-width: 375px) {
+    padding: 4rem 0 5rem;
+  }
 
   .section-title {
     margin-bottom: 4.5rem;
@@ -33,6 +36,10 @@
     @media screen and (max-width: 768px) {
       border: none;
     }
+    @media screen and (max-width: 375px) {
+      max-width: 22rem;
+      margin: auto;
+    }
     .slick-slide {
       align-items: center;
       display: flex;
@@ -59,6 +66,10 @@
       @media screen and (max-width: 1024px) {
         height: 43rem;
         width: 24rem;
+      }
+      @media screen and (max-width: 1024px) {
+        height: 43rem;
+        width: 32rem;
       }
     }//.slick-slide
 
@@ -91,7 +102,7 @@
     top: 50%;
     width: 100%;
     z-index: 1;
-
+    @media screen and (max-width: 375px) {top: 23%;}
     .icon-arrow {
       cursor: pointer;
       margin: 0 1.3rem;

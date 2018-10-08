@@ -3,6 +3,9 @@
 	position: relative;
 	text-align: center;
 	text-transform: uppercase;
+	@media screen and (max-width: 320px) {
+		font-size: 2.4rem;
+	}
 }
 
 

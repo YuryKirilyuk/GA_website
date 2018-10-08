@@ -65,4 +65,8 @@ svg.icon-logo-footer {
 [class*="service-icon"] {
   height: 24.2rem;
   width: 24.2rem;
+  @media screen and (max-width: 375px) {
+    height: 21.3rem;
+    width: 22.3rem;
+  }
 }
