@@ -7,7 +7,7 @@ svg.icon-arrow {
 }
 
 header svg {
-  height: 12px;
+  height: 1.2rem;
   &.icon-facebook {width: 7px;}
   &.icon-twitter {width: 15px;}
   &.icon-google {width: 19px;}
@@ -23,6 +23,15 @@ header svg {
     &.icon-instagram {width: 21px;}
     &.icon-linked-in {width: 21px;}
     &.icon-pinterest {width: 19px;}
+  }
+  @media screen and (max-width: 425px) {
+    height: 3rem;
+    &.icon-facebook {width: 20px;}
+    &.icon-twitter {width: 34px;}
+    &.icon-google {width: 42px;}
+    &.icon-instagram {width: 30px;}
+    &.icon-linked-in {width: 30px;}
+    &.icon-pinterest {width: 29px;}
   }
 }//header
 

@@ -1,4 +1,5 @@
 header{
+  background: rgba(252,72,107,.85);
 	height: $headerHeight;
 	margin-bottom: -$headerHeight;
 	min-width: $min-width;
@@ -22,10 +23,27 @@ header{
 			visibility: visible;
 			opacity: 1;
 		}
+    nav {
+      @media screen and (max-width: 768px) {
+        bottom: -5rem;
+        opacity: 1;
+        visibility: visible;
+      }
+      @media screen and (max-width: 425px) {
+        height: 100%;
+      }
+    }//nav
+    .socials {
+      @media screen and (max-width: 425px) {
+        opacity: 1;
+        visibility: visible;
+      }
+    }//.socials
 	}//&.active
 
 	.blur {
-		background: rgba(255,255,255,.4);
+		//background: rgba(255,255,255,.4);
+		//background: rgba(252,72,107,.45);
 		//background: #fff url(../img/header_bg.png) no-repeat center top;
 		height: 100%;
 		filter: blur(2px);
@@ -68,10 +86,14 @@ header{
 			justify-content: flex-end;
 			opacity: 1;
 			visibility: visible;
-			nav {display: none;}
 		}
-		@media screen and (max-width: 375px) {
-			.socials {display: none;}
+		@media screen and (max-width: 425px) {
+      flex-direction: column;
+      left: 0;
+      padding: 0;
+      position: absolute;
+      top: 100%;
+      width: 100%;
 		}
 	}//.site-menu
 
@@ -82,19 +104,46 @@ header{
 		cursor: pointer;
 		display: flex;
 		justify-content: space-evenly;
+    transition: $default-transition;
+    @media screen and (max-width: 768px) {
+      background: rgba(252,72,107,.85);
+      bottom: 0;
+      height: 5rem;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      visibility: hidden;
+      width: 100%;
+    }
+    @media screen and (max-width: 450px) {
+      background: transparent;
+      height: 0;
+      position: static;
+    }
 		ul {
 			list-style: none;
 			margin-bottom: 0;
+      @media screen and (max-width: 450px) {
+        background: rgba(252, 72, 107, 0.85);
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: flex-start;
+      }
 			li {
 				display: inline-block;
 				padding: 0 2rem;
 				@media screen and (max-width: 1024px) {
 					padding: 0 1rem;
 				}
+				@media screen and (max-width: 450px) {
+          border-top: 1px solid #fff;
+          padding: 0 2rem;
+				}
 				a {
 					color: #fff;
 					font-weight: 600;
-					opacity: .5;
+					opacity: .7;
 					letter-spacing: 2.5px;
 					text-transform: uppercase;
 					&:hover {
@@ -103,6 +152,11 @@ header{
 					}
 					@media screen and (max-width: 1024px) {
 						font-size: .9rem;
+					}
+					@media screen and (max-width: 450px) {
+            display: block;
+						opacity: 1;
+            padding: 1rem 0;
 					}
 				}//a
 				&.current a {opacity: 1;}
@@ -113,11 +167,21 @@ header{
 	.socials {
 		display: flex;
 		align-items: center;
+    @media screen and (max-width: 425px) {
+      background: rgba(252,72,107,.85);
+      border-top: 1px solid #fff;
+      justify-content: center;
+      opacity: 0;
+      padding: 1rem 0;
+      visibility: hidden;
+    }//@media screen and (max-width: 425px)
 		a {
 			fill: $violet;
 			margin: 0 1rem;
 			&:hover {fill: white;}
-
+      @media screen and (max-width: 425px) {
+        padding: 1rem;
+      }
 		}
 	}//.socials
 

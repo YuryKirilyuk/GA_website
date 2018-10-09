@@ -63,6 +63,7 @@
     max-width: 84rem;
     padding-left: 10%;
     width: 80%;
+    .form-title:first-child {}
     @media screen and (max-width: 1024px) {
       padding-left: 7%;
       padding-right: 7%;
@@ -76,6 +77,8 @@
     @media screen and (max-width: 425px) {
       padding-left: 2rem;
       padding-right: 2rem;
+      padding-top: 2rem;
+      .form-title:first-child {display: none;}
     }
     .form-group .col-sm-6 {
       margin-bottom: 2.5rem;
@@ -90,7 +93,7 @@
         max-width: 30rem;
       }
       @media screen and (max-width: 425px) {
-        margin-top: 1.5rem;
+        margin-top: 3.5rem;
         min-width: 0;
       }
     }//.button

@@ -16,7 +16,7 @@ form {
       &.mt-15 {margin-top: 4.5rem;}
     }
     @media screen and (max-width: 375px) {
-      display: none;
+      &.mt-15 {margin-top: .5rem;}
     }
   }//.form-title
 
@@ -149,12 +149,20 @@ form {
     background-repeat: repeat-x;
     background-position: 1rem bottom;
     content: '';
-    height: 62px;
+    height: 6.2rem;
     left: 0;
     position: absolute;
-    top: -38px;
+    top: -3.8rem;
     width: 100%;
-  }
+    @media screen and (max-width: 425px) {
+      background-size: 15px 39px;
+    }
+  }//&:before
+  &:after {
+    content: '8';
+    position: absolute;
+    right: 0;
+  }//&:after
 
   .ui-slider-range {
     background: -webkit-linear-gradient(to right, $violet 0%, $pink 75%);
@@ -166,10 +174,15 @@ form {
     border: none;
     border-radius: 1.3rem;
     cursor: pointer;
-    height: 39px;
+    height: 3.9rem;
     margin-left: -1.9rem;
     top: -1.5rem;
-    width: 39px;
+    width: 3.9rem;
+    @media screen and (max-width: 375px) {
+      height: 3rem;
+      top: -1rem;
+      width: 3rem;
+    }
   }//.ui-slider-handle
 
   div#value {
@@ -177,7 +190,7 @@ form {
     font-weight: 600;
     left: 50%;
     position: absolute;
-    top: -25px;
+    top: -2.5rem;
     transform: translateX(-50%);
   }
 
