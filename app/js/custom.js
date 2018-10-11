@@ -4,7 +4,10 @@ $(window).on('load', function () {
 	} else{
 		$('body').addClass('web');
 	};
-	$('body').removeClass('loaded'); 
+	$('body').removeClass('loaded');
+
+    headerColor();
+
 });
 
 
@@ -12,8 +15,9 @@ $(window).on('load', function () {
    When the window is scrolled, do
    ========================================================================== */
    
-	$(window).scroll(function() {		
-	
+	$(window).scroll(function() {
+
+        headerColor();
 		
 	});
 
@@ -43,12 +47,15 @@ $(function(){
         return false;
     });
 
+
 	$('header .actions').click(function(){
 		$(this).find('.navigation-button').toggleClass('active'),
 		$('header').toggleClass('active');
 		return false;
 	});
 
+
+    videoInPopup();
 
     /* components */
 
@@ -98,30 +105,6 @@ $(function(){
 			padding  : 10
 		});
 	};
-	if($('.slick-slider').length) {
-		$('.slick-slider').slick({
-			dots: true,
-			infinite: false,
-			speed: 300,
-			slidesToShow: 4,
-			slidesToScroll: 4,
-			responsive: [
-				{
-				  breakpoint: 1024,
-				  settings: {
-					slidesToShow: 3,
-					slidesToScroll: 3,
-					infinite: true,
-					dots: true
-				  }
-				},
-				{
-				  breakpoint: 600,
-				  settings: "unslick"
-				}				
-			]
-		});
-	};
 	if($('.scroll').length) {
 		$(".scroll").mCustomScrollbar({
 			axis:"x",
@@ -152,3 +135,24 @@ $(function(){
     $( "#value" ).text( $( "#slider" ).slider( "value" ) + "$");
 
 });
+
+function headerColor() {
+    var headerOffset = $('header').offset().top;
+    //console.log(headerOffset);
+    if (headerOffset >= 400) $('header').removeClass('transparent');
+    else $('header').addClass('transparent');
+}
+
+function videoInPopup() {
+
+    var videoSrc = $("#modalVideo iframe").attr("src");
+
+    $('#modalVideo').on('shown.bs.modal', function () {
+        var $iframe = $('iframe', jQuery(this));
+        $iframe.prop('src', '').prop('src', videoSrc + '&autoplay=1');
+    })
+    $('#modalVideo').on('hidden.bs.modal', function () {
+        $("#modalVideo iframe").prop("src", videoSrc);
+    })
+
+}

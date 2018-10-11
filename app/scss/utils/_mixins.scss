@@ -34,3 +34,8 @@
   &::-moz-placeholder          { @content; }
   &:-ms-input-placeholder      { @content; }
 }
+
+@mixin circle($diameter) {
+  height: $diameter;
+  width: $diameter;
+}

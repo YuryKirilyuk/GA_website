@@ -1,10 +1,10 @@
 header{
-  background: rgba(252,72,107,.85);
 	height: $headerHeight;
 	margin-bottom: -$headerHeight;
 	min-width: $min-width;
 	order: 1;
 	position: fixed;
+	transition: $default-transition;
 	width: 100%;
 	z-index: 999;
 	@media screen and (max-width: 1024px) {
@@ -17,7 +17,10 @@ header{
 		border-bottom: 1px solid #fff;
 		height: $headerHeightMobile;
 	}
+	&:not(.transparent) {background: rgba(252,72,107,.85);}
 	&.active {
+		background: rgba(252,72,107,.85);
+
 		.blur,
 		.site-menu {
 			visibility: visible;
@@ -209,6 +212,9 @@ header{
 	.actions {
 		cursor: pointer;
 		height: 3rem;
+		@media screen and (min-width: 768px) and (max-width: 1250px){
+			margin-left: 2rem;
+		}
 	}
 
 }//header

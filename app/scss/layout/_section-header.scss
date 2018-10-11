@@ -1,5 +1,7 @@
 .section-header {
-  background: #fff url(../img/header_bg.png) no-repeat center;
+  background: $pink;
+  background: -webkit-linear-gradient(50deg, $pink 0%, $violet 85%);
+  background: linear-gradient(50deg, $pink 0%, $violet 85%);
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
   height: 828px;
@@ -51,17 +53,47 @@
   .video-wrapper {
     background: $violet;
     box-shadow: 0px 40px 30px -5px #fb476c;
+    cursor: pointer;
     height: 30rem;
     margin-bottom: 3rem;
+    position: relative;
     width: 100%;
+    &:before {
+      border-left: 6.4rem solid #fff;
+      border-top: 3.2rem solid transparent;
+      border-bottom: 3.2rem solid transparent;
+      bottom: 0;
+      content: '';
+      height: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 0;
+    }
+    @media screen and (max-width: 1024px) {
+
+    }
     @media screen and (max-width: 768px) {
       height: 23rem;
+      &:before {
+        border-left-width: 4.7rem;
+        border-top-width: 2.75rem;
+        border-bottom-width: 2.75rem;
+      }
     }
     @media screen and (max-width: 320px) {
       height: 20rem;
       margin: 0 -1.2rem;
+      &:before {
+        border-left-width: 4.3rem;
+        border-top-width: 2.5rem;
+        border-bottom-width: 2.5rem;
+      }
     }
-  }
+  }//.video-wrapper
+
   button {
     margin: auto;
     @media screen and (max-width: 768px) {
@@ -73,5 +105,75 @@
     position: absolute;
     right: 0;
     bottom: 3rem;
+    z-index: -1;
   }
 }//.section-header
+
+[class*="planet"] {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  background: -webkit-linear-gradient(50deg, $violet 0%, $pink 90%);
+  background: linear-gradient(50deg, $violet 0%, $pink 90%);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 0;
+  @media screen and (max-width: 425px) {
+    display: none;
+  }
+}
+.planet-sm {
+  animation-name: planetsFly-1;
+  animation-duration: 50s;
+  @include circle(27.8rem);
+  box-shadow: -15px 25px 100px -10px $violet;
+  left: 15%;
+  top: -10rem;
+  @media screen and (max-width: 1024px) {
+    @include circle(21rem);
+    left: 10%;
+    top: -5rem;
+  }
+  @media screen and (max-width: 768px) {
+    @include circle(16rem);
+    left: 10%;
+    top: -5rem;
+  }
+}//.planet-sm
+.planet-md {
+  animation-name: planetsFly-2;
+  animation-duration: 60s;
+  @include circle(45rem);
+  box-shadow: 25px 45px 45px -28px $violet;
+  left: -10%;
+  bottom: 4rem;
+  @media screen and (max-width: 1024px) {
+    @include circle(34rem);
+    left: -12%;
+    bottom: 8rem;
+  }
+  @media screen and (max-width: 768px) {
+    @include circle(26rem);
+    left: -14%;
+    bottom: 5rem;
+  }
+}//.planet-md
+.planet-lg {
+  animation-name: planetsFly-3;
+  animation-duration: 60s;
+  @include circle(78.8rem);
+  background: -webkit-linear-gradient(70deg, $violet 0%, $pink 60%);
+  background: linear-gradient(70deg, $violet 0%, $pink 60%);
+  box-shadow: -5px 60px 45px -35px $violet;
+  right: -15%;
+  top: -25rem;
+  @media screen and (max-width: 1024px) {
+    @include circle(81rem);
+    right: -50%;
+    top: -40rem;
+  }
+  @media screen and (max-width: 768px) {
+    @include circle(62rem);
+    right: -43%;
+    top: -17rem;
+  }
+}//.planet-lg

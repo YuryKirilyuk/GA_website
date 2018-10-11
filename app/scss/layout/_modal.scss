@@ -1,0 +1,78 @@
+.modal {
+  padding: 0 !important;
+
+  .close {
+    background: #000;
+    height: 100%;
+    margin: 0;
+    opacity: 1;
+    width: 4.5rem;
+
+    span {
+      cursor: pointer;
+      position: relative;
+
+      &,
+      &::before,
+      &::after {
+        display: inline-block;
+        height: 2px;
+        vertical-align: middle;
+        width: 3.9rem;
+      }
+      &::before,
+      &::after {
+        background-color: #fff;
+        content: "";
+        left: 3px;
+        opacity: .5;
+        position: absolute;
+        transition: $default-transition;
+        top: 0;
+        width: 3.2rem;
+      }
+      &:before {transform: rotate(135deg);}
+      &:after {transform: rotate(-135deg);}
+    }//span
+
+    &:hover span {
+      &::before,
+      &::after {
+        opacity: 1;
+      }
+    }
+  }//.close
+
+}//.modal
+
+.modal-dialog {
+
+  padding-top: 4.5rem;
+
+  @media (min-width: 768px) {
+    max-width: 95%;
+    margin: 30px auto;
+    width: 100%;
+  }
+
+  .modal-content {
+    background: transparent;
+    border: none;
+  }
+  .modal-header {
+    border: none;
+    height: 4.5rem;
+    left: 0;
+    padding: 0;
+    position: absolute;
+    top: -4.5rem;
+    width: 100%;
+  }
+  .modal-body {
+    height: 85vh;
+    padding: 0;
+  }
+
+  iframe {display: block;}
+
+}//.modal-dialog

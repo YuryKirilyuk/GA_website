@@ -19,7 +19,7 @@
 <div class="main-wrapper">
 
 
-	<header>
+	<header class="transparent">
 		<div class="blur"></div>
 		<div class="wrapper">
 
@@ -75,14 +75,15 @@
 
 		<!-- SECTION HEADER -->
 		<section class="section-header" id="header">
+			<div class="planet-sm"></div>
+			<div class="planet-md"></div>
+			<div class="planet-lg"></div>
 			<div class="wrapper">
 				<h2 class="section-title text-white text-left">Cosmic Web Dev &<br/>Design Agency</h2>
 				<div class="section-body">
 					<div class="video-container text-center">
-						<div class="video-wrapper">
-
-						</div>
-						<button class="button button-sm button-white video-title">Play Video</button>
+						<div class="video-wrapper" data-toggle="modal" data-target="#modalVideo"></div>
+						<button type="button" class="button button-sm button-white video-title" data-toggle="modal" data-target="#modalVideo">Play Video</button>
 					</div>
 				</div>
 				<div class="section-footer">
@@ -239,7 +240,7 @@
 		</section><!-- //.section-projects -->
 
 
-		<!-- SECTION SERVICES -->
+    <!-- SECTION SERVICES -->
 		<section class="section-services gray-bg" id="services">
 			<div class="wrapper">
 				<h2 class="section-title">Services</h2>
@@ -638,19 +639,40 @@
 	</footer>
 
 
+
 </div><!-- //.main-wrapper -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalVideo" tabindex="-1" role="dialog" aria-labelledby="modalVideoLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true"></span>
+				</button>
+      </div>
+      <div class="modal-body">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bAdqazixuRY?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div><!-- //.modal-content -->
+  </div><!-- //.modal-dialog -->
+</div><!-- //.modal -->
+
+
 
 <div class="icon-load"></div>		
 
 	
-	<script src="js/jquery-3.0.0.min.js"></script>		
-	<script src="js/jquery-migrate-1.4.1.min.js" ></script>
+	<script src="js/jquery-3.0.0.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/components/slick.js" ></script>
+	<script src="js/components/bootstrap.min.js" ></script>
 	<script src="js/components/bootsnav.js" ></script>
 	<script src="js/components/vivus.min.js" ></script>
 
 	<!--
+	<script src="js/jquery-migrate-1.4.1.min.js" ></script>
 	<script src="js/components/jquery.fancybox.js" ></script>
 	<script src="js/components/jquery.formstyler.js" ></script>
 	<script src="js/components/jquery.mCustomScrollbar.js" ></script>
