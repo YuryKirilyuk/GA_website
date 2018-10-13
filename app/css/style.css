@@ -4050,6 +4050,12 @@ footer .copyright span:before, footer .copyright span:after { background: #52059
 
 .button.button-sm { height: 5rem; line-height: 4.4rem; min-width: 21rem; }
 
+.button.button-back .icon-arrow { left: 6rem; -webkit-transform: rotateY(180deg); transform: rotateY(180deg); }
+
+@media screen and (max-width: 425px) { .button.button-back .icon-arrow { left: 0; } }
+
+.button.button-back:hover .icon-arrow { left: 4rem; }
+
 .navigation-button { cursor: pointer; position: relative; }
 
 .navigation-button, .navigation-button::before, .navigation-button::after { background-color: #fff; display: inline-block; height: 2px; width: 3.9rem; }
@@ -4703,5 +4709,15 @@ body:not(.home) .section-team .section-title { margin-bottom: 12rem; }
 @media screen and (max-width: 425px) { .section-join .section-title { font-size: 2.4rem; } }
 
 .section-join .button { height: 7.7rem; line-height: 7.3rem; margin: auto; max-width: 50.8rem; width: 100%; }
+
+.section-error { padding: 2rem 0 6rem; text-align: center; }
+
+.section-error .section-title { margin-bottom: 4rem; }
+
+.section-error .section-footer { padding: 3rem 0 0; }
+
+.section-error h4 { color: #520596; font-size: 1.8rem; font-weight: 900; margin-bottom: 2rem; }
+
+.section-error .button { height: 7.7rem; line-height: 7.3rem; margin: auto; }
 
 /*# sourceMappingURL=style.css.map */

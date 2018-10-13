@@ -19,14 +19,17 @@
 <div class="main-wrapper">
 
 
-	<header class="transparent">
+	<header class="">
 		<div class="blur"></div>
 		<div class="wrapper">
 
 			<div class="logo">
 				<a href="/">
-					<svg class="icon-logo-header">
-						<use xlink:href="img/sprite.svg#logo-header"></use>
+					<svg class="icon-logo-header desktop">
+						<use xlink:href="img/sprite.svg#logo-header-inner"></use>
+					</svg>
+					<svg class="icon-logo-header mobile">
+						<use xlink:href="img/sprite.svg#logo-mobile"></use>
 					</svg>
 				</a>
 			</div><!-- //.logo -->
@@ -34,33 +37,18 @@
 			<div class="site-menu">
 				<nav>
 					<ul>
-						<li><a href="#header">Main</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#services">Services</a></li>
-						<li><a href="#aboutUs">About Us</a></li>
-						<li><a href="#contactUs">Contact Us</a></li>
+						<ul>
+							<li><a href="index.html">Main</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li class="active"><a href="aboutus.html">About Us</a></li>
+							<li><a href="contactus.html">Contact Us</a></li>
+						</ul>
 					</ul>
 				</nav>
-				<div class="socials">
-					<a class="fb" href="#">
-						<svg class="icon-facebook">
-							<use xlink:href="img/sprite.svg#facebook"></use>
-						</svg>
-					</a>
-					<a class="in" href="#">
-						<svg class="icon-instagram">
-							<use xlink:href="img/sprite.svg#instagram"></use>
-						</svg>
-					</a>
-					<a class="li" href="#">
-						<svg class="icon-linked-in">
-							<use xlink:href="img/sprite.svg#linked-in"></use>
-						</svg>
-					</a>
-				</div><!-- //.socials -->
 			</div><!-- //.site-menu -->
 
-			<a href="#" class="button button-sm button-white">Get in touch</a>
+			<a href="#" class="button">Get in touch</a>
 
 			<div class="actions">
 				<span class="navigation-button"></span>
@@ -72,6 +60,29 @@
 
 
 	<main class="content">
+		<section class="section-error">
+			<div class="wrapper">
+				<div class="section-title">OOPS! ERROR404</div>
+				<div class="section-body">
+					<img alt="" src="img/error404_3@2x.png" />
+				</div>
+				<div class="section-footer">
+					<h4>KUDA TO NE TUDA	TI ZABREL, BRATISHKA</h4>
+
+					<a href="index.html" class="button button-back">
+						GO TO MAIN
+						<svg class="icon-arrow violet">
+							<use xlink:href="img/sprite.svg#arrow-violet"></use>
+						</svg>
+						<svg class="icon-arrow white">
+							<use xlink:href="img/sprite.svg#arrow-white"></use>
+						</svg>
+					</a>
+
+				</div>
+			</div>
+
+		</section>
 
 
 

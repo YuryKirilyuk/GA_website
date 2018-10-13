@@ -58,6 +58,16 @@
     line-height: 4.4rem;
     min-width: 21rem;
   }
+  &.button-back {
+    .icon-arrow {
+      left: 6rem;
+      transform: rotateY(180deg);
+      @media screen and (max-width: 425px) {
+        left: 0;
+      }
+    }
+    &:hover .icon-arrow {left: 4rem;}
+  }
 }//.button
 
 .navigation-button {

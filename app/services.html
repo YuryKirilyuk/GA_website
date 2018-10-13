@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
-	<title>Main</title>
+	<title>About Us</title>
 	<meta name='description' content="" />
 	<meta name="keywords" content="" />
 	<link rel="icon" type="image/x-icon" href="favicon.ico" />
@@ -19,14 +19,17 @@
 <div class="main-wrapper">
 
 
-	<header class="transparent">
+	<header class="">
 		<div class="blur"></div>
 		<div class="wrapper">
 
 			<div class="logo">
 				<a href="/">
-					<svg class="icon-logo-header">
-						<use xlink:href="img/sprite.svg#logo-header"></use>
+					<svg class="icon-logo-header desktop">
+						<use xlink:href="img/sprite.svg#logo-header-inner"></use>
+					</svg>
+					<svg class="icon-logo-header mobile">
+						<use xlink:href="img/sprite.svg#logo-mobile"></use>
 					</svg>
 				</a>
 			</div><!-- //.logo -->
@@ -34,33 +37,18 @@
 			<div class="site-menu">
 				<nav>
 					<ul>
-						<li><a href="#header">Main</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#services">Services</a></li>
-						<li><a href="#aboutUs">About Us</a></li>
-						<li><a href="#contactUs">Contact Us</a></li>
+						<ul>
+							<li><a href="index.html">Main</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li class="active"><a href="aboutus.html">About Us</a></li>
+							<li><a href="contactus.html">Contact Us</a></li>
+						</ul>
 					</ul>
 				</nav>
-				<div class="socials">
-					<a class="fb" href="#">
-						<svg class="icon-facebook">
-							<use xlink:href="img/sprite.svg#facebook"></use>
-						</svg>
-					</a>
-					<a class="in" href="#">
-						<svg class="icon-instagram">
-							<use xlink:href="img/sprite.svg#instagram"></use>
-						</svg>
-					</a>
-					<a class="li" href="#">
-						<svg class="icon-linked-in">
-							<use xlink:href="img/sprite.svg#linked-in"></use>
-						</svg>
-					</a>
-				</div><!-- //.socials -->
 			</div><!-- //.site-menu -->
 
-			<a href="#" class="button button-sm button-white">Get in touch</a>
+			<a href="#" class="button">Get in touch</a>
 
 			<div class="actions">
 				<span class="navigation-button"></span>
@@ -73,432 +61,20 @@
 
 	<main class="content">
 
-		<!-- SECTION HEADER -->
-		<section class="section-header" id="header">
-			<div class="planet-sm"></div>
-			<div class="planet-md"></div>
-			<div class="planet-lg"></div>
+
+		<section class="section-text">
 			<div class="wrapper">
-				<h2 class="section-title text-white text-left">Cosmic Web Dev &<br/>Design Agency</h2>
+				<h2 class="section-title dash">About us</h2>
 				<div class="section-body">
-					<div class="video-container text-center">
-						<div class="video-wrapper" data-toggle="modal" data-target="#modalVideo"></div>
-						<button type="button" class="button button-sm button-white video-title" data-toggle="modal" data-target="#modalVideo">Play Video</button>
-					</div>
+					<p>Grad-Agency is your website developer, designer, marketer and top-notch quality all bundled together in a coherent and transparent package. With continuous updates to your project status and our ability to work with you as closely as possible, you are promised to be satisfied. Find out how we can help you!</p>
 				</div>
-				<div class="section-footer">
-					<div class="section-number text-white">01</div>
-				</div>
-			</div><!-- //.wrapper -->
-		</section><!-- //.section-header -->
-
-
-		<!-- SECTION PROJECTS -->
-		<section class="section-projects" id="projects">
-			<div class="wrapper">
-				<h2 class="section-title">PROJECTS</h2>
-
-				<div class="section-body">
-
-
-					<div class="projects-list">
-
-						<div class="project">
-							<div class="project-image">
-								<img alt="" src="img/p1.jpg" />
-							</div>
-							<div class="project-info">
-								<div class="project-brand">branding</div>
-								<div class="project-title">OGD SOLUTION LANDING PAGE</div>
-								<a href="#" class="button button-white">
-									read more
-									<svg class="icon-arrow white">
-										<use xlink:href="img/sprite.svg#arrow-white"></use>
-									</svg>
-									<svg class="icon-arrow violet">
-										<use xlink:href="img/sprite.svg#arrow-violet"></use>
-									</svg>
-								</a>
-							</div><!-- //.project-info -->
-						</div><!-- //.project -->
-
-						<div class="project">
-							<div class="project-image">
-								<img alt="" src="img/p2.jpg" />
-							</div>
-							<div class="project-info">
-								<div class="project-brand">branding</div>
-								<div class="project-title">OGD SOLUTION LANDING PAGE</div>
-								<a href="#" class="button button-white">
-									read more
-									<svg class="icon-arrow white">
-										<use xlink:href="img/sprite.svg#arrow-white"></use>
-									</svg>
-									<svg class="icon-arrow violet">
-										<use xlink:href="img/sprite.svg#arrow-violet"></use>
-									</svg>
-								</a>
-							</div><!-- //.project-info -->
-						</div><!-- //.project -->
-
-						<div class="project">
-							<div class="project-image">
-								<img alt="" src="img/p3.jpg" />
-							</div>
-							<div class="project-info">
-								<div class="project-brand">branding</div>
-								<div class="project-title">OGD SOLUTION LANDING PAGE</div>
-								<a href="#" class="button button-white">
-									read more
-									<svg class="icon-arrow white">
-										<use xlink:href="img/sprite.svg#arrow-white"></use>
-									</svg>
-									<svg class="icon-arrow violet">
-										<use xlink:href="img/sprite.svg#arrow-violet"></use>
-									</svg>
-								</a>
-							</div><!-- //.project-info -->
-						</div><!-- //.project -->
-
-						<div class="project">
-							<div class="project-image">
-								<img alt="" src="img/p1.jpg" />
-							</div>
-							<div class="project-info">
-								<div class="project-brand">branding</div>
-								<div class="project-title">OGD SOLUTION LANDING PAGE</div>
-								<a href="#" class="button button-white">
-									read more
-									<svg class="icon-arrow white">
-										<use xlink:href="img/sprite.svg#arrow-white"></use>
-									</svg>
-									<svg class="icon-arrow violet">
-										<use xlink:href="img/sprite.svg#arrow-violet"></use>
-									</svg>
-								</a>
-							</div><!-- //.project-info -->
-						</div><!-- //.project -->
-
-						<div class="project">
-							<div class="project-image">
-								<img alt="" src="img/p3.jpg" />
-							</div>
-							<div class="project-info">
-								<div class="project-brand">branding</div>
-								<div class="project-title">OGD SOLUTION LANDING PAGE</div>
-								<a href="#" class="button button-white">
-									read more
-									<svg class="icon-arrow white">
-										<use xlink:href="img/sprite.svg#arrow-white"></use>
-									</svg>
-									<svg class="icon-arrow violet">
-										<use xlink:href="img/sprite.svg#arrow-violet"></use>
-									</svg>
-								</a>
-							</div><!-- //.project-info -->
-						</div><!-- //.project -->
-
-						<div class="project">
-							<div class="project-image">
-								<img alt="" src="img/p2.jpg" />
-							</div>
-							<div class="project-info">
-								<div class="project-brand">branding</div>
-								<div class="project-title">OGD SOLUTION LANDING PAGE</div>
-								<a href="#" class="button button-white">
-									read more
-									<svg class="icon-arrow white">
-										<use xlink:href="img/sprite.svg#arrow-white"></use>
-									</svg>
-									<svg class="icon-arrow violet">
-										<use xlink:href="img/sprite.svg#arrow-violet"></use>
-									</svg>
-								</a>
-							</div><!-- //.project-info -->
-						</div><!-- //.project -->
-
-					</div><!-- //.projects-list -->
-
-
-					<a href="#" class="button">
-						veiw all projets
-						<svg class="icon-arrow white">
-							<use xlink:href="img/sprite.svg#arrow-white"></use>
-						</svg>
-						<svg class="icon-arrow violet">
-							<use xlink:href="img/sprite.svg#arrow-violet"></use>
-						</svg>
-					</a>
-
-				</div><!-- //.section-body -->
-
-				<div class="section-footer">
-					<div class="section-number text-violet">02</div>
-				</div>
-
-			</div><!-- //.wrapper -->
-		</section><!-- //.section-projects -->
-
-
-    <!-- SECTION SERVICES -->
-		<section class="section-services gray-bg" id="services">
-			<div class="wrapper">
-				<h2 class="section-title">Services</h2>
-				<div class="section-body">
-
-					<a href="#" class="service-item">
-						<div class="service-icon">
-							<svg class="service-icon-1">
-								<use xlink:href="img/sprite.svg#icon-1"></use>
-							</svg>
-						</div>
-						<div class="service-title">web development</div>
-					</a><!-- //.service-item -->
-
-					<a href="#" class="service-item">
-						<div class="service-icon">
-							<svg class="service-icon-2">
-								<use xlink:href="img/sprite.svg#icon-2"></use>
-							</svg>
-						</div>
-						<div class="service-title">web design</div>
-					</a><!-- //.service-item -->
-
-					<a href="#" class="service-item">
-						<div class="service-icon">
-							<svg class="service-icon-3">
-								<use xlink:href="img/sprite.svg#icon-6"></use>
-							</svg>
-						</div>
-						<div class="service-title">brand design</div>
-					</a><!-- //.service-item -->
-
-					<a href="#" class="service-item">
-						<div class="service-icon">
-							<svg class="service-icon-4">
-								<use xlink:href="img/sprite.svg#icon-3"></use>
-							</svg>
-						</div>
-						<div class="service-title">WORDPRESS DEVELOPMENT</div>
-					</a><!-- //.service-item -->
-
-					<a href="#" class="service-item">
-						<div class="service-icon">
-							<svg class="service-icon-5">
-								<use xlink:href="img/sprite.svg#icon-4"></use>
-							</svg>
-						</div>
-						<div class="service-title">INTERNET MARKETING</div>
-					</a><!-- //.service-item -->
-
-					<a href="#" class="service-item">
-						<div class="service-icon">
-							<svg class="service-icon-6">
-								<use xlink:href="img/sprite.svg#icon-5"></use>
-							</svg>
-						</div>
-						<div class="service-title">SUPPORT</div>
-					</a><!-- //.service-item -->
-
-				</div><!-- //.section-body -->
-
-				<div class="section-footer">
-					<div class="section-number text-white">03</div>
-				</div>
-
-			</div><!-- //.wrapper -->
-		</section><!-- //.section-services -->
-
-
-	<div class="section-group">
-
-		<!-- SECTION REVIEWS -->
-		<section class="section-reviews text-center" id="reviews">
-			<div class="wrapper">
-				<h2 class="section-title">Reviews</h2>
-
-				<div class="section-body">
-
-					<div class="slide-arrows">
-						<span class="arrow-left">
-							<svg class="icon-arrow white">
-								<use xlink:href="img/sprite.svg#arrow-white"></use>
-							</svg>
-							<svg class="icon-arrow violet">
-								<use xlink:href="img/sprite.svg#arrow-violet"></use>
-							</svg>
-						</span>
-						<span class="arrow-right">
-							<svg class="icon-arrow white">
-								<use xlink:href="img/sprite.svg#arrow-white"></use>
-							</svg>
-							<svg class="icon-arrow violet">
-								<use xlink:href="img/sprite.svg#arrow-violet"></use>
-							</svg>
-						</span>
-					</div><!-- //.slide-arrows -->
-
-					<div class="slick-slider">
-
-						<a href="#">
-							<div class="review-image">
-								<img src="img/reviews1.png" alt="" />
-							</div>
-							<div class="review-text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-							</div>
-							<div class="review-title">intel</div>
-						</a>
-
-						<a href="#">
-							<div class="review-image">
-								<img src="img/reviews2.png" alt="" />
-							</div>
-							<div class="review-text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-							</div>
-							<div class="review-title">Microsoft</div>
-						</a>
-
-						<a href="#">
-							<div class="review-image">
-								<img src="img/reviews3.png" alt="" />
-							</div>
-							<div class="review-text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-							</div>
-							<div class="review-title">burger king</div>
-						</a>
-
-						<a href="#">
-							<div class="review-image">
-								<img src="img/reviews1.png" alt="" />
-							</div>
-							<div class="review-text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-							</div>
-							<div class="review-title">intel</div>
-						</a>
-
-						<a href="#">
-							<div class="review-image">
-								<img src="img/reviews2.png" alt="" />
-							</div>
-							<div class="review-text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-							</div>
-							<div class="review-title">Microsoft</div>
-						</a>
-
-						<a href="#">
-							<div class="review-image">
-								<img src="img/reviews3.png" alt="" />
-							</div>
-							<div class="review-text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-							</div>
-							<div class="review-title">burger king</div>
-						</a>
-
-					</div>
-				</div><!-- //.section-body -->
-
-				<div class="section-footer">
-					<div class="section-number text-violet">04</div>
-				</div>
-			</div><!-- //.wrapper -->
-
-		</section><!-- //.section-reviews -->
-
-
-		<section class="section-venture gray-bg">
-
-				<div class="left">
-					<h2 class="section-title text-white text-left">allow us to	help you build your	next venture</h2>
-				</div>
-
-				<div class="right">
-					<form class="form-horizontal">
-						<div class="form-title mb-30">basic info</div>
-
-						<div class="form-group">
-							<div class="col-sm-6 col-xs-12">
-								<input type="text" class="form-control" id="name" placeholder="Name">
-								<label for="name">Name</label>
-							</div>
-							<div class="col-sm-6 col-xs-12">
-								<input type="email" class="form-control" id="email" placeholder="E-mail">
-								<label for="email">E-mail</label>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-sm-6 col-xs-12">
-								<input type="text" class="form-control" id="project" placeholder="Project description (optional)">
-								<label for="project">Project description (optional)</label>
-							</div>
-						</div>
-
-
-							<div class="form-title mt-15">what will we do?</div>
-							<p class="pl-15 mb-15">Keep unchecked if you don’t now</p>
-
-							<div class="form-group">
-								<div class="col-sm-5">
-									<div class="checkbox">
-										<input type="checkbox" id="design">
-										<label for="design">Design</label>
-									</div>
-								</div>
-
-								<div class="col-sm-5">
-									<div class="checkbox">
-										<input type="checkbox" id="web">
-										<label for="web">Web Development</label>
-									</div>
-								</div>
-
-								<div class="col-sm-5">
-									<div class="checkbox">
-										<input type="checkbox" id="ios">
-										<label for="ios">iOS Development</label>
-									</div>
-								</div>
-
-								<div class="col-sm-5">
-									<div class="checkbox">
-										<input type="checkbox" id="android">
-										<label for="android">Android Development</label>
-									</div>
-								</div>
-
-								<div class="col-sm-5">
-									<div class="checkbox">
-											<input type="checkbox" id="backend">
-											<label for="backend">Backend</label>
-									</div>
-								</div>
-
-							</div><!-- //.form-group -->
-
-
-							<div class="form-title mb-25">Budget</div>
-							<input type="text" id="amount" readonly>
-							<div id="slider"></div>
-
-
-						<button type="submit" class="button mt-60">Submit</button>
-
-					</form>
-				</div><!-- //.right -->
-
-		</section><!-- //.section-venture -->
-
-	</div><!-- //.mback -->
+			</div>
+		</section>
 
 		<!-- SECTION TEAM -->
 		<section class="section-team" id="aboutUs">
 			<div class="wrapper">
-				<h2 class="section-title">About us</h2>
+				<h2 class="section-title">Our team</h2>
 				<div class="section-body">
 
 					<ul class="member-list">
@@ -548,23 +124,28 @@
 
 					</ul>
 
-					<a href="#" class="button">
-						ABOUT US
-						<svg class="icon-arrow violet">
-							<use xlink:href="img/sprite.svg#arrow-violet"></use>
-						</svg>
-						<svg class="icon-arrow white">
-							<use xlink:href="img/sprite.svg#arrow-white"></use>
-						</svg>
-					</a>
-
 				</div><!-- //.section-body -->
 
-				<div class="section-footer">
-					<div class="section-number text-violet">05</div>
-				</div>
 			</div>
 		</section><!-- //.section-team -->
+
+
+		<section class="section-join">
+			<div class="wrapper">
+				<div class="section-title text-white">DO YOU SEE YOURSELF IN	OUR TEAM?</div>
+
+				<a href="#" class="button button-white">
+					JOIN US
+					<svg class="icon-arrow violet">
+						<use xlink:href="img/sprite.svg#arrow-violet"></use>
+					</svg>
+					<svg class="icon-arrow white">
+						<use xlink:href="img/sprite.svg#arrow-white"></use>
+					</svg>
+				</a>
+
+			</div>
+		</section>
 
 
 		<section class="section-nav gray-bg">
@@ -575,11 +156,13 @@
 			</a>
 			<nav class="text-center">
 				<ul>
-					<li class="active"><a href="#header">MAin</a></li>
-					<li><a href="#projects">projects</a></li>
-					<li><a href="#services">services</a></li>
-					<li><a href="#aboutUs">about us</a></li>
-					<li><a href="#contactUs">contact us</a></li>
+					<ul>
+						<li><a href="index.html">Main</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li class="active"><a href="aboutus.html">About Us</a></li>
+						<li><a href="contactus.html">Contact Us</a></li>
+					</ul>
 				</ul>
 			</nav>
 		</section><!-- //.section-nav -->

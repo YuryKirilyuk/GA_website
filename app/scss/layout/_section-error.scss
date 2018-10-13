@@ -1,0 +1,22 @@
+.section-error {
+  padding: 2rem 0 6rem;
+  text-align: center;
+
+  .section-title {
+    margin-bottom: 4rem;
+  }
+  .section-footer {
+    padding: 3rem 0 0;
+  }
+  h4 {
+    color: $violet;
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+  }
+  .button {
+    height: 7.7rem;
+    line-height: 7.3rem;
+    margin: auto;
+  }
+}//section-footer
