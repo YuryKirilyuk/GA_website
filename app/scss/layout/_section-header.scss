@@ -5,15 +5,18 @@
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
   height: 828px;
+  margin-top: -$headerHeight;
   padding: $headerHeight 1.2rem 0;
   position: relative;
   @media screen and (max-width: 1024px) {
     height: 69rem;
+    margin-top: -$headerHeightDesktop;
     padding-top: $headerHeightDesktop;
   }
   @media screen and (max-width: 768px) {
     clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
     height: 54rem;
+    margin-top: -$headerHeightTablet;
     padding-top: $headerHeightTablet;
   }
   @media screen and (max-width: 320px) {
@@ -21,6 +24,7 @@
     background-image: linear-gradient(60deg, $pink 0%, $violet 100%);
     clip-path: none;
     height: 40rem;
+    margin-top: -$headerHeightMobile;
     padding-top: $headerHeightMobile;
   }
 
@@ -108,6 +112,8 @@
     z-index: -1;
   }
 }//.section-header
+
+
 
 [class*="planet"] {
   animation-timing-function: linear;

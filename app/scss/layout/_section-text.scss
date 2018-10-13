@@ -1,0 +1,31 @@
+.section-text {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  max-width: 56.5rem;
+  margin: auto;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 2rem;
+  }
+  @media screen and (min-width: 1024px) {
+    padding-top: 10rem;
+  }
+
+
+  @media screen and (max-width: 425px) {
+    font-size: 1.4rem;
+    line-height: normal;
+  }
+
+  .wrapper {
+    padding: 0 2rem;
+  }
+
+  .section-title {
+    margin-bottom: 8rem;
+    &.dash:after {
+      bottom: -4rem;
+    }
+  }
+
+}//.section-text

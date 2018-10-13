@@ -48,6 +48,26 @@
 	flex-grow: 1;
 	min-width: $min-width;
 	order: 2;
+	padding-top: $headerHeight;
 	text-align:left;
   width: 100%;
-}
+	@media screen and (max-width: 1024px) {
+		padding-top: $headerHeightDesktop;
+	}
+	@media screen and (max-width: 768px) {
+		padding-top: $headerHeightTablet;
+	}
+	@media screen and (max-width: 320px) {
+		padding-top: $headerHeightMobile;
+	}
+
+	body:not(.home) & {
+		@media screen and (min-width: 769px) and (max-width: 1024px) {
+			padding-top: $headerHeightDesktop + 5rem;
+		}
+		@media screen and (min-width: 426px) and (max-width: 768px) {
+			padding-top: $headerHeightTablet + 5rem;
+		}
+	}
+
+}//.content

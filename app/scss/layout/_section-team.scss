@@ -18,20 +18,6 @@
     @media screen and (max-width: 375px) {
       margin-bottom: 4rem;
     }
-    &:after {
-      background: $violet;
-      bottom: -8rem;
-      content: '';
-      height: .7rem;
-      left: 0;
-      margin: auto;
-      right: 0;
-      position: absolute;
-      width: 6rem;
-      @media screen and (max-width: 375px) {
-        bottom: -1rem;
-      }
-    }
   }//.section-title
 
   .section-body {
@@ -176,3 +162,16 @@
   }
 
 }//.section-team
+
+body:not(.home) .section-team {
+  padding-top: 6rem;
+  @media screen and (max-width: 425px) {
+    padding-top: 0;
+  }
+  .section-title {
+    margin-bottom: 12rem;
+    @media screen and (max-width: 425px) {
+      margin-bottom: 2rem;
+    }
+  }
+}
