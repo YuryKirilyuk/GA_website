@@ -100,8 +100,8 @@ header {
 			padding-bottom: 5rem;
 		}
 		@media screen and (min-width: 426px) and (max-width: 768px) {
-			height: $headerHeightTablet + 5rem;
-			padding-bottom: 5rem;
+			height: $headerHeightTablet + 8rem;
+			padding-bottom: 8rem;
 		}
 	}
 	@media screen and (max-width: 425px) {
@@ -132,7 +132,8 @@ header {
 				width: 100%;
 			}
 			@media screen and (max-width: 768px) {
-				//bottom: 0;
+				bottom: -8rem;
+				height: 8rem;
 			}
 			@media screen and (max-width: 450px) {
 				background: transparent;

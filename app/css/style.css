@@ -3854,7 +3854,7 @@ header { background: #EDECEC; }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) { body:not(.home) header { height: 15rem; padding-bottom: 5rem; } }
 
-@media screen and (min-width: 426px) and (max-width: 768px) { body:not(.home) header { height: 14rem; padding-bottom: 5rem; } }
+@media screen and (min-width: 426px) and (max-width: 768px) { body:not(.home) header { height: 17rem; padding-bottom: 8rem; } }
 
 @media screen and (max-width: 425px) { header { background: #520596; padding: 0; } }
 
@@ -3863,6 +3863,8 @@ header .site-menu { display: -webkit-box; display: -webkit-flex; display: -ms-fl
 header nav { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; cursor: pointer; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
 
 @media screen and (max-width: 1024px) { body:not(.home) header nav { background: #EDECEC; bottom: -5rem; height: 5rem; left: 0; opacity: 1; position: absolute; visibility: visible; width: 100%; } }
+
+@media screen and (max-width: 768px) { body:not(.home) header nav { bottom: -8rem; height: 8rem; } }
 
 @media screen and (max-width: 450px) { body:not(.home) header nav { background: transparent; height: 0; opacity: 0; position: static; visibility: hidden; } }
 
@@ -3989,6 +3991,8 @@ footer .copyright span:before, footer .copyright span:after { background: #52059
 
 .wrapper { min-width: 320px; max-width: 1410px; margin: 0 auto; position: relative; }
 
+.wrapper.full-screen { max-width: 100%; }
+
 /* text position */
 .text-left { text-align: left !important; }
 
@@ -4020,7 +4024,7 @@ footer .copyright span:before, footer .copyright span:after { background: #52059
 
 @media screen and (min-width: 769px) and (max-width: 1024px) { body:not(.home) .content { padding-top: 15rem; } }
 
-@media screen and (min-width: 426px) and (max-width: 768px) { body:not(.home) .content { padding-top: 14rem; } }
+@media screen and (min-width: 426px) and (max-width: 768px) { body:not(.home) .content { padding-top: 17rem; } }
 
 .button { background: #8A00F4; border: 3px solid #8A00F4; color: #fff; display: block; font-family: "Montserrat", sans-serif; font-size: 1.4rem; font-weight: 600; height: 7.5rem; line-height: 7.1rem; letter-spacing: 2.5px; max-width: 51rem; min-width: 32rem; position: relative; text-align: center; text-transform: uppercase; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
 
@@ -4231,6 +4235,8 @@ svg.icon-logo-footer { height: 2rem; }
 [class*="service-icon"] { height: 24.2rem; width: 24.2rem; }
 
 @media screen and (max-width: 375px) { [class*="service-icon"] { height: 21.3rem; width: 22.3rem; } }
+
+svg.icon-satellite { fill: transparent; height: 14.5rem; -webkit-transform: rotateZ(-45deg); -ms-transform: rotate(-45deg); transform: rotateZ(-45deg); width: 17.8rem; }
 
 .modal { padding: 0 !important; }
 
@@ -4501,7 +4507,7 @@ body:not(.home) .section-team .section-title { margin-bottom: 12rem; }
 
 .section-nav ul li a:hover { color: #520596; opacity: 1; }
 
-@media screen and (max-width: 375px) { .section-nav { display: none; } }
+@media screen and (max-width: 425px) { .section-nav { display: none; } }
 
 .section-reviews { padding: 13rem 0 0; }
 
@@ -4637,19 +4643,22 @@ body:not(.home) .section-team .section-title { margin-bottom: 12rem; }
 
 @media screen and (min-width: 1400px) { .section-services .section-footer { position: absolute; right: 0; top: 320px; } }
 
-.section-venture { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
-
-@media screen and (max-width: 768px) { .section-venture { background: transparent !important; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; padding-bottom: 9rem; } }
+@media screen and (max-width: 768px) { .section-venture { padding-bottom: 9rem; }
+  .section-venture.gray-bg { background: transparent !important; } }
 
 @media screen and (max-width: 425px) { .section-venture { padding-bottom: 0; } }
 
-.section-venture .section-title { max-width: 57rem; display: inline-block; }
+.section-venture .wrapper { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
 
-@media screen and (max-width: 1024px) { .section-venture .section-title { font-size: 3.6rem; } }
+@media screen and (max-width: 768px) { .section-venture .wrapper { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; } }
 
-@media screen and (max-width: 768px) { .section-venture .section-title { margin-bottom: 2rem; } }
+.section-venture .left .section-title { max-width: 57rem; display: inline-block; }
 
-@media screen and (max-width: 425px) { .section-venture .section-title { font-size: 2.4rem; } }
+@media screen and (max-width: 1024px) { .section-venture .left .section-title { font-size: 3.6rem; } }
+
+@media screen and (max-width: 768px) { .section-venture .left .section-title { margin-bottom: 2rem; } }
+
+@media screen and (max-width: 425px) { .section-venture .left .section-title { font-size: 2.4rem; } }
 
 .section-venture .left { background: linear-gradient(33deg, #520596 0%, #fc486b 70%); padding: 1rem 3rem; text-align: right; width: 40.4255%; }
 
@@ -4681,6 +4690,40 @@ body:not(.home) .section-team .section-title { margin-bottom: 12rem; }
 @media screen and (max-width: 425px) { .section-venture form .button { margin-top: 3.5rem; min-width: 0; } }
 
 @media screen and (max-width: 425px) { .section-venture .group-field { display: none; } }
+
+@media screen and (max-width: 768px) { body:not(.home) .section-venture { background: linear-gradient(33deg, #520596 0%, #fc486b 70%); } }
+
+body:not(.home) .section-venture .section-title { margin: 0; padding: 7.5rem 0 9.5rem; }
+
+@media screen and (max-width: 768px) { body:not(.home) .section-venture .section-title { color: #fff; padding: 3.5rem 0 1rem; } }
+
+@media screen and (max-width: 768px) { body:not(.home) .section-venture .left { border: none; padding-top: 0; } }
+
+@media screen and (max-width: 425px) { body:not(.home) .section-venture .left { padding-bottom: 0; } }
+
+.contact-info { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; padding: 5rem 1rem; }
+
+@media screen and (max-width: 1100px) { .contact-info { -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; } }
+
+@media screen and (max-width: 1024px) { .contact-info { padding: 3rem 1rem; } }
+
+@media screen and (max-width: 768px) { .contact-info { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; } }
+
+@media screen and (max-width: 425px) { .contact-info { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; } }
+
+@media screen and (max-width: 1024px) { .contact-info svg.icon-satellite { height: 11.4rem; width: 13.1rem; } }
+
+.contact-info .contact { color: #fff; font-size: 2.4rem; line-height: normal; margin: 0; padding-bottom: 1rem; text-align: left; }
+
+@media screen and (max-width: 425px) { .contact-info .contact { font-size: 1.8rem; } }
+
+.contact-info .contact p { padding: 2rem 0; }
+
+@media screen and (max-width: 768px) { .contact-info .contact p { padding: 1rem 0; } }
+
+.contact-info .contact b { font-weight: 900; }
+
+@media screen and (max-width: 1024px) { .contact-info .contact b { display: block; } }
 
 .section-text { font-size: 1.8rem; line-height: 3rem; max-width: 56.5rem; margin: auto; }
 

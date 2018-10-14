@@ -12,9 +12,11 @@
 .wrapper{
 	min-width: $min-width;
 	max-width: $max-width;
-	//padding: 0 2rem;
 	margin: 0 auto;
 	position: relative;
+	&.full-screen {
+		max-width: 100%;
+	}
 }
 
 /* text position */
@@ -66,7 +68,7 @@
 			padding-top: $headerHeightDesktop + 5rem;
 		}
 		@media screen and (min-width: 426px) and (max-width: 768px) {
-			padding-top: $headerHeightTablet + 5rem;
+			padding-top: $headerHeightTablet + 8rem;
 		}
 	}
 
