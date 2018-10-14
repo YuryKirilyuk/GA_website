@@ -27,7 +27,10 @@
 
 
 /* loader */
-.loaded .main-wrapper{visibility:hidden;}
+.loaded .main-wrapper{
+	opacity: 0;
+	visibility: hidden;
+}
 .icon-load {
 	background: url(../img/loader.gif) no-repeat left top;
 	width: 4rem;

@@ -130,6 +130,7 @@ header {
 				position: absolute;
 				visibility: visible;
 				width: 100%;
+				z-index: 1;
 			}
 			@media screen and (max-width: 768px) {
 				bottom: -8rem;
