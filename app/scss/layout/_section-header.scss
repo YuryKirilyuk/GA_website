@@ -116,6 +116,7 @@
 
 
 [class*="planet"] {
+  animation-duration: 40s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   background: -webkit-linear-gradient(50deg, $violet 0%, $pink 90%);
@@ -129,7 +130,6 @@
 }
 .planet-sm {
   animation-name: planetsFly-1;
-  animation-duration: 50s;
   @include circle(27.8rem);
   box-shadow: -15px 25px 100px -10px $violet;
   left: 15%;
@@ -147,7 +147,6 @@
 }//.planet-sm
 .planet-md {
   animation-name: planetsFly-2;
-  animation-duration: 60s;
   @include circle(45rem);
   box-shadow: 25px 45px 45px -28px $violet;
   left: -10%;
@@ -165,7 +164,6 @@
 }//.planet-md
 .planet-lg {
   animation-name: planetsFly-3;
-  animation-duration: 60s;
   @include circle(78.8rem);
   background: -webkit-linear-gradient(70deg, $violet 0%, $pink 60%);
   background: linear-gradient(70deg, $violet 0%, $pink 60%);

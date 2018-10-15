@@ -18,7 +18,7 @@ $(window).on('load', function () {
 	$(window).scroll(function() {
 
         headerColor();
-		
+
 	});
 
 /* ==========================================================================
@@ -110,8 +110,11 @@ $(function(){
 
 });
 
+
+
 function headerColor() {
     var headerOffset = $('.home header').offset().top;
+    console.log(headerOffset);
     if (headerOffset >= 400) $('header').removeClass('transparent');
     else $('header').addClass('transparent');
 }
