@@ -198,10 +198,13 @@ form {
   }//.ui-slider-handle
 
   div#value {
+    background: #ececec;
     color: #636363;
     font-weight: 600;
     left: 50%;
+    min-width: 4rem;
     position: absolute;
+    text-align: center;
     top: -2.5rem;
     transform: translateX(-50%);
   }

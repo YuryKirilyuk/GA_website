@@ -1,22 +1,38 @@
 .section-error {
-  padding: 2rem 0 6rem;
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  left: 0;
+  padding-bottom: 2rem;
+  position: absolute;
+  right: 0;
   text-align: center;
+  top: 0;
 
-  .section-title {
-    margin-bottom: 4rem;
-  }
-  .section-footer {
-    padding: 3rem 0 0;
-  }
+  .section-title {  margin-bottom: 4rem;  }
+  .section-footer {  padding: 3rem 0 0;  }
   h4 {
     color: $violet;
     font-size: 1.8rem;
     font-weight: 900;
     margin-bottom: 2rem;
   }
+  .section-body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    img {  max-width: 47rem;  }
+  }
   .button {
     height: 7.7rem;
     line-height: 7.3rem;
     margin: auto;
+    @media screen and (max-width: 320px) {
+      svg.icon-arrow {
+        left: -5px;
+        width: 7rem;
+      }
+    }
   }
 }//section-footer

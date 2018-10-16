@@ -63,7 +63,7 @@
       left: 6rem;
       transform: rotateY(180deg);
       @media screen and (max-width: 425px) {
-        left: 0;
+        left: 0 !important;
       }
     }
     &:hover .icon-arrow {left: 4rem;}

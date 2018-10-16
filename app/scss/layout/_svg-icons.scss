@@ -82,7 +82,9 @@ svg.icon-logo-footer {
   height: 2rem;
 }
 
-[class*="service-icon"] {
+svg[class*="service-icon"] {
+  background: $violet;
+  border-radius: 50%;
   fill: transparent;
   height: 24.2rem;
   width: 24.2rem;
