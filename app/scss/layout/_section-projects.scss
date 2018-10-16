@@ -114,24 +114,10 @@
           min-width: 0;
         }
         svg {
+          position: static;
           transition: position 0s, opacity linear .2s, transform linear .2s;}
-        .icon-arrow.violet {position: static;}
-        .icon-arrow.white {
-          position: absolute;
-          visibility: hidden;
-          opacity: 0;
-        }
         &:hover {
-          .icon-arrow.white {
-            position: static;
-            visibility: visible;
-            opacity: 1;
-          }
-          .icon-arrow.violet {
-            position: absolute;
-            visibility: hidden;
-            opacity: 0;
-          }
+
         }
       }//.button
 
@@ -202,10 +188,6 @@
       line-height: 6.4rem;
     }
   }//.button
-
-  .section-body > .button {
-    svg {display: none;}
-  }
 
   .section-footer {
     position: absolute;

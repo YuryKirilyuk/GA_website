@@ -106,23 +106,18 @@
     .icon-arrow {
       cursor: pointer;
       margin: 0 1.3rem;
-      &.white {
-        @media screen and (min-width: 769px) {display: none;}
-      }
-      &.violet {
-        @media screen and (max-width: 768px) {display: none;}
-      }
-    }
+      @media screen and (min-width: 769px) {stroke: #8800f6;}
+      @media screen and (max-width: 768px) {stroke: #fff;}
+      @media screen and (max-width: 320px) {width: 5.5rem;}
+    }//.icon-arrow
     .arrow-right {
       transition: $default-transition;
       &:hover {transform: translateX(.5rem);}
+      .icon-arrow {transform: rotateZ(180deg);}
     }
     .arrow-left {
       transition: $default-transition;
       &:hover {transform: translateX(-.5rem);}
-      .icon-arrow {
-        transform: rotateZ(180deg);
-      }
     }//.arrow-left
 
   }//.slide-arrows
@@ -169,11 +164,10 @@
     margin-bottom: 2.5rem;
     position: relative;
     z-index: 1;
-    @media screen and (max-width: 1024px) {
-      width: 16.2rem;
-    }
+    @media screen and (max-width: 1024px) {  width: 16.2rem;  }
     img {margin: auto;}
   }
+
   .review-text {
     margin: 2rem auto 1rem;
     //max-height: 0;

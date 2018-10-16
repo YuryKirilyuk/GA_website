@@ -22,12 +22,9 @@
   &:hover {
     background: transparent;
     color: #8A00F4;
-    .icon-arrow {
-      transform: translateX(2rem);
-      &.violet {opacity: 1;}
-      &.white {opacity: 0;}
-    }
+    .icon-arrow {stroke: #8A00F4;}
   }//&:hover
+
   &.button-white {
     background: white;
     border-color: #fff;
@@ -35,23 +32,23 @@
     &:hover {
       background: transparent;
       color: #fff;
-      .icon-arrow {
-        &.violet {opacity: 0;}
-        &.white {opacity: 1;}
-      }
+      .icon-arrow {stroke: #fff;}
     }
-    .icon-arrow {
-      &.violet {opacity: 1;}
-    }
+    .icon-arrow {stroke: $violet;}
   }//&.button-white
 
   .icon-arrow {
     bottom: 0;
+    stroke: #fff;
     margin: auto 0 auto 2rem;
     position: absolute;
     top: 0;
     transition: $default-transition;
-    &.violet {opacity: 0;}
+    @media screen and (max-width: 425px) {  position: static;  }
+  }//.icon-arrow
+  &:not(.button-back) {
+    .icon-arrow {transform: rotateZ(180deg);}
+    &:hover {.icon-arrow {transform: rotateZ(180deg) translateX(-2rem);}}
   }
   &.button-sm {
     height: 5rem;
@@ -61,10 +58,8 @@
   &.button-back {
     .icon-arrow {
       left: 6rem;
-      transform: rotateY(180deg);
-      @media screen and (max-width: 425px) {
-        left: 0 !important;
-      }
+      margin: auto 2rem auto 0;
+      @media screen and (max-width: 425px) {left: 0 !important;}
     }
     &:hover .icon-arrow {left: 4rem;}
   }

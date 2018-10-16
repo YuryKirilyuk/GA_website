@@ -2,7 +2,9 @@
   background: -webkit-linear-gradient(33deg, $violet 0%, $pink 70%);
   background: linear-gradient(33deg, $violet 0%, $pink 70%);
   height: 45rem;
+  overflow: hidden;
   padding: 5rem 0;
+  position: relative;
   @media screen and (max-width: 425px) {
     height: 23rem;
     padding: 0;
@@ -35,6 +37,15 @@
     margin: auto;
     max-width: 50.8rem;
     width: 100%;
-  }
+    &:hover {
+      .icon-arrow {
+        stroke: #fff;
+      }
+    }
+    .icon-arrow {
+      stroke: $violet;
+    }
+  }//.button
 
 }//.section-join
+

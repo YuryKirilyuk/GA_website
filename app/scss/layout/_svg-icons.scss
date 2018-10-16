@@ -1,6 +1,8 @@
 svg {transition: $default-transition;}
 svg.icon-arrow {
+  fill: none;
   height: 1rem;
+  stroke: #fff;
   width: 9rem;
 }
 
@@ -89,7 +91,7 @@ svg[class*="service-icon"] {
   height: 24.2rem;
   width: 24.2rem;
   @media screen and (max-width: 375px) {
-    height: 21.3rem;
+    height: 22.3rem;
     width: 22.3rem;
   }
 }

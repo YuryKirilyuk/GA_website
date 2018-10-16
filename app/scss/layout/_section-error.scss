@@ -9,8 +9,9 @@
   text-align: center;
   top: 0;
 
-  .section-title {  margin-bottom: 4rem;  }
-  .section-footer {  padding: 3rem 0 0;  }
+  .section-title {margin-bottom: 4rem;}
+  .section-footer {padding: 3rem 0 0;}
+
   h4 {
     color: $violet;
     font-size: 1.8rem;
@@ -22,17 +23,21 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
-    img {  max-width: 47rem;  }
+    img {
+      @media screen and (max-width: 425px) {max-width: 47rem;}
+    }
   }
+
   .button {
     height: 7.7rem;
     line-height: 7.3rem;
     margin: auto;
-    @media screen and (max-width: 320px) {
-      svg.icon-arrow {
+    svg.icon-arrow {
+      @media screen and (max-width: 320px) {
         left: -5px;
         width: 7rem;
       }
     }
-  }
+  }//.button
+
 }//section-footer

@@ -46,12 +46,8 @@
   .video-container {
     margin: 0 auto 4rem;
     max-width: 53.5rem;
-    @media screen and (max-width: 1024px) {
-      max-width: 46rem;
-    }
-    @media screen and (max-width: 768px) {
-      max-width: 35rem;
-    }
+    @media screen and (max-width: 1024px) {max-width: 46rem;}
+    @media screen and (max-width: 768px) {max-width: 35rem;}
   }//.video-container
 
   .video-wrapper {
@@ -90,6 +86,7 @@
     @media screen and (max-width: 320px) {
       height: 20rem;
       margin: 0 -1.2rem;
+      width: 32rem;
       &:before {
         border-left-width: 4.3rem;
         border-top-width: 2.5rem;
