@@ -3818,6 +3818,30 @@ img { height: auto; max-width: 100%; }
   40% { -webkit-transform: translate(-10%, 20%); transform: translate(-10%, 20%); }
   60% { -webkit-transform: translate(5%, 20%); transform: translate(5%, 20%); } }
 
+@-webkit-keyframes planetsFly-1a { 0%, 100% { -webkit-transform: translate(0, 0) rotateZ(-25deg); transform: translate(0, 0) rotateZ(-25deg); }
+  40% { -webkit-transform: translate(55px, -20px) rotateZ(-55deg); transform: translate(55px, -20px) rotateZ(-55deg); }
+  60% { -webkit-transform: translate(30px, -20px) rotateZ(-155deg); transform: translate(30px, -20px) rotateZ(-155deg); } }
+
+@keyframes planetsFly-1a { 0%, 100% { -webkit-transform: translate(0, 0) rotateZ(-25deg); transform: translate(0, 0) rotateZ(-25deg); }
+  40% { -webkit-transform: translate(55px, -20px) rotateZ(-55deg); transform: translate(55px, -20px) rotateZ(-55deg); }
+  60% { -webkit-transform: translate(30px, -20px) rotateZ(-155deg); transform: translate(30px, -20px) rotateZ(-155deg); } }
+
+@-webkit-keyframes planetsFly-2a { 0%, 100% { -webkit-transform: translate(0, 0) rotateZ(-25deg); transform: translate(0, 0) rotateZ(-25deg); }
+  40% { -webkit-transform: translate(-50px, 20px) rotateZ(-55deg); transform: translate(-50px, 20px) rotateZ(-55deg); }
+  60% { -webkit-transform: translate(-20px, 20px) rotateZ(-155deg); transform: translate(-20px, 20px) rotateZ(-155deg); } }
+
+@keyframes planetsFly-2a { 0%, 100% { -webkit-transform: translate(0, 0) rotateZ(-25deg); transform: translate(0, 0) rotateZ(-25deg); }
+  40% { -webkit-transform: translate(-50px, 20px) rotateZ(-55deg); transform: translate(-50px, 20px) rotateZ(-55deg); }
+  60% { -webkit-transform: translate(-20px, 20px) rotateZ(-155deg); transform: translate(-20px, 20px) rotateZ(-155deg); } }
+
+@-webkit-keyframes planetsFly-3a { 0%, 100% { -webkit-transform: translate(0, 0) rotateZ(-25deg); transform: translate(0, 0) rotateZ(-25deg); }
+  40% { -webkit-transform: translate(-30px, 20px) rotateZ(-55deg); transform: translate(-30px, 20px) rotateZ(-55deg); }
+  60% { -webkit-transform: translate(15px, 20px) rotateZ(-155deg); transform: translate(15px, 20px) rotateZ(-155deg); } }
+
+@keyframes planetsFly-3a { 0%, 100% { -webkit-transform: translate(0, 0) rotateZ(-25deg); transform: translate(0, 0) rotateZ(-25deg); }
+  40% { -webkit-transform: translate(-30px, 20px) rotateZ(-55deg); transform: translate(-30px, 20px) rotateZ(-55deg); }
+  60% { -webkit-transform: translate(15px, 20px) rotateZ(-155deg); transform: translate(15px, 20px) rotateZ(-155deg); } }
+
 header { height: 12rem; margin-bottom: -12rem; min-width: 0; -webkit-box-ordinal-group: 2; -webkit-order: 1; -ms-flex-order: 1; order: 1; position: fixed; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; width: 100%; z-index: 999; }
 
 @media screen and (max-width: 1024px) { header { height: 10rem; } }
@@ -4647,7 +4671,7 @@ body:not(.home) .section-services .wrapper { -webkit-box-align: center; -webkit-
 
 body:not(.home) .section-services .section-body { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; margin: 0; }
 
-body:not(.home) .section-services .section-body .service-item { background: -webkit-gradient(linear, left top, left bottom, color-stop(75%, #520596), to(#fc486b)); background: linear-gradient(#520596 75%, #fc486b 100%); color: #520596; font-size: 1.8rem; margin: 0; max-width: 100%; padding: 7rem 0 15rem; position: relative; text-align: left; }
+body:not(.home) .section-services .section-body .service-item { background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #520596), to(#fc486b)); background: linear-gradient(#520596 80%, #fc486b 100%); color: #520596; font-size: 1.8rem; margin: 0; max-width: 100%; padding: 7rem 0; position: relative; text-align: left; }
 
 body:not(.home) .section-services .section-body .service-item:hover { color: #fff; }
 
@@ -4655,7 +4679,11 @@ body:not(.home) .section-services .section-body .service-item:hover:before { opa
 
 body:not(.home) .section-services .section-body .service-item:hover .service-title { color: #fff; }
 
-body:not(.home) .section-services .section-body .service-item:hover .button { background: #fff; color: #8A00F4; }
+body:not(.home) .section-services .section-body .service-item:hover .service-icon { overflow: visible; }
+
+body:not(.home) .section-services .section-body .service-item:hover .button { background: #fff; color: #8A00F4; visibility: visible; }
+
+body:not(.home) .section-services .section-body .service-item:hover .button:hover { background: transparent; color: #fff; }
 
 body:not(.home) .section-services .section-body .service-item:before { background: #fff; content: ''; bottom: 0; left: 0; right: 0; top: 0; position: absolute; opacity: 1; -webkit-transition: all ease-in .3s; transition: all ease-in .3s; width: 100%; }
 
@@ -4664,18 +4692,20 @@ body:not(.home) .section-services .section-body .service-item:before { backgroun
 @media screen and (max-width: 768px) { body:not(.home) .section-services .section-body .service-item { padding: 5.5rem 0; } }
 
 @media screen and (max-width: 500px) { body:not(.home) .section-services .section-body .service-item { color: #fff; }
-  body:not(.home) .section-services .section-body .service-item .service-title { color: #fff; }
-  body:not(.home) .section-services .section-body .service-item .button { background: #fff; color: #8A00F4; } }
+  body:not(.home) .section-services .section-body .service-item .service-title { color: #fff; } }
 
-body:not(.home) .section-services .section-body .service-item .button { background: #8A00F4; color: #fff; height: 7.5rem; line-height: 7.1rem; max-width: 31.6rem; width: 100%; }
+body:not(.home) .section-services .section-body .service-item .button { color: #fff; height: 7.5rem; line-height: 7.1rem; max-width: 31.6rem; width: 100%; }
+
+@media screen and (min-width: 769px) { body:not(.home) .section-services .section-body .service-item .button { visibility: hidden; } }
 
 @media screen and (max-width: 500px) { body:not(.home) .section-services .section-body .service-item .button { display: none; } }
 
 @media screen and (min-width: 501px) { body:not(.home) .section-services .section-body .left .button { display: none; } }
 
-@media screen and (max-width: 500px) { body:not(.home) .section-services .section-body .left .button { border-color: transparent; display: block; margin: auto; } }
+@media screen and (max-width: 500px) { body:not(.home) .section-services .section-body .left .button { border-color: transparent; display: block; margin: auto; }
+  body:not(.home) .section-services .section-body .left .button:hover { background: transparent; border-color: #fff; } }
 
-body:not(.home) .section-services .section-body .service-icon { margin: 0 1rem; position: static; -webkit-transform: none; -ms-transform: none; transform: none; }
+body:not(.home) .section-services .section-body .service-icon { margin: 0 1rem; -webkit-transform: none; -ms-transform: none; transform: none; height: 33rem; width: 33rem; overflow: hidden; position: relative; /*svg[class*="service-icon"] { position: absolute; } .service-icon-1 { height: 48rem; left: -41.2%; width: 46.7rem; } .service-icon-2 { height: 39.6rem; top: -20%; width: 50.5rem; } .service-icon-3 { height: 33rem; width: 55.8rem; } .service-icon-4 { height: 47.7rem; width: 54.6rem; } .service-icon-5 { height: 35.9rem; width: 40rem; }*/ }
 
 @media screen and (max-width: 500px) { body:not(.home) .section-services .section-body .service-icon { margin: 0 auto 2rem; }
   body:not(.home) .section-services .section-body .service-icon svg { background: transparent; } }
@@ -4790,17 +4820,67 @@ body:not(.home) .section-venture .section-title { margin: 0; padding: 7.5rem 0 9
 
 .section-join { background: linear-gradient(33deg, #520596 0%, #fc486b 70%); height: 45rem; overflow: hidden; padding: 5rem 0; position: relative; }
 
+.section-join:before { background: url(../img/planets.png) no-repeat center top; position: absolute; content: ''; left: 0; top: 0; bottom: 0; right: 0; }
+
+@media screen and (max-width: 1024px) { .section-join:before { background-size: contain; } }
+
+@media screen and (max-width: 768px) { .section-join:before { background-image: url(../img/planets_768.png); background-position: center -30px; background-size: initial; } }
+
+@media screen and (max-width: 425px) { .section-join:before { background-image: url(../img/planets_425.png); background-position: 35px 0; } }
+
 @media screen and (max-width: 425px) { .section-join { height: 23rem; padding: 0; } }
+
+.section-join .planet-sq { -webkit-animation-duration: 20s; animation-duration: 20s; border-radius: 0; height: 2.2rem; width: 2.2rem; }
+
+@media screen and (max-width: 425px) { .section-join .planet-sq { display: block; } }
+
+.section-join .planet-sq.sq-1 { -webkit-animation-name: planetsFly-1a; animation-name: planetsFly-1a; left: 10%; top: 30%; }
+
+@media screen and (max-width: 1024px) { .section-join .planet-sq.sq-1 { left: 5%; } }
+
+@media screen and (max-width: 768px) { .section-join .planet-sq.sq-1 { top: 25%; } }
+
+.section-join .planet-sq.sq-2 { -webkit-animation-name: planetsFly-2a; animation-name: planetsFly-2a; left: 57%; top: 33%; }
+
+@media screen and (max-width: 1024px) { .section-join .planet-sq.sq-2 { top: 20%; } }
+
+@media screen and (max-width: 768px) { .section-join .planet-sq.sq-2 { left: 43%; top: 40%; } }
+
+.section-join .planet-sq.sq-3 { -webkit-animation-name: planetsFly-3a; animation-name: planetsFly-3a; bottom: 5%; left: 25%; }
+
+@media screen and (max-width: 1024px) { .section-join .planet-sq.sq-3 { bottom: 15%; left: 15%; } }
+
+.section-join .planet-sq.sq-4 { -webkit-animation-name: planetsFly-1a; animation-name: planetsFly-1a; left: 65%; bottom: -2%; }
+
+@media screen and (max-width: 1024px) { .section-join .planet-sq.sq-4 { bottom: 5%; } }
+
+.section-join .planet-xs { height: 3.8rem; width: 3.8rem; }
+
+@media screen and (max-width: 425px) { .section-join .planet-xs { display: block; } }
+
+.section-join .planet-xs.xs-1 { -webkit-animation-name: planetsFly-1a; animation-name: planetsFly-1a; left: 45%; top: 45%; }
+
+@media screen and (max-width: 1024px) { .section-join .planet-xs.xs-1 { left: 50%; top: 40%; } }
+
+@media screen and (max-width: 768px) { .section-join .planet-xs.xs-1 { left: 65%; top: 14%; } }
+
+.section-join .planet-xs.xs-2 { -webkit-animation-name: planetsFly-2a; animation-name: planetsFly-2a; right: 3%; top: 47%; }
+
+@media screen and (max-width: 1024px) { .section-join .planet-xs.xs-2 { top: 35%; } }
+
+@media screen and (max-width: 1024px) { .section-join .planet-xs.xs-2 { top: 50%; } }
 
 .section-join .wrapper { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; height: 100%; }
 
-.section-join .section-title { max-width: 86rem; margin: auto; padding: 0 2rem; text-align: left; }
+.section-join .section-title { line-height: 6rem; max-width: 90rem; margin: auto; padding: 0 2rem; text-align: left; }
 
-@media screen and (max-width: 768px) { .section-join .section-title { font-size: 4.8rem; } }
+@media screen and (max-width: 768px) { .section-join .section-title { font-size: 4.8rem; margin: 0 auto 2rem; } }
 
-@media screen and (max-width: 425px) { .section-join .section-title { font-size: 2.4rem; } }
+@media screen and (max-width: 425px) { .section-join .section-title { font-size: 2.4rem; line-height: initial; margin-bottom: 0; padding-top: 1rem; } }
 
 .section-join .button { height: 7.7rem; line-height: 7.3rem; margin: auto; max-width: 50.8rem; width: 100%; }
+
+@media screen and (max-width: 768px) { .section-join .button { max-width: 38rem; } }
 
 .section-join .button:hover .icon-arrow { stroke: #fff; }
 

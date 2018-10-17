@@ -5,10 +5,96 @@
   overflow: hidden;
   padding: 5rem 0;
   position: relative;
+  &:before {
+    background: url(../img/planets.png) no-repeat center top;
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    @media screen and (max-width: 1024px) {  background-size: contain;  }
+    @media screen and (max-width: 768px) {
+      background-image: url(../img/planets_768.png);
+      background-position: center -30px;
+      background-size: initial;
+    }
+    @media screen and (max-width: 425px) {
+      background-image: url(../img/planets_425.png);
+      background-position: 35px 0;
+    }
+  }//&:before
   @media screen and (max-width: 425px) {
     height: 23rem;
     padding: 0;
   }
+
+
+  .planet-sq {
+    animation-duration: 20s;
+    border-radius: 0;
+    height: 2.2rem;
+    width: 2.2rem;
+    @media screen and (max-width: 425px) {display: block;}
+    &.sq-1 {
+      animation-name: planetsFly-1a;
+      left: 10%;
+      top: 30%;
+      @media screen and (max-width: 1024px) {  left: 5%;  }
+      @media screen and (max-width: 768px) {  top: 25%;  }
+    }
+    &.sq-2 {
+      animation-name: planetsFly-2a;
+      left: 57%;
+      top: 33%;
+      @media screen and (max-width: 1024px) {  top: 20%;  }
+      @media screen and (max-width: 768px) {
+        left: 43%;
+        top: 40%;
+      }
+    }
+    &.sq-3 {
+      animation-name: planetsFly-3a;
+      bottom: 5%;
+      left: 25%;
+      @media screen and (max-width: 1024px) {
+        bottom: 15%;
+        left: 15%;
+      }
+    }
+    &.sq-4 {
+      animation-name: planetsFly-1a;
+      left: 65%;
+      bottom: -2%;
+      @media screen and (max-width: 1024px) {  bottom: 5%;  }
+    }
+  }//.planet-sq
+  .planet-xs {
+    height: 3.8rem;
+    width: 3.8rem;
+    @media screen and (max-width: 425px) {display: block;}
+    &.xs-1 {
+      animation-name: planetsFly-1a;
+      left: 45%;
+      top: 45%;
+      @media screen and (max-width: 1024px) {
+        left: 50%;
+        top: 40%;
+      }
+      @media screen and (max-width: 768px) {
+        left: 65%;
+        top: 14%;
+      }
+    }
+    &.xs-2 {
+      animation-name: planetsFly-2a;
+      right: 3%;
+      top: 47%;
+      @media screen and (max-width: 1024px) {  top: 35%;  }
+      @media screen and (max-width: 1024px) {  top: 50%;  }
+    }
+  }//.planet-xs
+
 
   .wrapper {
     align-items: center;
@@ -19,17 +105,22 @@
   }
 
   .section-title {
-    max-width: 86rem;
+    line-height: 6rem;
+    max-width: 90rem;
     margin: auto;
     padding: 0 2rem;
     text-align: left;
     @media screen and (max-width: 768px) {
       font-size: 4.8rem;
+      margin: 0 auto 2rem;
     }
     @media screen and (max-width: 425px) {
       font-size: 2.4rem;
+      line-height: initial;
+      margin-bottom: 0;
+      padding-top: 1rem;
     }
-  }
+  }//.section-title
 
   .button {
     height: 7.7rem;
@@ -37,14 +128,13 @@
     margin: auto;
     max-width: 50.8rem;
     width: 100%;
+    @media screen and (max-width: 768px) {
+      max-width: 38rem;
+    }
     &:hover {
-      .icon-arrow {
-        stroke: #fff;
-      }
+      .icon-arrow {  stroke: #fff;  }
     }
-    .icon-arrow {
-      stroke: $violet;
-    }
+    .icon-arrow {  stroke: $violet;  }
   }//.button
 
 }//.section-join

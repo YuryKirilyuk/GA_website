@@ -139,24 +139,30 @@ body:not(.home) .section-services {
     margin: 0;
 
     .service-item {
-      background: -webkit-linear-gradient($violet 75%, $pink 100%);
-      background: linear-gradient($violet 75%, $pink 100%);
+      background: -webkit-linear-gradient($violet 80%, $pink 100%);
+      background: linear-gradient($violet 80%, $pink 100%);
       color: $violet;
       font-size: 1.8rem;
       margin: 0;
       max-width: 100%;
-      padding: 7rem 0 15rem;
+      padding: 7rem 0;
       position: relative;
       text-align: left;
       &:hover {
         color: #fff;
         &:before {opacity: 0;}
         .service-title {color: #fff;}
+        .service-icon {overflow: visible;}
         .button {
           background: #fff;
           color: #8A00F4;
-        }
-      }
+          visibility: visible;
+          &:hover {
+            background: transparent;
+            color: #fff;
+          }
+        }//.button
+      }//&:hover
       &:before {
         background: #fff;
         content: '';
@@ -174,23 +180,18 @@ body:not(.home) .section-services {
       @media screen and (max-width: 500px) {
         color: #fff;
         .service-title {color: #fff;}
-        .button {
-          background: #fff;
-          color: #8A00F4;
-        }
       }//@media screen and (max-width: 500px)
 
       .button {
-        background: #8A00F4;
         color: #fff;
         height: 7.5rem;
         line-height: 7.1rem;
         max-width: 31.6rem;
         width: 100%;
-        @media screen and (max-width: 500px) {
-          display: none;
-        }
-      }
+        @media screen and (min-width: 769px) {visibility: hidden;}
+        @media screen and (max-width: 500px) {display: none;}
+      }//.button
+
     }//.service-item
 
     .left .button {
@@ -201,17 +202,63 @@ body:not(.home) .section-services {
         border-color: transparent;
         display: block;
         margin: auto;
+        &:hover {
+          background: transparent;
+          border-color: #fff;
+        }
       }
-    }
+    }//.left .button
+
     .service-icon {
       margin: 0 1rem;
-      position: static;
+      //position: static;
       transform: none;
+
+      height: 33rem;
+      width: 33rem;
+      overflow: hidden;
+      position: relative;
+
       @media screen and (max-width: 500px) {
         margin: 0 auto 2rem;
         svg {background: transparent;}
       }
-    }
+
+      /*svg[class*="service-icon"] {
+        position: absolute;
+      }
+      .service-icon-1 {
+        height: 48rem;
+        left: -41.2%;
+        width: 46.7rem;
+      }
+      .service-icon-2 {
+        height: 39.6rem;
+        top: -20%;
+        width: 50.5rem;
+      }
+      .service-icon-3 {
+
+        height: 33rem;
+        width: 55.8rem;
+      }
+      .service-icon-4 {
+
+        height: 47.7rem;
+        width: 54.6rem;
+      }
+      .service-icon-5 {
+
+        height: 35.9rem;
+        width: 40rem;
+      }*/
+      .service-icon-6 {
+
+        //height: 48rem;
+        //width: 46.7rem;
+      }
+    }//.service-icon
+
     .service-description {
       max-width: 68rem;
       padding: 0 2.5rem;

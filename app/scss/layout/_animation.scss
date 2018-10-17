@@ -27,3 +27,19 @@
     40% {transform: translate(-10%, 20%);}
     60% {transform: translate(5%, 20%);}
 }
+
+@keyframes planetsFly-1a {
+    0%, 100% {transform: translate(0, 0) rotateZ(-25deg);}
+    40% {transform: translate(55px, -20px) rotateZ(-55deg);}
+    60% {transform: translate(30px, -20px) rotateZ(-155deg);}
+}
+@keyframes planetsFly-2a {
+    0%, 100% {transform: translate(0, 0) rotateZ(-25deg);}
+    40% {transform: translate(-50px, 20px) rotateZ(-55deg);}
+    60% {transform: translate(-20px, 20px) rotateZ(-155deg);}
+}
+@keyframes planetsFly-3a {
+    0%, 100% {transform: translate(0, 0) rotateZ(-25deg);}
+    40% {transform: translate(-30px, 20px) rotateZ(-55deg);}
+    60% {transform: translate(15px, 20px) rotateZ(-155deg);}
+}

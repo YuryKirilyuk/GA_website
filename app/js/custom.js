@@ -113,9 +113,9 @@ $(function(){
 
 
 function headerColor() {
-    var headerOffset = $('.home header').offset().top;
-    console.log(headerOffset);
-    if (headerOffset >= 100) $('header').removeClass('transparent');
+    var headerOffset = $('header').offset().top;
+    //console.log(headerOffset);
+    if (headerOffset >= 100) $('.home header').removeClass('transparent');
     else $('header').addClass('transparent');
 }
 
