@@ -71,16 +71,14 @@ $(function(){
             {
                 breakpoint: 769,
                 settings: {
-                    slidesToShow: 1,
-                    infinite: false
+                    slidesToShow: 1
                 }
             },
             {
                 breakpoint: 376,
                 settings: {
                     slidesToShow: 1,
-                    centerMode: false,
-                    infinite: false
+                    centerMode: false
                 }
             }
         ]

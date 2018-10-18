@@ -4074,6 +4074,8 @@ footer .copyright span:before, footer .copyright span:after { background: #52059
 
 .button:not(.button-back):hover .icon-arrow { -webkit-transform: rotateZ(180deg) translateX(-2rem); -ms-transform: rotate(180deg) translateX(-2rem); transform: rotateZ(180deg) translateX(-2rem); }
 
+@media screen and (max-width: 425px) { .button:not(.button-back):hover .icon-arrow { -webkit-transform: rotateZ(180deg) translateX(-0.5rem); -ms-transform: rotate(180deg) translateX(-0.5rem); transform: rotateZ(180deg) translateX(-0.5rem); } }
+
 .button.button-sm { height: 5rem; line-height: 4.4rem; min-width: 21rem; }
 
 .button.button-back .icon-arrow { left: 6rem; margin: auto 2rem auto 0; }
@@ -4943,7 +4945,11 @@ body:not(.home) .section-venture .left .planet-xs.xs-md { -webkit-animation-name
 
 .section-join .button .icon-arrow { stroke: #520596; }
 
-.section-error { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; bottom: 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; left: 0; padding-bottom: 2rem; position: absolute; right: 0; text-align: center; top: 0; }
+.section-error { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; bottom: 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; left: 0; position: absolute; right: 0; text-align: center; top: 0; }
+
+.section-error .wrapper { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; height: 100vh; padding: 1rem 0; width: 100vw; }
+
+@media all and (max-height: 570px) and (orientation: landscape) { .section-error .wrapper { -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; overflow: auto; z-index: 1; } }
 
 .section-error .section-title { margin-bottom: 4rem; }
 
@@ -4951,7 +4957,9 @@ body:not(.home) .section-venture .left .planet-xs.xs-md { -webkit-animation-name
 
 .section-error h4 { color: #520596; font-size: 1.8rem; font-weight: 900; margin-bottom: 2rem; }
 
-.section-error .section-body { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; overflow: hidden; }
+.section-error .section-body { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; overflow: hidden; min-height: 30rem; }
+
+.section-error .section-body img { -o-object-fit: cover; object-fit: cover; }
 
 @media screen and (max-width: 425px) { .section-error .section-body img { max-width: 47rem; } }
 

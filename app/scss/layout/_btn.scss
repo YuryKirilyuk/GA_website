@@ -48,8 +48,15 @@
   }//.icon-arrow
   &:not(.button-back) {
     .icon-arrow {transform: rotateZ(180deg);}
-    &:hover {.icon-arrow {transform: rotateZ(180deg) translateX(-2rem);}}
-  }
+    &:hover {
+      .icon-arrow {
+        transform: rotateZ(180deg) translateX(-2rem);
+        @media screen and (max-width:425px) {
+          transform: rotateZ(180deg) translateX(-.5rem);
+        }
+      }
+    }
+  }//&:not(.button-back)
   &.button-sm {
     height: 5rem;
     line-height: 4.4rem;

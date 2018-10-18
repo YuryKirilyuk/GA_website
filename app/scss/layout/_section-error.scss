@@ -3,11 +3,25 @@
   bottom: 0;
   display: flex;
   left: 0;
-  padding-bottom: 2rem;
+  //padding-bottom: 2rem;
   position: absolute;
   right: 0;
   text-align: center;
   top: 0;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 1rem 0;
+    width: 100vw;
+    @media all and (max-height: 570px) and (orientation:landscape) {
+      justify-content: flex-start;
+      overflow: auto;
+      z-index: 1;
+    }
+  }//.wrapper
 
   .section-title {margin-bottom: 4rem;}
   .section-footer {padding: 3rem 0 0;}
@@ -21,12 +35,16 @@
   .section-body {
     align-items: center;
     display: flex;
+    //flex: 1;
     justify-content: center;
     overflow: hidden;
+    min-height: 30rem;
     img {
+      //height: 100%;
+      object-fit: cover;
       @media screen and (max-width: 425px) {max-width: 47rem;}
     }
-  }
+  }//.section-body
 
   .button {
     height: 7.7rem;
