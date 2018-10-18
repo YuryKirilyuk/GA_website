@@ -33,8 +33,7 @@
   .planet-sq {
     animation-duration: 20s;
     border-radius: 0;
-    height: 2.2rem;
-    width: 2.2rem;
+    @include circle(2.2rem);
     @media screen and (max-width: 425px) {display: block;}
     &.sq-1 {
       animation-name: planetsFly-1a;
@@ -70,8 +69,7 @@
     }
   }//.planet-sq
   .planet-xs {
-    height: 3.8rem;
-    width: 3.8rem;
+    @include circle(3.8rem);
     @media screen and (max-width: 425px) {display: block;}
     &.xs-1 {
       animation-name: planetsFly-1a;
