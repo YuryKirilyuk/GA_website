@@ -120,18 +120,24 @@ body:not(.home) .section-services {
   }
 
   .wrapper {
-    align-items: center;
+    align-items: stretch;
     display: flex;
     justify-content: center;
     @media screen and (max-width: 768px) {
-      align-items: flex-start;
+      //align-items: stretch;
     }
     @media screen and (max-width: 500px) {
-      align-items: center;
+      //align-items: center;
       flex-direction: column-reverse;
       text-align: center;
     }
   }//.wrapper
+
+  .left {
+    @media screen and (min-width: 501px) {
+      display: flex;
+    }
+  }
 
   .section-body {
     align-items: center;
@@ -145,6 +151,7 @@ body:not(.home) .section-services {
       font-size: 1.8rem;
       margin: 0;
       max-width: 100%;
+      overflow: hidden;
       padding: 7rem 0;
       position: relative;
       text-align: left;
@@ -210,58 +217,94 @@ body:not(.home) .section-services {
     }//.left .button
 
     .service-icon {
-      margin: 0 1rem;
-      //position: static;
-      transform: none;
-
+      background: $violet;
+      border-radius: 50%;
       height: 33rem;
-      width: 33rem;
+      margin: 0 1rem;
       overflow: hidden;
       position: relative;
+      transform: none;
+      width: 33rem;
 
       @media screen and (max-width: 500px) {
+        background: transparent;
         margin: 0 auto 2rem;
+        overflow: visible;
         svg {background: transparent;}
       }
 
-      /*svg[class*="service-icon"] {
+      &.icon-1 {
+        align-self: flex-end;
+        @media screen and (min-width: 501px) {top: -8rem;}
+      }
+      &.icon-2 {margin-top: -.4rem;}
+      &.icon-3:before {
+        background: $pink;
+        content: '';
+        height: 52px;
+        position: absolute;
+        right: 100%;
+        top: 42px;
+        width: 500px;
+      }
+      &.icon-4 {
+        @extend .icon-1;
+      }
+      &.icon-5 {
+
+      }
+      &.icon-6 {
+
+      }
+
+      svg[class*="service-icon"] {
+        background: transparent;
+        border-radius: 0;
         position: absolute;
       }
       .service-icon-1 {
-        height: 48rem;
-        left: -41.2%;
-        width: 46.7rem;
+        height: 47.9rem;
+        left: -21.3rem;
+        width: 62.2rem;
+        @media screen and (max-width: 500px) {
+          //height: 24.5rem;
+          //width: 24.5rem;
+        }
       }
       .service-icon-2 {
         height: 39.6rem;
-        top: -20%;
+        left: 0;
+        top: -6.6rem;
         width: 50.5rem;
       }
       .service-icon-3 {
-
         height: 33rem;
-        width: 55.8rem;
+        left: -13.5rem;
+        width: 46.5rem;
       }
       .service-icon-4 {
-
         height: 47.7rem;
+        left: 0;
         width: 54.6rem;
       }
       .service-icon-5 {
-
-        height: 35.9rem;
-        width: 40rem;
-      }*/
+        height: 34.8rem;
+        left: -67px;
+        top: -16px;
+        width: 46.6rem;
+      }
       .service-icon-6 {
-
-        //height: 48rem;
-        //width: 46.7rem;
+        height: 33rem;
+        left: 0;
+        width: 33rem;
       }
     }//.service-icon
 
     .service-description {
       max-width: 68rem;
       padding: 0 2.5rem;
+      position: relative;
+      z-index: 1;
       @media screen and (max-width: 500px) {  font-size: 1.4rem;  }
     }
     .service-title {

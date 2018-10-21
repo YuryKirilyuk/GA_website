@@ -41,12 +41,12 @@ header {
 
 	.logo {
 		svg.desktop {
-			@media screen and (max-width: 425px) {
+			@media screen and (max-width: 580px) {
 				display: none;
 			}
 		}
 		svg.mobile {
-			@media screen and (min-width: 426px) {
+			@media screen and (min-width: 581px) {
 				display: none;
 			}
 		}
@@ -99,12 +99,12 @@ header {
 			height: $headerHeightDesktop + 5rem;
 			padding-bottom: 5rem;
 		}
-		@media screen and (min-width: 426px) and (max-width: 768px) {
+		@media screen and (min-width: 580px) and (max-width: 768px) {
 			height: $headerHeightTablet + 8rem;
 			padding-bottom: 8rem;
 		}
 	}
-	@media screen and (max-width: 425px) {
+	@media screen and (max-width: 580px) {
 		background: $violet;
 		padding: 0;
 	}
@@ -136,7 +136,7 @@ header {
 				bottom: -8rem;
 				height: 8rem;
 			}
-			@media screen and (max-width: 450px) {
+			@media screen and (max-width: 580px) {
 				background: transparent;
 				height: 0;
 				opacity: 0;
@@ -147,7 +147,7 @@ header {
 		ul {
 			list-style: none;
 			margin-bottom: 0;
-			@media screen and (max-width: 450px) {
+			@media screen and (max-width: 580px) {
 				background: $violet;
 				display: flex;
 				flex-direction: column;
@@ -160,7 +160,7 @@ header {
 				@media screen and (max-width: 1024px) {
 					padding: 0 1rem;
 				}
-				@media screen and (max-width: 450px) {
+				@media screen and (max-width: 580px) {
 					border-top: 1px solid #fff;
 					padding: 0 2rem;
 				}
@@ -168,7 +168,7 @@ header {
 				&.current a {
 					color: #8A00F4;
 					opacity: 1;
-					@media screen and (max-width: 425px) {
+					@media screen and (max-width: 580px) {
 						color: #fff;
 					}
 				}
@@ -182,7 +182,7 @@ header {
 						color: #8A00F4;
 						opacity: 1;
 					}
-					@media screen and (max-width: 450px) {
+					@media screen and (max-width: 580px) {
 						display: block;
 						opacity: 1;
 						padding: 1rem 0;
@@ -202,7 +202,7 @@ header {
 			opacity: 1;
 			visibility: visible;
 		}
-		@media screen and (max-width: 425px) {
+		@media screen and (max-width: 580px) {
 			display: block;
 			flex-direction: column;
 			left: 0;
@@ -220,7 +220,7 @@ header {
 		@media screen and (max-width: 768px) {
 
 		}
-		@media screen and (max-width: 520px) {
+		@media screen and (max-width: 580px) {
 			display: none;
 		}
 	}//.button.button-sm
@@ -229,7 +229,7 @@ header {
 	.actions {
 		cursor: pointer;
 		height: 3rem;
-		@media screen and (min-width: 426px) {display: none;}
+		@media screen and (min-width: 580px) {display: none;}
 		@media screen and (min-width: 768px) and (max-width: 1250px){
 			margin-left: 2rem;
 		}
@@ -242,7 +242,7 @@ header {
 			opacity: 1 !important;
 		}
 		nav {
-			@media screen and (max-width: 425px) {
+			@media screen and (max-width: 580px) {
 				height: 100% !important;
 				opacity: 1 !important;
 				visibility: visible !important;
@@ -269,12 +269,12 @@ header {
 					opacity: 1;
 					visibility: visible;
 				}
-				@media screen and (max-width: 425px) {
+				@media screen and (max-width: 580px) {
 					height: 100%;
 				}
 			}//nav
 			.socials {
-				@media screen and (max-width: 425px) {
+				@media screen and (max-width: 580px) {
 					opacity: 1;
 					visibility: visible;
 				}
@@ -293,17 +293,17 @@ header {
 				visibility: hidden;
 				bottom: 0;
 			}
-			@media screen and (max-width: 450px) {
+			@media screen and (max-width: 580px) {
 				background: transparent;
 				height: 0;
 				position: static;
 			}
 			ul {
-				@media screen and (max-width: 450px) {
+				@media screen and (max-width: 580px) {
 					background: rgba(252, 72, 107, 0.85);
 				}
 				li {
-					@media screen and (max-width: 450px) {
+					@media screen and (max-width: 580px) {
 						border-top: 1px solid #fff;
 					}
 					a {
