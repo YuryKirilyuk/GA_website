@@ -407,7 +407,7 @@ body:not(.home) .section-services {
     &.xs-3 {
       animation-name: planetsFly-3a;
       bottom: 5%;
-      left: 35%;
+      left: 20%;
       @media screen and (max-width: 1024px) {
         bottom: 15%;
         left: 15%;
@@ -421,7 +421,7 @@ body:not(.home) .section-services {
     }
     &.xs-5 {
       animation-name: planetsFly-3a;
-      left: 35%;
+      left: 40%;
       top: 7%;
       @media screen and (max-width: 1024px) {
         left: 38%;

@@ -4792,7 +4792,7 @@ body:not(.home) .section-services .section-body .service-text { margin-bottom: 2
 
 @media screen and (max-width: 768px) { .service-item .planet-xs.xs-2 { left: 43%; top: 40%; } }
 
-.service-item .planet-xs.xs-3 { -webkit-animation-name: planetsFly-3a; animation-name: planetsFly-3a; bottom: 5%; left: 35%; }
+.service-item .planet-xs.xs-3 { -webkit-animation-name: planetsFly-3a; animation-name: planetsFly-3a; bottom: 5%; left: 20%; }
 
 @media screen and (max-width: 1024px) { .service-item .planet-xs.xs-3 { bottom: 15%; left: 15%; } }
 
@@ -4800,7 +4800,7 @@ body:not(.home) .section-services .section-body .service-text { margin-bottom: 2
 
 @media screen and (max-width: 1024px) { .service-item .planet-xs.xs-4 { bottom: 5%; } }
 
-.service-item .planet-xs.xs-5 { -webkit-animation-name: planetsFly-3a; animation-name: planetsFly-3a; left: 35%; top: 7%; }
+.service-item .planet-xs.xs-5 { -webkit-animation-name: planetsFly-3a; animation-name: planetsFly-3a; left: 40%; top: 7%; }
 
 @media screen and (max-width: 1024px) { .service-item .planet-xs.xs-5 { left: 38%; top: 40%; } }
 
