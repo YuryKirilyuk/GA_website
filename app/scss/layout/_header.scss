@@ -69,7 +69,7 @@ header {
 	.socials {
 		display: flex;
 		align-items: center;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 580px) {
       background: rgba(252,72,107,.85);
       border-top: 1px solid #fff;
       justify-content: center;
@@ -99,7 +99,7 @@ header {
 			height: $headerHeightDesktop + 5rem;
 			padding-bottom: 5rem;
 		}
-		@media screen and (min-width: 580px) and (max-width: 768px) {
+		@media screen and (min-width: 581px) and (max-width: 768px) {
 			height: $headerHeightTablet + 8rem;
 			padding-bottom: 8rem;
 		}
@@ -143,7 +143,8 @@ header {
 				position: static;
 				visibility: hidden;
 			}
-		}
+			ul li:last-child {border-bottom: 1px solid #fff;}
+		}//body:not(.home) nav
 		ul {
 			list-style: none;
 			margin-bottom: 0;
@@ -187,7 +188,7 @@ header {
 						opacity: 1;
 						padding: 1rem 0;
 					}
-					@media screen and (max-width: 425px) {
+					@media screen and (max-width: 580px) {
 						color: $grey-light;
 					}
 				}//a
@@ -229,7 +230,7 @@ header {
 	.actions {
 		cursor: pointer;
 		height: 3rem;
-		@media screen and (min-width: 580px) {display: none;}
+		@media screen and (min-width: 581px) {display: none;}
 		@media screen and (min-width: 768px) and (max-width: 1250px){
 			margin-left: 2rem;
 		}
