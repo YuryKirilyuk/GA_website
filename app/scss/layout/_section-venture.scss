@@ -132,7 +132,7 @@ body:not(.home) .section-venture {
     &:before {
       background: url(../img/planets_form.png) no-repeat center 90%;
       bottom: 0;
-      content: none;
+      content: '';
       left: 0;
       position: absolute;
       right: 0;
@@ -274,6 +274,7 @@ body:not(.home) .section-venture {
 
 
 
+/*
 
 .parallax-container {
   bottom: 0;
@@ -339,28 +340,4 @@ body:not(.home) .section-venture {
   }
 }//.parallax-container
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/

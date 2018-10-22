@@ -142,8 +142,8 @@ header {
 				opacity: 0;
 				position: static;
 				visibility: hidden;
+				ul li:last-child {border-bottom: 1px solid #fff;}
 			}
-			ul li:last-child {border-bottom: 1px solid #fff;}
 		}//body:not(.home) nav
 		ul {
 			list-style: none;
