@@ -3848,7 +3848,7 @@ header { height: 12rem; margin-bottom: -12rem; min-width: 0; -webkit-box-ordinal
 
 @media screen and (max-width: 768px) { header { height: 9rem; } }
 
-@media screen and (max-width: 320px) { header { border-bottom: 1px solid #fff; height: 7rem; } }
+@media screen and (max-width: 320px) { header { height: 7rem; } }
 
 header .blur { height: 100%; -webkit-filter: blur(2px); filter: blur(2px); opacity: 0; position: absolute; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; visibility: hidden; width: 100%; z-index: 0; }
 
@@ -4423,6 +4423,14 @@ svg.icon-satellite { fill: transparent; height: 14.5rem; -webkit-transform: rota
 
 .section-projects .section-footer { position: absolute; right: 0; bottom: -13rem; }
 
+body:not(.home) .section-projects { padding: 5rem 0 5rem; }
+
+body:not(.home) .section-projects .section-title { margin-bottom: 5rem; }
+
+body:not(.home) .section-projects .projects-list { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; height: auto; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+
+body:not(.home) .section-projects .projects-list .project { -webkit-box-ordinal-group: initial; -webkit-order: initial; -ms-flex-order: initial; order: initial; }
+
 .section-team { padding: 10rem 0 8.5rem; }
 
 @media screen and (max-width: 1024px) { .section-team { padding: 6rem 0 8.5rem; } }
@@ -4449,11 +4457,11 @@ svg.icon-satellite { fill: transparent; height: 14.5rem; -webkit-transform: rota
 
 @media screen and (max-width: 826px) { .section-team .member-list { -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; } }
 
-@media screen and (max-width: 768px) { .section-team .member-list { -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; max-width: 56rem; } }
+@media screen and (max-width: 768px) { .section-team .member-list { -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; max-width: 56rem; padding: 0 1rem; } }
 
-@media screen and (max-width: 445px) { .section-team .member-list { -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; } }
+@media screen and (max-width: 475px) { .section-team .member-list { -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; } }
 
-@media screen and (max-width: 425px) { .section-team .member-list { margin: 0 -.5rem; } }
+@media screen and (max-width: 425px) { .section-team .member-list { margin: 0 -.5rem; padding: 0; } }
 
 .section-team .member-list li { margin-bottom: 9rem; }
 
@@ -4665,7 +4673,7 @@ body:not(.home) .section-services .section-title { color: #520596; margin: 0; }
 
 @media screen and (max-width: 500px) { body:not(.home) .section-services .section-title { background: #520596; border-bottom: 1px solid #fff; color: #fff; padding: 2.5rem 0; } }
 
-body:not(.home) .section-services .wrapper { -webkit-box-align: stretch; -webkit-align-items: stretch; -ms-flex-align: stretch; align-items: stretch; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+body:not(.home) .section-services .wrapper { -webkit-box-align: stretch; -webkit-align-items: stretch; -ms-flex-align: stretch; align-items: stretch; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; z-index: 2; }
 
 @media screen and (max-width: 500px) { body:not(.home) .section-services .wrapper { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -webkit-flex-direction: column-reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; text-align: center; } }
 
@@ -4681,13 +4689,21 @@ body:not(.home) .section-services .section-body .service-item:hover:before { opa
 
 body:not(.home) .section-services .section-body .service-item:hover .service-title { color: #fff; }
 
-body:not(.home) .section-services .section-body .service-item:hover .service-icon { overflow: visible; }
+@media screen and (max-width: 768px) { body:not(.home) .section-services .section-body .service-item:hover .service-icon { background: transparent; } }
+
+body:not(.home) .section-services .section-body .service-item:hover .icon-3:before { width: 500px; }
+
+body:not(.home) .section-services .section-body .service-item:hover .icon-5 .icon-wrapper { left: -8rem; top: -8rem; }
+
+body:not(.home) .section-services .section-body .service-item:hover .icon-5 .icon-wrapper .service-icon-5 { left: 1.3rem; top: 6.4rem; }
+
+body:not(.home) .section-services .section-body .service-item:hover .icon-wrapper { border-radius: 0; height: 200%; width: 200%; }
 
 body:not(.home) .section-services .section-body .service-item:hover .button { background: #fff; color: #8A00F4; visibility: visible; }
 
 body:not(.home) .section-services .section-body .service-item:hover .button:hover { background: transparent; color: #fff; }
 
-body:not(.home) .section-services .section-body .service-item:before { background: #fff; content: ''; bottom: 0; left: 0; right: 0; top: 0; position: absolute; opacity: 1; -webkit-transition: all ease-in .3s; transition: all ease-in .3s; width: 100%; }
+body:not(.home) .section-services .section-body .service-item:before { background: #fff; content: ''; bottom: 0; left: 0; right: 0; top: 0; position: absolute; opacity: 1; -webkit-transition: all ease-in .3s; transition: all ease-in .3s; width: 100%; z-index: 1; }
 
 @media screen and (max-width: 500px) { body:not(.home) .section-services .section-body .service-item:before { content: none; } }
 
@@ -4707,26 +4723,40 @@ body:not(.home) .section-services .section-body .service-item .button { color: #
 @media screen and (max-width: 500px) { body:not(.home) .section-services .section-body .left .button { border-color: transparent; display: block; margin: auto; }
   body:not(.home) .section-services .section-body .left .button:hover { background: transparent; border-color: #fff; } }
 
-body:not(.home) .section-services .section-body .service-icon { background: #520596; border-radius: 50%; height: 33rem; margin: 0 1rem; overflow: hidden; position: relative; -webkit-transform: none; -ms-transform: none; transform: none; width: 33rem; }
+body:not(.home) .section-services .section-body .service-icon { background: #520596; border-radius: 50%; height: 33rem; margin: 0 1rem; position: relative; -webkit-transform: none; -ms-transform: none; transform: none; width: 33rem; }
 
 @media screen and (max-width: 500px) { body:not(.home) .section-services .section-body .service-icon { background: transparent; margin: 0 auto 2rem; overflow: visible; }
   body:not(.home) .section-services .section-body .service-icon svg { background: transparent; } }
+
+body:not(.home) .section-services .section-body .service-icon .icon-wrapper { border-radius: 50%; height: 100%; overflow: hidden; position: absolute; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; width: 100%; }
+
+@media screen and (max-width: 500px) { body:not(.home) .section-services .section-body .service-icon .icon-wrapper { overflow: visible; } }
 
 body:not(.home) .section-services .section-body .service-icon.icon-1, body:not(.home) .section-services .section-body .service-icon.icon-4 { -webkit-align-self: flex-end; -ms-flex-item-align: end; align-self: flex-end; }
 
 @media screen and (min-width: 501px) { body:not(.home) .section-services .section-body .service-icon.icon-1, body:not(.home) .section-services .section-body .service-icon.icon-4 { top: -8rem; } }
 
+body:not(.home) .section-services .section-body .service-icon.icon-1 .icon-wrapper, body:not(.home) .section-services .section-body .service-icon.icon-4 .icon-wrapper { right: 0; top: 0; }
+
 body:not(.home) .section-services .section-body .service-icon.icon-2 { margin-top: -.4rem; }
 
-body:not(.home) .section-services .section-body .service-icon.icon-3:before { background: #fc486b; content: ''; height: 52px; position: absolute; right: 100%; top: 42px; width: 500px; }
+body:not(.home) .section-services .section-body .service-icon.icon-2 .icon-wrapper { left: 0; bottom: 0; }
+
+body:not(.home) .section-services .section-body .service-icon.icon-3:before { background: #fc486b; content: ''; height: 52px; position: absolute; right: 100%; top: 42px; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; width: 0; }
+
+body:not(.home) .section-services .section-body .service-icon.icon-3 .icon-wrapper { right: 0; top: 0; }
+
+body:not(.home) .section-services .section-body .service-icon.icon-4 .icon-wrapper { left: 0; top: 0; }
+
+body:not(.home) .section-services .section-body .service-icon.icon-5 .icon-wrapper { left: 0; top: 0; }
 
 body:not(.home) .section-services .section-body .service-icon svg[class*="service-icon"] { background: transparent; border-radius: 0; position: absolute; }
 
-body:not(.home) .section-services .section-body .service-icon .service-icon-1 { height: 47.9rem; left: -21.3rem; width: 62.2rem; }
+body:not(.home) .section-services .section-body .service-icon .service-icon-1 { height: 47.9rem; right: -7.5rem; top: 0; width: 62.2rem; }
 
-body:not(.home) .section-services .section-body .service-icon .service-icon-2 { height: 39.6rem; left: 0; top: -6.6rem; width: 50.5rem; }
+body:not(.home) .section-services .section-body .service-icon .service-icon-2 { bottom: 0; height: 39.6rem; left: 0; width: 50.5rem; }
 
-body:not(.home) .section-services .section-body .service-icon .service-icon-3 { height: 33rem; left: -13.5rem; width: 46.5rem; }
+body:not(.home) .section-services .section-body .service-icon .service-icon-3 { height: 33rem; right: 0; top: 0; width: 46.5rem; }
 
 body:not(.home) .section-services .section-body .service-icon .service-icon-4 { height: 47.7rem; left: 0; width: 54.6rem; }
 
@@ -4745,6 +4775,42 @@ body:not(.home) .section-services .section-body .service-title { color: #520596;
 @media screen and (max-width: 500px) { body:not(.home) .section-services .section-body .service-title { font-size: 1.8rem; } }
 
 body:not(.home) .section-services .section-body .service-text { margin-bottom: 2rem; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
+
+.service-item .planet-xs { height: 5.2rem; width: 5.2rem; }
+
+@media screen and (max-width: 425px) { .service-item .planet-xs { display: block; } }
+
+.service-item .planet-xs.xs-1 { -webkit-animation-name: planetsFly-1a; animation-name: planetsFly-1a; left: 5%; top: 30%; }
+
+@media screen and (max-width: 1024px) { .service-item .planet-xs.xs-1 { left: 5%; } }
+
+@media screen and (max-width: 768px) { .service-item .planet-xs.xs-1 { top: 25%; } }
+
+.service-item .planet-xs.xs-2 { -webkit-animation-name: planetsFly-2a; animation-name: planetsFly-2a; left: 57%; top: 33%; }
+
+@media screen and (max-width: 1024px) { .service-item .planet-xs.xs-2 { top: 20%; } }
+
+@media screen and (max-width: 768px) { .service-item .planet-xs.xs-2 { left: 43%; top: 40%; } }
+
+.service-item .planet-xs.xs-3 { -webkit-animation-name: planetsFly-3a; animation-name: planetsFly-3a; bottom: 5%; left: 35%; }
+
+@media screen and (max-width: 1024px) { .service-item .planet-xs.xs-3 { bottom: 15%; left: 15%; } }
+
+.service-item .planet-xs.xs-4 { -webkit-animation-name: planetsFly-1a; animation-name: planetsFly-1a; left: 65%; bottom: 10%; }
+
+@media screen and (max-width: 1024px) { .service-item .planet-xs.xs-4 { bottom: 5%; } }
+
+.service-item .planet-xs.xs-5 { -webkit-animation-name: planetsFly-3a; animation-name: planetsFly-3a; left: 35%; top: 7%; }
+
+@media screen and (max-width: 1024px) { .service-item .planet-xs.xs-5 { left: 38%; top: 40%; } }
+
+@media screen and (max-width: 768px) { .service-item .planet-xs.xs-5 { left: 65%; top: 14%; } }
+
+.service-item .planet-xs.xs-6 { -webkit-animation-name: planetsFly-2a; animation-name: planetsFly-2a; right: 3%; top: 47%; }
+
+@media screen and (max-width: 1024px) { .service-item .planet-xs.xs-6 { top: 35%; } }
+
+@media screen and (max-width: 1024px) { .service-item .planet-xs.xs-6 { top: 50%; } }
 
 @media screen and (max-width: 768px) { .section-venture { padding-bottom: 9rem; }
   .section-venture.gray-bg { background: transparent !important; } }
@@ -4820,7 +4886,7 @@ body:not(.home) .section-venture .left:before { background: url(../img/planets_f
 
 @media screen and (max-width: 425px) { body:not(.home) .section-venture .left { margin: 0; padding: 0; } }
 
-body:not(.home) .section-venture .left .planet-sq { -webkit-animation-duration: 20s; animation-duration: 20s; border-radius: 0; height: 1.3rem; width: 1.3rem; }
+body:not(.home) .section-venture .left .planet-sq { -webkit-animation-duration: 20s; animation-duration: 20s; height: 1.3rem; width: 1.3rem; }
 
 @media screen and (max-width: 768px) { body:not(.home) .section-venture .left .planet-sq { height: 1.95rem; width: 1.95rem; } }
 
@@ -4962,7 +5028,7 @@ body:not(.home) .section-venture .left .planet-xs.xs-md { -webkit-animation-name
 
 @media screen and (max-width: 425px) { .section-join { height: 23rem; padding: 0; } }
 
-.section-join .planet-sq { -webkit-animation-duration: 20s; animation-duration: 20s; border-radius: 0; height: 2.2rem; width: 2.2rem; }
+.section-join .planet-sq { -webkit-animation-duration: 20s; animation-duration: 20s; height: 2.2rem; width: 2.2rem; }
 
 @media screen and (max-width: 425px) { .section-join .planet-sq { display: block; } }
 

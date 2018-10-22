@@ -32,7 +32,7 @@
 
   .planet-sq {
     animation-duration: 20s;
-    border-radius: 0;
+    //border-radius: 0;
     @include circle(2.2rem);
     @media screen and (max-width: 425px) {display: block;}
     &.sq-1 {

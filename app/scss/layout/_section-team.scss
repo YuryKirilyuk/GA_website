@@ -62,12 +62,14 @@
     @media screen and (max-width: 768px) {
       justify-content: space-between;
       max-width: 56rem;
+      padding: 0 1rem;
     }
-    @media screen and (max-width: 445px) {
+    @media screen and (max-width: 475px) {
       justify-content: space-evenly;
     }
     @media screen and (max-width: 425px) {
       margin: 0 -.5rem;
+      padding: 0;
     }
 
     li {

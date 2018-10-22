@@ -14,7 +14,7 @@ header {
 		height: $headerHeightTablet;
 	}
 	@media screen and (max-width: 320px) {
-		border-bottom: 1px solid #fff;
+		//border-bottom: 1px solid #fff;
 		height: $headerHeightMobile;
 	}
 

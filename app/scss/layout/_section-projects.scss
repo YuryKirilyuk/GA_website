@@ -196,3 +196,26 @@
   }
 
 }//.section-projects
+
+
+
+
+
+
+body:not(.home) .section-projects {
+  padding: 5rem 0 5rem;
+
+  .section-title {
+    margin-bottom: 5rem;
+  }
+
+  .projects-list {
+    flex-direction: row;
+    height: auto;
+    justify-content: space-between;
+    .project {
+      order: initial;
+    }
+  }
+
+}//body:not(.home) .section-projects

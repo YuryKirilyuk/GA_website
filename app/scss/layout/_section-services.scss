@@ -123,6 +123,7 @@ body:not(.home) .section-services {
     align-items: stretch;
     display: flex;
     justify-content: center;
+    z-index: 2;
     @media screen and (max-width: 768px) {
       //align-items: stretch;
     }
@@ -155,11 +156,31 @@ body:not(.home) .section-services {
       padding: 7rem 0;
       position: relative;
       text-align: left;
+
       &:hover {
         color: #fff;
         &:before {opacity: 0;}
+
         .service-title {color: #fff;}
-        .service-icon {overflow: visible;}
+
+        .service-icon {
+          @media screen and (max-width: 768px) {background: transparent;}
+        }
+        .icon-3:before {width: 500px;}
+        .icon-5 .icon-wrapper {
+          left: -8rem;
+          top: -8rem;
+          .service-icon-5 {
+            left: 1.3rem;
+            top: 6.4rem;
+          }
+        }
+        .icon-wrapper {
+          border-radius: 0;
+          height: 200%;
+          width: 200%;
+        }
+
         .button {
           background: #fff;
           color: #8A00F4;
@@ -169,7 +190,8 @@ body:not(.home) .section-services {
             color: #fff;
           }
         }//.button
-      }//&:hover
+      }//.service-item:hover
+
       &:before {
         background: #fff;
         content: '';
@@ -181,6 +203,7 @@ body:not(.home) .section-services {
         opacity: 1;
         transition: all ease-in .3s;
         width: 100%;
+        z-index: 1;
         @media screen and (max-width: 500px) {  content: none;  }
       }
       @media screen and (max-width: 768px) {  padding: 5.5rem 0;  }
@@ -221,7 +244,7 @@ body:not(.home) .section-services {
       border-radius: 50%;
       height: 33rem;
       margin: 0 1rem;
-      overflow: hidden;
+      //overflow: hidden;
       position: relative;
       transform: none;
       width: 33rem;
@@ -232,30 +255,62 @@ body:not(.home) .section-services {
         overflow: visible;
         svg {background: transparent;}
       }
+      .icon-wrapper {
+        //background: #ccc;
+        border-radius: 50%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        transition: $default-transition;
+        width: 100%;
+        @media screen and (max-width: 500px) {overflow: visible;}
+      }
 
       &.icon-1 {
         align-self: flex-end;
         @media screen and (min-width: 501px) {top: -8rem;}
+        .icon-wrapper {
+          right: 0;
+          top: 0;
+        }
       }
-      &.icon-2 {margin-top: -.4rem;}
-      &.icon-3:before {
-        background: $pink;
-        content: '';
-        height: 52px;
-        position: absolute;
-        right: 100%;
-        top: 42px;
-        width: 500px;
+      &.icon-2 {
+        margin-top: -.4rem;
+        .icon-wrapper {
+          left: 0;
+          bottom: 0;
+        }
+      }
+      &.icon-3 {
+        &:before {
+          background: $pink;
+          content: '';
+          height: 52px;
+          position: absolute;
+          right: 100%;
+          top: 42px;
+          transition: $default-transition;
+          width: 0;
+        }
+        .icon-wrapper {
+          right: 0;
+          top: 0;
+        }
       }
       &.icon-4 {
         @extend .icon-1;
+        .icon-wrapper {
+          left: 0;
+          top: 0;
+        }
       }
       &.icon-5 {
-
+        .icon-wrapper {
+          left: 0;
+          top: 0;
+        }
       }
-      &.icon-6 {
-
-      }
+      &.icon-6 { }
 
       svg[class*="service-icon"] {
         background: transparent;
@@ -264,22 +319,20 @@ body:not(.home) .section-services {
       }
       .service-icon-1 {
         height: 47.9rem;
-        left: -21.3rem;
+        right: -7.5rem;
+        top: 0;
         width: 62.2rem;
-        @media screen and (max-width: 500px) {
-          //height: 24.5rem;
-          //width: 24.5rem;
-        }
       }
       .service-icon-2 {
+        bottom: 0;
         height: 39.6rem;
         left: 0;
-        top: -6.6rem;
         width: 50.5rem;
       }
       .service-icon-3 {
         height: 33rem;
-        left: -13.5rem;
+        right: 0;
+        top: 0;
         width: 46.5rem;
       }
       .service-icon-4 {
@@ -324,3 +377,67 @@ body:not(.home) .section-services {
   }//.section-body
 
 }//body:not(.home) .section-services
+
+
+
+
+
+//SECTION'S BACKGROUND PLANETS
+.service-item {
+  .planet-xs {
+    @include circle(5.2rem);
+    @media screen and (max-width: 425px) {display: block;}
+    &.xs-1 {
+      animation-name: planetsFly-1a;
+      left: 5%;
+      top: 30%;
+      @media screen and (max-width: 1024px) {  left: 5%;  }
+      @media screen and (max-width: 768px) {  top: 25%;  }
+    }
+    &.xs-2 {
+      animation-name: planetsFly-2a;
+      left: 57%;
+      top: 33%;
+      @media screen and (max-width: 1024px) {  top: 20%;  }
+      @media screen and (max-width: 768px) {
+        left: 43%;
+        top: 40%;
+      }
+    }
+    &.xs-3 {
+      animation-name: planetsFly-3a;
+      bottom: 5%;
+      left: 35%;
+      @media screen and (max-width: 1024px) {
+        bottom: 15%;
+        left: 15%;
+      }
+    }
+    &.xs-4 {
+      animation-name: planetsFly-1a;
+      left: 65%;
+      bottom: 10%;
+      @media screen and (max-width: 1024px) {  bottom: 5%;  }
+    }
+    &.xs-5 {
+      animation-name: planetsFly-3a;
+      left: 35%;
+      top: 7%;
+      @media screen and (max-width: 1024px) {
+        left: 38%;
+        top: 40%;
+      }
+      @media screen and (max-width: 768px) {
+        left: 65%;
+        top: 14%;
+      }
+    }
+    &.xs-6 {
+      animation-name: planetsFly-2a;
+      right: 3%;
+      top: 47%;
+      @media screen and (max-width: 1024px) {  top: 35%;  }
+      @media screen and (max-width: 1024px) {  top: 50%;  }
+    }
+  }//.planet-xs
+}
