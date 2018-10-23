@@ -46,6 +46,7 @@
     transition: $default-transition;
     @media screen and (max-width: 425px) {  position: static;  }
   }//.icon-arrow
+
   &:not(.button-back) {
     .icon-arrow {transform: rotateZ(180deg);}
     &:hover {
@@ -57,11 +58,13 @@
       }
     }
   }//&:not(.button-back)
+
   &.button-sm {
     height: 5rem;
     line-height: 4.4rem;
     min-width: 21rem;
-  }
+  }//.button-sm
+
   &.button-back {
     .icon-arrow {
       left: 6rem;
@@ -69,8 +72,18 @@
       @media screen and (max-width: 425px) {left: 0 !important;}
     }
     &:hover .icon-arrow {left: 4rem;}
-  }
+  }//.button-back
+
+  &.button-load {
+    .icon-arrow {
+      transform: none !important;
+      margin: 0 3rem;
+      position: static;
+    }
+  }//.button-load
+
 }//.button
+
 
 .navigation-button {
   cursor: pointer;

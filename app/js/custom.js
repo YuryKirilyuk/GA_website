@@ -51,8 +51,15 @@ $(function(){
 	$('header .actions').click(function(){
 		$(this).find('.navigation-button').toggleClass('active'),
 		$('header').toggleClass('active');
-		$('.site-menu a').toggleClass('bounceInDown bounceOutUp');
-		$('.socials').toggleClass('bounceInDown bounceOutUp');
+		$('.site-menu a').toggleClass('fadeInDown fadeOutUp');
+		$('.socials').toggleClass('fadeInDown fadeOutUp');
+		return false;
+	});
+
+
+	$('.filter a').click(function(){
+		$(this).toggleClass('active');
+		$(this).parent().siblings().find('a').removeClass('active');
 		return false;
 	});
 
@@ -94,6 +101,7 @@ $(function(){
 
 
     $( "#slider" ).slider({
+        animate: "slow",
         range: "min",
         value: 1500,
         min: 0,
@@ -107,6 +115,13 @@ $(function(){
     $('.ui-slider-handle').append('<div id="value"></div>');
     $( "#amount" ).val( $( "#slider" ).slider( "value" ) );
     $( "#value" ).text( $( "#slider" ).slider( "value" ) + "$");
+
+
+    $('.grid').masonry({
+        itemSelector: '.project',
+        fitWidth: true,
+        gutter: 30
+    });
 
 });
 

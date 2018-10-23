@@ -42,7 +42,28 @@
 }//.section-group
 
 
-
+.filter {
+	margin-bottom: 8rem;
+	text-align: center;
+	li {
+		display: inline-block;
+		font-family: $form-font-family;
+		font-size: 1.4rem;
+		font-weight: 600;
+		margin: 0 2rem;
+		a {
+			border-radius: 3rem;
+			color: $violet;
+			padding: .5rem 1.5rem;
+			&.active {
+				background: #8A00F4;
+				color: #fff;
+				&:hover {background: $violet;}
+			}
+			&:hover {background: #eee;}
+		}
+	}
+}//.filter
 
 
 

@@ -4,7 +4,7 @@
 /*************************
    Text color
 *************************/
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900|Playfair+Display:900|Open+Sans:400");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900|Playfair+Display:900|Open+Sans:400,600");
 .text-violet { color: #520596; }
 
 .text-blue { color: #4FC1F0; }
@@ -5625,6 +5625,8 @@ header.active .blur, header.active .site-menu { visibility: visible !important; 
 
 @media screen and (max-width: 768px) { .home header .button.button-sm { background: none; border: none; border-bottom: 1px solid; color: #fff; min-width: 15.4rem; position: absolute; left: 0; right: 0; margin: auto; width: 10rem; } }
 
+.home header .actions { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+
 /*
 ================================================================================
 |                                     FOOTER                                   |
@@ -5739,6 +5741,8 @@ footer .copyright span:before, footer .copyright span:after { background: #52059
 
 .button.button-back:hover .icon-arrow { left: 4rem; }
 
+.button.button-load .icon-arrow { -webkit-transform: none !important; -ms-transform: none !important; transform: none !important; margin: 0 3rem; position: static; }
+
 .navigation-button { cursor: pointer; position: relative; }
 
 .navigation-button, .navigation-button::before, .navigation-button::after { background-color: #fff; display: inline-block; height: 2px; width: 3.9rem; }
@@ -5827,7 +5831,7 @@ form.form-horizontal .checkbox { margin-bottom: 1.3rem; }
 
 #slider.ui-slider .ui-slider-range:before { content: '0$'; color: #DFDFDF; font-size: 1.4rem; left: 0; position: absolute; top: -4rem; }
 
-#slider.ui-slider .ui-slider-handle { background: #fc486b; border: none; border-radius: 1.3rem; cursor: pointer; height: 3.9rem; margin-left: -1.9rem; top: -1.5rem; width: 3.9rem; }
+#slider.ui-slider .ui-slider-handle { background: #fc486b; border: none; border-radius: 50%; box-shadow: 0 0 15px -5px #000; cursor: pointer; height: 3.9rem; margin-left: -1.9rem; top: -1.5rem; width: 3.9rem; }
 
 @media screen and (max-width: 375px) { #slider.ui-slider .ui-slider-handle { height: 3rem; top: -1rem; width: 3rem; } }
 
@@ -5846,6 +5850,18 @@ form.form-horizontal .checkbox { margin-bottom: 1.3rem; }
 @media screen and (max-width: 1024px) { .section-number { display: none; } }
 
 @media screen and (max-width: 768px) { .section-group { background-image: linear-gradient(33deg, #520596 0%, #fc486b 70%); } }
+
+.filter { margin-bottom: 8rem; text-align: center; }
+
+.filter li { display: inline-block; font-family: "Open Sans", sans-serif; font-size: 1.4rem; font-weight: 600; margin: 0 2rem; }
+
+.filter li a { border-radius: 3rem; color: #520596; padding: .5rem 1.5rem; }
+
+.filter li a.active { background: #8A00F4; color: #fff; }
+
+.filter li a.active:hover { background: #520596; }
+
+.filter li a:hover { background: #eee; }
 
 .truncate { display: inline-block; max-width: 100%; overflow: hidden; -webkit-text-overflow: ellipsis; -ms-text-overflow: ellipsis; text-overflow: ellipsis; vertical-align: top; white-space: nowrap; width: 100%; }
 
@@ -6077,11 +6093,13 @@ svg.icon-satellite { fill: transparent; height: 14.5rem; -webkit-transform: rota
 
 .section-projects .section-footer { position: absolute; right: 0; bottom: -13rem; }
 
-body:not(.home) .section-projects { padding: 5rem 0 5rem; }
+body:not(.home) .section-projects { padding: 5rem 0 15rem; }
 
-body:not(.home) .section-projects .section-title { margin-bottom: 5rem; }
+body:not(.home) .section-projects .section-title { margin-bottom: 7rem; }
 
-body:not(.home) .section-projects .projects-list { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; height: auto; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+body:not(.home) .section-projects .projects-list { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; height: auto; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; display: block; margin-bottom: 5.5rem; }
+
+body:not(.home) .section-projects .projects-list .grid { margin: auto; }
 
 body:not(.home) .section-projects .projects-list .project { -webkit-box-ordinal-group: initial; -webkit-order: initial; -ms-flex-order: initial; order: initial; }
 

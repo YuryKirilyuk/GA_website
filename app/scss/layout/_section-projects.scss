@@ -203,19 +203,20 @@
 
 
 body:not(.home) .section-projects {
-  padding: 5rem 0 5rem;
+  padding: 5rem 0 15rem;
 
   .section-title {
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
   }
 
   .projects-list {
     flex-direction: row;
     height: auto;
     justify-content: space-between;
-    .project {
-      order: initial;
-    }
+    display: block;
+    margin-bottom: 5.5rem;
+    .grid {margin: auto;}
+    .project {order: initial;}
   }
 
 }//body:not(.home) .section-projects
