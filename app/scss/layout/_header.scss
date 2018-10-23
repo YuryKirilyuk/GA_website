@@ -69,6 +69,9 @@ header {
 	.socials {
 		display: flex;
 		align-items: center;
+		@media screen and (min-width: 581px) and (max-width: 768px) {
+			animation: none !important;
+		}
     @media screen and (max-width: 580px) {
       background: rgba(252,72,107,.85);
       border-top: 1px solid #fff;
@@ -175,6 +178,7 @@ header {
 				}
 				a {
 					color: $grey;
+					display: block;
 					font-weight: 600;
 					opacity: .7;
 					letter-spacing: 2.5px;
@@ -184,7 +188,7 @@ header {
 						opacity: 1;
 					}
 					@media screen and (max-width: 580px) {
-						display: block;
+						//display: block;
 						opacity: 1;
 						padding: 1rem 0;
 					}
@@ -228,8 +232,11 @@ header {
 
 
 	.actions {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		cursor: pointer;
-		height: 3rem;
+		height: 100%;
 		@media screen and (min-width: 581px) {display: none;}
 		@media screen and (min-width: 768px) and (max-width: 1250px){
 			margin-left: 2rem;
@@ -321,6 +328,7 @@ header {
 
 		.site-menu {
 			opacity: 0;
+			transition: all 2s;
 			visibility: hidden;
 			@media screen and (max-width: 768px) {
 				flex: 1;
@@ -328,6 +336,13 @@ header {
 				opacity: 1;
 				visibility: visible;
 			}
+			li:nth-child(1) a {animation-delay: .1s;}
+			li:nth-child(2) a {animation-delay: .2s;}
+			li:nth-child(3) a {animation-delay: .3s;}
+			li:nth-child(4) a {animation-delay: .4s;}
+			li:nth-child(5) a {animation-delay: .5s;}
+			li:nth-child(6) a {animation-delay: .6s;}
+			.socials {animation-delay: .7s;}
 		}//.site-menu
 
 		.button.button-sm {
@@ -349,7 +364,9 @@ header {
 		}//.button.button-sm
 
 
-		.actions {display: block;}
+		.actions {
+
+		}
 
 	}//.home header
 

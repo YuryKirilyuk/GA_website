@@ -51,6 +51,8 @@ $(function(){
 	$('header .actions').click(function(){
 		$(this).find('.navigation-button').toggleClass('active'),
 		$('header').toggleClass('active');
+		$('.site-menu a').toggleClass('bounceInDown bounceOutUp');
+		$('.socials').toggleClass('bounceInDown bounceOutUp');
 		return false;
 	});
 

@@ -164,7 +164,7 @@ body:not(.home) .section-services {
         .service-title {color: #fff;}
 
         .service-icon {
-          @media screen and (max-width: 768px) {background: transparent;}
+          background: transparent;
         }
         .icon-3:before {width: 500px;}
         .icon-5 .icon-wrapper {
@@ -324,10 +324,13 @@ body:not(.home) .section-services {
         width: 62.2rem;
       }
       .service-icon-2 {
-        bottom: 0;
-        height: 39.6rem;
+        //bottom: 0;
+        bottom: -11rem;
+        //height: 39.6rem;
+        height: 63.6rem;
         left: 0;
-        width: 50.5rem;
+        //width: 50.5rem;
+        width: 90.5rem;
       }
       .service-icon-3 {
         height: 33rem;
@@ -377,8 +380,6 @@ body:not(.home) .section-services {
   }//.section-body
 
 }//body:not(.home) .section-services
-
-
 
 
 
