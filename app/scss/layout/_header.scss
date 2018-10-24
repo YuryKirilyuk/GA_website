@@ -76,6 +76,11 @@ header {
 //header on inner pages
 header {
 	background: #EDECEC;
+	@media screen and (max-width: 580px) {
+		background: $violet;
+		padding: 0;
+	}
+
 	body:not(.home) & {
 		@media screen and (min-width: 769px) and (max-width: 1024px) {
 			height: $headerHeightDesktop + 5rem;
@@ -85,11 +90,9 @@ header {
 			height: $headerHeightTablet + 8rem;
 			padding-bottom: 8rem;
 		}
-	}
-	@media screen and (max-width: 580px) {
-		background: $violet;
-		padding: 0;
-	}
+		.wrapper {justify-content: space-between;}
+	}//body:not(.home) header
+
 
 	.site-menu {
 		display: flex;

@@ -77,7 +77,21 @@
 	}
 }//.filter
 
-
+.breadcrumbs {
+	background: #EDECEC;
+	font-family: $form-font-family;
+	padding: 0 1.2rem;
+	.wrapper {
+		border-top: 1px solid;
+		color: #8e02f1;
+		padding: 3rem 0;
+	}
+	.icon-arrow {
+		margin: 0 1rem;
+		stroke: #8e02f1;
+		transform: rotateZ(180deg);
+	}
+}//.breadcrumbs
 
 
 
