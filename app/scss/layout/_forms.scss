@@ -148,11 +148,13 @@ form {
     background-size: 28px 39px;
     background-repeat: repeat-x;
     background-position: 1rem bottom;
-    content: '';
-    height: 6.2rem;
+    content: '0$';
+    color: #DFDFDF;
+    font-size: 1.4rem;
+    height: 6.8rem;
     left: 0;
     position: absolute;
-    top: -3.8rem;
+    top: -4.4rem;
     width: 100%;
     @media screen and (max-width: 425px) {
       background-size: 15px 39px;
@@ -164,7 +166,7 @@ form {
     height: 2rem;
     position: absolute;
     right: -1rem;
-    top: -4rem;
+    top: -4.5rem;
     width: 2rem;
   }//&:after
 
@@ -172,14 +174,6 @@ form {
     background: -webkit-linear-gradient(to right, $violet 0%, $pink 75%);
     background: linear-gradient(to right, $violet 0%, $pink 75%);
     border-radius: 5px;
-    &:before {
-      content: '0$';
-      color: #DFDFDF;
-      font-size: 1.4rem;
-      left: 0;
-      position: absolute;
-      top: -4rem;
-    }
   }
   .ui-slider-handle {
     background: $pink;
@@ -199,14 +193,15 @@ form {
   }//.ui-slider-handle
 
   div#value {
-    background: #ececec;
+    background: #F0EEEE;
     color: #636363;
     font-weight: 600;
     left: 50%;
     min-width: 4rem;
+    padding: 0 1rem;
     position: absolute;
     text-align: center;
-    top: -2.5rem;
+    top: -3rem;
     transform: translateX(-50%);
   }
 

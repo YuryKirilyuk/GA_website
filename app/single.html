@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
-	<title>Contact Us</title>
+	<title>Main</title>
 	<meta name='description' content="" />
 	<meta name="keywords" content="" />
 	<link rel="icon" type="image/x-icon" href="favicon.ico" />
@@ -37,10 +37,10 @@
 				<nav>
 					<ul>
 						<li><a href="index.html">Main</a></li>
-						<li><a href="projects.html">Projects</a></li>
+						<li class="active"><a href="projects.html">Projects</a></li>
 						<li><a href="services.html">Services</a></li>
 						<li><a href="aboutus.html">About Us</a></li>
-						<li class="active"><a href="contactus.html">Contact Us</a></li>
+						<li><a href="contactus.html">Contact Us</a></li>
 					</ul>
 				</nav>
 			</div><!-- //.site-menu -->
@@ -55,124 +55,20 @@
 	</header>
 
 
-
 	<main class="content">
 
+		<!-- SECTION PROJECTS -->
+		<section class="section-projects" id="projects">
+			<div class="wrapper">
+				<h2 class="section-title">PROJECT Title</h2>
 
-		<section class="section-venture">
-
-			<h2 class="section-title text-center">Contact us</h2>
-
-			<div class="wrapper full-screen">
-
-				<div class="left">
-					<div class="planet-sq sq-1"></div>
-					<div class="planet-sq sq-2"></div>
-					<div class="planet-sq sq-md"></div>
-					<div class="planet-xs xs-1"></div>
-					<div class="planet-xs xs-md"></div>
-
-					<div class="contact-info">
-						<div class="icon">
-							<svg class="icon-satellite">
-								<use xlink:href="img/sprite.svg#icon-satellite"></use>
-							</svg>
-						</div>
-						<div class="contact">
-							<p><b>Phone</b> +380(63)435-64-48</p>
-							<p><b>Email</b> <a href="mailto:mdxxiv@yahoo.com">mdxxiv@yahoo.com</a>
-							</p>
-						</div>
-					</div><!-- //.contact-info -->
+				<div class="section-body">
 
 
-					<!--
-					<div class="parallax-container">
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-						<div class="image"></div>
-					</div>
-					-->
+				</div><!-- //.section-body -->
 
-				</div><!-- //.left -->
-
-				<div class="right gray-bg">
-					<form class="form-horizontal">
-						<div class="form-title mb-30">basic info</div>
-
-						<div class="form-group">
-							<div class="col-sm-6 col-xs-12">
-								<input type="text" class="form-control" id="name" placeholder="Name">
-								<label for="name">Name</label>
-							</div>
-							<div class="col-sm-6 col-xs-12">
-								<input type="email" class="form-control" id="email" placeholder="E-mail">
-								<label for="email">E-mail</label>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-xs-12">
-								<input type="text" class="form-control" id="project" placeholder="Project description (optional)">
-								<label for="project">Project description (optional)</label>
-							</div>
-						</div>
-
-
-						<div class="form-title mt-15">what will we do?</div>
-						<p class="pl-15 mb-15">Keep unchecked if you don’t now</p>
-
-						<div class="form-group">
-							<div class="col-sm-5">
-								<div class="checkbox">
-									<input type="checkbox" id="design">
-									<label for="design">Design</label>
-								</div>
-							</div>
-
-							<div class="col-sm-5">
-								<div class="checkbox">
-									<input type="checkbox" id="web">
-									<label for="web">Web Development</label>
-								</div>
-							</div>
-
-							<div class="col-sm-5">
-								<div class="checkbox">
-									<input type="checkbox" id="ios">
-									<label for="ios">iOS Development</label>
-								</div>
-							</div>
-
-							<div class="col-sm-5">
-								<div class="checkbox">
-									<input type="checkbox" id="android">
-									<label for="android">Android Development</label>
-								</div>
-							</div>
-
-							<div class="col-sm-5">
-								<div class="checkbox">
-									<input type="checkbox" id="backend">
-									<label for="backend">Backend</label>
-								</div>
-							</div>
-
-						</div><!-- //.form-group -->
-
-
-						<div class="form-title mb-25">Budget</div>
-						<input type="text" id="amount" readonly>
-						<div id="slider"></div>
-
-
-						<button type="submit" class="button mt-60">Submit</button>
-
-					</form>
-				</div><!-- //.right -->
 			</div><!-- //.wrapper -->
-		</section><!-- //.section-venture -->
+		</section><!-- //.section-projects -->
 
 
 		<section class="section-nav gray-bg">
@@ -185,10 +81,10 @@
 				<ul>
 					<ul>
 						<li><a href="index.html">Main</a></li>
-						<li><a href="projects.html">Projects</a></li>
+						<li class="active"><a href="projects.html">Projects</a></li>
 						<li><a href="services.html">Services</a></li>
 						<li><a href="aboutus.html">About Us</a></li>
-						<li class="active"><a href="contactus.html">Contact Us</a></li>
+						<li><a href="contactus.html">Contact Us</a></li>
 					</ul>
 				</ul>
 			</nav>
@@ -261,11 +157,11 @@
 	
 	<script src="js/jquery-3.0.0.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script src="js/components/jquery.ui.touch-punch.js" ></script>
 	<script src="js/components/slick.js" ></script>
 	<script src="js/components/bootstrap.min.js" ></script>
 
 	<!--
+	<script src="js/components/masonry.pkgd.min.js" ></script>
 	<script src="js/components/bootsnav.js" ></script>
 	<script src="js/components/vivus.min.js" ></script>
 	<script src="js/jquery-migrate-1.4.1.min.js" ></script>

@@ -204,9 +204,15 @@
 
 body:not(.home) .section-projects {
   padding: 5rem 0 15rem;
+  @media screen and (max-width: 768px) {
+    padding: 2rem 0 7rem;
+  }
 
   .section-title {
     margin-bottom: 7rem;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 4rem;
+    }
   }
 
   .projects-list {
@@ -215,6 +221,9 @@ body:not(.home) .section-projects {
     justify-content: space-between;
     display: block;
     margin-bottom: 5.5rem;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 3rem;
+    }
     .grid {margin: auto;}
     .project {order: initial;}
   }
