@@ -143,7 +143,7 @@
 			<div class="wrapper">
 				<div class="section-title text-white">DO YOU SEE YOURSELF IN	OUR TEAM?</div>
 
-				<a href="#" class="button button-white">
+				<a href="#" class="button button-white" data-toggle="modal" data-target="#modalJoinUs">
 					JOIN US
 					<svg class="icon-arrow">
 						<use xlink:href="img/sprite.svg#icon-arrow"></use>
@@ -175,7 +175,6 @@
 			</nav>
 		</section><!-- //.section-nav -->
 
-
 	</main><!-- //.content -->
 
 
@@ -201,21 +200,6 @@
 								<use xlink:href="img/sprite.svg#linked-in"></use>
 							</svg>
 						</a>
-						<!--a class="tw" href="#">
-							<svg class="icon-twitter">
-								<use xlink:href="img/sprite.svg#twitter"></use>
-							</svg>
-						</a>
-						<a class="gp" href="#">
-							<svg class="icon-google">
-								<use xlink:href="img/sprite.svg#google"></use>
-							</svg>
-						</a>
-						<a class="pin" href="#">
-							<svg class="icon-pinterest">
-								<use xlink:href="img/sprite.svg#pinterest"></use>
-							</svg>
-						</a-->
 					</div>
 				</div><!-- //.row -->
 
@@ -235,7 +219,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="modalVideo" tabindex="-1" role="dialog" aria-labelledby="modalVideoLabel">
+<div class="modal fade" id="modalJoinUs" databackdrop="pink" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -244,8 +228,39 @@
 				</button>
       </div>
       <div class="modal-body">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bAdqazixuRY?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </div>
+				<h2> How do you see	yourself in our team?</h2>
+				<div class="form-wrapper">
+					<form class="form-horizontal">
+
+						<div class="form-group">
+							<div class="col-sm-6 col-xs-12">
+								<input type="text" class="form-control" id="name" placeholder="Name">
+								<label for="name">Name</label>
+							</div>
+							<div class="col-sm-6 col-xs-12">
+								<input type="email" class="form-control" id="email" placeholder="E-mail">
+								<label for="email">E-mail</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-xs-12">
+								<input type="text" class="form-control" id="project" placeholder="Project description (optional)">
+								<label for="project">Project description (optional)</label>
+							</div>
+						</div>
+
+						<div class="form-footer">
+							<div class="button button-file">
+								<div class="selectbutton">+ add cv</div>
+								<div id="fileformlabel"></div>
+								<input type="file" name="upload" id="upload" onchange="getName(this.value);" />
+							</div>
+							<button type="submit" class="button">Submit</button>
+						</div>
+
+					</form>
+				</div><!-- //.form-wrapper -->
+      </div><!-- //.modal-body -->
     </div><!-- //.modal-content -->
   </div><!-- //.modal-dialog -->
 </div><!-- //.modal -->

@@ -1,4 +1,33 @@
 .modal {
+  .modal-body {
+    @media screen and (max-width: 375px) {
+      padding: 0;
+    }
+  }
+  .modal-content {
+    background: transparent;
+    border: none;
+  }
+  h2 {
+    color: #fff;
+    font-size: 6rem;
+    font-family: $base-font-family;
+    font-weight: 900;
+    margin-bottom: 4.5rem;
+    text-align: center;
+    @media screen and (max-width: 768px) {
+      font-size: 4rem;
+    }
+    @media screen and (max-width: 450px) {
+      margin-bottom: 2rem;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 3rem;
+    }
+  }
+}//.modal
+
+.modal#modalVideo {
   padding: 0 !important;
 
   .close {
@@ -43,36 +72,79 @@
     }
   }//.close
 
-}//.modal
+  .modal-dialog {
 
-.modal-dialog {
+    padding-top: 4.5rem;
 
-  padding-top: 4.5rem;
+    @media (min-width: 768px) {
+      max-width: 95%;
+      margin: 30px auto;
+      width: 100%;
+    }
 
-  @media (min-width: 768px) {
-    max-width: 95%;
-    margin: 30px auto;
-    width: 100%;
+    .modal-header {
+      border: none;
+      height: 4.5rem;
+      left: 0;
+      padding: 0;
+      position: absolute;
+      top: -4.5rem;
+      width: 100%;
+    }
+    .modal-body {
+      height: 85vh;
+      padding: 0;
+    }
+
+    iframe {display: block;}
+
+  }//.modal-dialog
+
+}//.modal#modalVideo
+
+.modal[databackdrop="pink"] ~ {
+  .modal-backdrop {
+    background: -webkit-linear-gradient(to right, $violet 0%, $pink 75%);
+    background: linear-gradient(to right, $violet 0%, $pink 75%);
   }
+}
 
+.modal#modalJoinUs {
+  .modal-dialog {
+    max-width: 86rem;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+      margin: 0;
+    }
+  }
   .modal-content {
-    background: transparent;
-    border: none;
+    box-shadow: none;
   }
   .modal-header {
     border: none;
-    height: 4.5rem;
-    left: 0;
-    padding: 0;
-    position: absolute;
-    top: -4.5rem;
-    width: 100%;
   }
-  .modal-body {
-    height: 85vh;
-    padding: 0;
+  .form-wrapper {
+    background: #fff;
+    padding: 5rem 10rem 10rem;
+    @media screen and (max-width: 768px) {
+      padding: 2rem 4rem 4rem;
+    }
+    @media screen and (max-width: 450px) {
+      padding: 2rem;
+    }
+  }//.form-wrapper
+
+  form {
+    @media screen and (max-width: 450px) {
+      padding-top: 1rem;
+    }
+    @media screen and (max-width: 767px) {
+      .col-sm-6:first-child {
+        margin-bottom: 3rem;
+      }
+    }
+    .form-group {
+      margin-bottom: 3rem;
+    }
   }
-
-  iframe {display: block;}
-
-}//.modal-dialog
+}//.modal#modalJoinUs
