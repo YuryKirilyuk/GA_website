@@ -5348,6 +5348,26 @@ svg[class*="service-icon"] { background: #520596; border-radius: 50%; fill: tran
 
 svg.icon-satellite { fill: transparent; height: 14.5rem; -webkit-transform: rotateZ(-45deg); -ms-transform: rotate(-45deg); transform: rotateZ(-45deg); width: 17.8rem; }
 
+.modal .close { opacity: 1; }
+
+.modal .close span { cursor: pointer; position: relative; }
+
+.modal .close span, .modal .close span::before, .modal .close span::after { display: inline-block; height: 2px; vertical-align: middle; width: 3.9rem; }
+
+.modal .close span::before, .modal .close span::after { background-color: #fff; content: ""; left: 3px; opacity: .5; position: absolute; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; top: 0; width: 3.2rem; }
+
+.modal .close span:before { -webkit-transform: rotate(135deg); -ms-transform: rotate(135deg); transform: rotate(135deg); }
+
+.modal .close span:after { -webkit-transform: rotate(-135deg); -ms-transform: rotate(-135deg); transform: rotate(-135deg); }
+
+.modal .close:hover span::before, .modal .close:hover span::after { opacity: 1; }
+
+.modal .modal-header { border: none; height: 6rem; letter-spacing: 2px; padding: 1.5rem 4rem; }
+
+.modal .modal-header a { color: #fff; }
+
+.modal .modal-header a:hover .icon-arrow { -webkit-transform: translateX(-2rem); -ms-transform: translateX(-2rem); transform: translateX(-2rem); }
+
 @media screen and (max-width: 375px) { .modal .modal-body { padding: 0; } }
 
 .modal .modal-content { background: transparent; border: none; }
@@ -5362,19 +5382,7 @@ svg.icon-satellite { fill: transparent; height: 14.5rem; -webkit-transform: rota
 
 .modal#modalVideo { padding: 0 !important; }
 
-.modal#modalVideo .close { background: #000; height: 100%; margin: 0; opacity: 1; width: 4.5rem; }
-
-.modal#modalVideo .close span { cursor: pointer; position: relative; }
-
-.modal#modalVideo .close span, .modal#modalVideo .close span::before, .modal#modalVideo .close span::after { display: inline-block; height: 2px; vertical-align: middle; width: 3.9rem; }
-
-.modal#modalVideo .close span::before, .modal#modalVideo .close span::after { background-color: #fff; content: ""; left: 3px; opacity: .5; position: absolute; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; top: 0; width: 3.2rem; }
-
-.modal#modalVideo .close span:before { -webkit-transform: rotate(135deg); -ms-transform: rotate(135deg); transform: rotate(135deg); }
-
-.modal#modalVideo .close span:after { -webkit-transform: rotate(-135deg); -ms-transform: rotate(-135deg); transform: rotate(-135deg); }
-
-.modal#modalVideo .close:hover span::before, .modal#modalVideo .close:hover span::after { opacity: 1; }
+.modal#modalVideo .close { background: #000; height: 100%; margin: 0; width: 4.5rem; }
 
 .modal#modalVideo .modal-dialog { padding-top: 4.5rem; }
 
@@ -5386,7 +5394,7 @@ svg.icon-satellite { fill: transparent; height: 14.5rem; -webkit-transform: rota
 
 .modal#modalVideo .modal-dialog iframe { display: block; }
 
-.modal[databackdrop="pink"] ~ .modal-backdrop { background: -webkit-gradient(linear, left top, right top, from(#520596), color-stop(75%, #fc486b)); background: linear-gradient(to right, #520596 0%, #fc486b 75%); }
+.modal[databackdrop="pink"] ~ .modal-backdrop { background: -webkit-gradient(linear, left top, right top, from(#520596), color-stop(75%, #fc486b)); background: linear-gradient(to right, #520596 0%, #fc486b 75%); opacity: .75; }
 
 .modal#modalJoinUs .modal-dialog { max-width: 86rem; width: 100%; }
 
@@ -5407,6 +5415,29 @@ svg.icon-satellite { fill: transparent; height: 14.5rem; -webkit-transform: rota
 @media screen and (max-width: 767px) { .modal#modalJoinUs form .col-sm-6:first-child { margin-bottom: 3rem; } }
 
 .modal#modalJoinUs form .form-group { margin-bottom: 3rem; }
+
+.modal#modalGetInTouch .modal-dialog { width: 100%; }
+
+@media screen and (max-width: 768px) { .modal#modalGetInTouch .modal-dialog { margin: 0; } }
+
+.modal#modalGetInTouch .modal-content { box-shadow: none; }
+
+.modal#modalGetInTouch .modal-body { padding: 0; }
+
+.modal#modalGetInTouch .section-venture { background: none !important; }
+
+@media screen and (max-width: 768px) { .modal#modalGetInTouch .section-venture .wrapper { display: block; } }
+
+.modal#modalGetInTouch .left { background: transparent; border: none; }
+
+.modal#modalGetInTouch .left:before { content: none; }
+
+@media screen and (max-width: 768px) { .modal#modalGetInTouch .left { display: block; margin: 0 auto 2rem; padding: 0; }
+  .modal#modalGetInTouch .left h2 { display: block; margin: auto; text-align: center !important; } }
+
+.modal#modalGetInTouch form .form-group { margin-bottom: 5.5rem; }
+
+.modal#modalGetInTouch .checkbox-container .form-group { margin-bottom: 1rem; }
 
 .section-header { background: #fc486b; background: linear-gradient(50deg, #fc486b 0%, #520596 85%); background-size: cover; -webkit-clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%); clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%); height: 828px; margin-top: -12rem; padding: 12rem 1.2rem 0; position: relative; }
 
@@ -5842,7 +5873,7 @@ body:not(.home) .section-services .section-body .service-item:hover .service-tit
 
 body:not(.home) .section-services .section-body .service-item:hover .service-icon { background: transparent; }
 
-body:not(.home) .section-services .section-body .service-item:hover .icon-3:before { width: 500px; }
+body:not(.home) .section-services .section-body .service-item:hover .icon-3:before { width: 700px; }
 
 body:not(.home) .section-services .section-body .service-item:hover .icon-5 .icon-wrapper { left: -8rem; top: -8rem; }
 
@@ -5879,7 +5910,7 @@ body:not(.home) .section-services .section-body .service-icon { background: #520
 @media screen and (max-width: 500px) { body:not(.home) .section-services .section-body .service-icon { background: transparent; margin: 0 auto 2rem; overflow: visible; }
   body:not(.home) .section-services .section-body .service-icon svg { background: transparent; } }
 
-body:not(.home) .section-services .section-body .service-icon .icon-wrapper { border-radius: 50%; height: 100%; overflow: hidden; position: absolute; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; width: 100%; }
+body:not(.home) .section-services .section-body .service-icon .icon-wrapper { border-radius: 50%; height: 100%; overflow: hidden; position: absolute; -webkit-transition: all .7s linear; transition: all .7s linear; width: 100%; }
 
 @media screen and (max-width: 500px) { body:not(.home) .section-services .section-body .service-icon .icon-wrapper { overflow: visible; } }
 
@@ -5893,7 +5924,7 @@ body:not(.home) .section-services .section-body .service-icon.icon-2 { margin-to
 
 body:not(.home) .section-services .section-body .service-icon.icon-2 .icon-wrapper { left: 0; bottom: 0; }
 
-body:not(.home) .section-services .section-body .service-icon.icon-3:before { background: #fc486b; content: ''; height: 52px; position: absolute; right: 100%; top: 42px; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; width: 0; }
+body:not(.home) .section-services .section-body .service-icon.icon-3:before { background: #fc486b; content: ''; height: 52px; position: absolute; right: 70%; top: 42px; -webkit-transition: all .7s linear; transition: all .7s linear; width: 0; }
 
 body:not(.home) .section-services .section-body .service-icon.icon-3 .icon-wrapper { right: 0; top: 0; }
 
@@ -5914,6 +5945,8 @@ body:not(.home) .section-services .section-body .service-icon .service-icon-4 { 
 body:not(.home) .section-services .section-body .service-icon .service-icon-5 { height: 34.8rem; left: -67px; top: -16px; width: 46.6rem; }
 
 body:not(.home) .section-services .section-body .service-icon .service-icon-6 { height: 33rem; left: 0; width: 33rem; }
+
+body:not(.home) .section-services .section-body #intmark .icon-wrapper { -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
 
 body:not(.home) .section-services .section-body .service-description { max-width: 68rem; padding: 0 2.5rem; position: relative; z-index: 1; }
 

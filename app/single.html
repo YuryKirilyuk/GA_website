@@ -45,7 +45,7 @@
 				</nav>
 			</div><!-- //.site-menu -->
 
-			<a href="contactus.html" class="button">Get in touch</a>
+			<a href="#" class="button" data-toggle="modal" data-target="#modalGetInTouch">Get in touch</a>
 
 			<div class="actions">
 				<span class="navigation-button"></span>
@@ -173,40 +173,132 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="modalVideo" tabindex="-1" role="dialog" aria-labelledby="modalVideoLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
+<div class="modal fade" id="modalGetInTouch" databackdrop="pink" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
       <div class="modal-header">
+        <a href="#" class="back" data-dismiss="modal" aria-label="Close">
+          <svg class="icon-arrow">
+            <use xlink:href="img/sprite.svg#icon-arrow"></use>
+          </svg>
+          Back
+        </a>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true"></span>
-				</button>
-      </div>
-      <div class="modal-body">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bAdqazixuRY?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </div>
-    </div><!-- //.modal-content -->
-  </div><!-- //.modal-dialog -->
-</div><!-- //.modal -->
+          <span aria-hidden="true"></span>
+        </button>
+      </div><!-- //.modal-header -->
 
+			<div class="modal-body">
+				<section class="section-venture">
+
+					<div class="wrapper full-screen">
+
+						<div class="left">
+							<h2 class="section-title text-white text-left">allow us to	help you build your	next venture</h2>
+						</div>
+
+						<div class="right gray-bg">
+							<form class="form-horizontal">
+								<div class="form-title mb-30">basic info</div>
+
+								<div class="form-group">
+									<div class="col-sm-6 col-xs-12">
+										<input type="text" class="form-control" id="name" placeholder="Name">
+										<label for="name">Name</label>
+									</div>
+									<div class="col-sm-6 col-xs-12">
+										<input type="email" class="form-control" id="email" placeholder="E-mail">
+										<label for="email">E-mail</label>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-xs-12">
+										<input type="text" class="form-control" id="project" placeholder="Project description (optional)">
+										<label for="project">Project description (optional)</label>
+									</div>
+								</div>
+
+
+								<div class="form-title mt-15">what will we do?</div>
+								<p class="pl-15 mb-15">Keep unchecked if you don’t now</p>
+
+                <div class="checkbox-container">
+                  <div class="form-group">
+                    <div class="col-sm-5">
+                      <div class="checkbox">
+                        <input type="checkbox" id="design">
+                        <label for="design">Design</label>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-5">
+                      <div class="checkbox">
+                        <input type="checkbox" id="web">
+                        <label for="web">Web Development</label>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-5">
+                      <div class="checkbox">
+                        <input type="checkbox" id="ios">
+                        <label for="ios">iOS Development</label>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-5">
+                      <div class="checkbox">
+                        <input type="checkbox" id="android">
+                        <label for="android">Android Development</label>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-5">
+                      <div class="checkbox">
+                        <input type="checkbox" id="backend">
+                        <label for="backend">Backend</label>
+                      </div>
+                    </div>
+
+                  </div><!-- //.form-group -->
+                </div>
+
+
+								<div class="form-title mb-25">Budget</div>
+								<input type="text" id="amount" readonly>
+								<div id="slider"></div>
+
+
+								<button type="submit" class="button mt-60">Submit</button>
+
+							</form>
+						</div><!-- //.right -->
+					</div><!-- //.wrapper -->
+
+				</section><!-- //.section-venture -->
+			</div>
+		</div><!-- //.modal-content -->
+	</div><!-- //.modal-dialog -->
+</div><!-- //.modal -->
 
 
 <div class="icon-load"></div>		
 
 	
-	<script src="js/jquery-3.0.0.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script src="js/components/slick.js" ></script>
-	<script src="js/components/bootstrap.min.js" ></script>
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/components/jquery.ui.touch-punch.js" ></script>
+<script src="js/components/slick.js" ></script>
+<script src="js/components/bootstrap.min.js" ></script>
 
-	<!--
-	<script src="js/components/masonry.pkgd.min.js" ></script>
-	<script src="js/components/bootsnav.js" ></script>
-	<script src="js/components/vivus.min.js" ></script>
-	<script src="js/jquery-migrate-1.4.1.min.js" ></script>
-	<script src="js/components/jquery.fancybox.js" ></script>
-	<script src="js/components/jquery.formstyler.js" ></script>
-	<script src="js/components/jquery.mCustomScrollbar.js" ></script>
-	-->
+<!--
+<script src="js/components/masonry.pkgd.min.js" ></script>
+<script src="js/components/bootsnav.js" ></script>
+<script src="js/components/vivus.min.js" ></script>
+<script src="js/jquery-migrate-1.4.1.min.js" ></script>
+<script src="js/components/jquery.fancybox.js" ></script>
+<script src="js/components/jquery.formstyler.js" ></script>
+<script src="js/components/jquery.mCustomScrollbar.js" ></script>
+-->
 
 	<script src="js/custom.js" ></script>
 </body>

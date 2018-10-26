@@ -166,7 +166,7 @@ body:not(.home) .section-services {
         .service-icon {
           background: transparent;
         }
-        .icon-3:before {width: 500px;}
+        .icon-3:before {width: 700px;}
         .icon-5 .icon-wrapper {
           left: -8rem;
           top: -8rem;
@@ -261,10 +261,11 @@ body:not(.home) .section-services {
         height: 100%;
         overflow: hidden;
         position: absolute;
-        transition: $default-transition;
+        transition: all .7s linear;
         width: 100%;
         @media screen and (max-width: 500px) {overflow: visible;}
       }
+
 
       &.icon-1 {
         align-self: flex-end;
@@ -287,9 +288,9 @@ body:not(.home) .section-services {
           content: '';
           height: 52px;
           position: absolute;
-          right: 100%;
+          right: 70%;
           top: 42px;
-          transition: $default-transition;
+          transition: all .7s linear;
           width: 0;
         }
         .icon-wrapper {
@@ -355,6 +356,7 @@ body:not(.home) .section-services {
         width: 33rem;
       }
     }//.service-icon
+    #intmark .icon-wrapper {transition: $default-transition;}
 
     .service-description {
       max-width: 68rem;
