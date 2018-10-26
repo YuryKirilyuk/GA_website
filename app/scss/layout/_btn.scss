@@ -19,6 +19,7 @@
     height: 5rem;
     line-height: 4.6rem;
   }
+  &:focus {color: #fff;}
   &:hover {
     background: transparent;
     color: #8A00F4;
@@ -29,6 +30,7 @@
     background: white;
     border-color: #fff;
     color: #8A00F4;
+    &:focus {color: #8A00F4;}
     &:hover {
       background: transparent;
       color: #fff;
