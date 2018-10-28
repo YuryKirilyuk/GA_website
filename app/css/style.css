@@ -5242,7 +5242,7 @@ form .button-file #upload { cursor: pointer; font-size: 0; height: 100%; left: 0
 
 @media screen and (max-width: 375px) { #slider.ui-slider .ui-slider-handle { height: 3rem; top: -1rem; width: 3rem; } }
 
-#slider.ui-slider div#value { background: #F0EEEE; color: #636363; font-weight: 600; left: 50%; min-width: 4rem; padding: 0 1rem; position: absolute; text-align: center; top: -3rem; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
+#slider.ui-slider div#value { background: #ececec; color: #636363; font-weight: 600; left: 50%; min-width: 4rem; padding: 0 1rem; position: absolute; text-align: center; top: -3rem; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
 
 .section-title { color: #520596; font-size: 6rem; font-weight: 900; line-height: initial; position: relative; text-align: center; text-transform: uppercase; }
 
