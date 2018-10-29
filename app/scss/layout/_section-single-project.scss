@@ -54,11 +54,12 @@
           display: inline-block;
           margin: 0 5%;
           padding: 1rem;
-          &:hover svg {fill: #8A00F4;}
+          &:hover svg {opacity: 1;}
         }
         svg {
           fill: #fff;
           height: 2.3rem;
+          opacity: .5;
           width: 2.2rem;
           &.icon-instagram {
             height: 2.5rem;

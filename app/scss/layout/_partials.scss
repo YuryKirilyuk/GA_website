@@ -43,9 +43,9 @@
 
 
 .filter {
-	margin-bottom: 8rem;
+	margin-bottom: 7rem;
 	text-align: center;
-	@media screen and (max-width: 768px) {margin-bottom: 5.5rem;}
+	@media screen and (max-width: 768px) {margin-bottom: 4.5rem;}
 	@media screen and (max-width: 425px) {
 		overflow: hidden;
 		padding: 1rem 3rem;
@@ -55,14 +55,16 @@
 		font-family: $form-font-family;
 		font-size: 1.4rem;
 		font-weight: 600;
-		margin: 0 2rem;
+		margin: 0 2rem 1rem;
 		@media screen and (max-width: 425px) {
 			float: left;
-			margin: 0;
+			margin: 0 0 1rem;
 			text-align: left;
 			width: 50%;
 		}
-		a {
+		button {
+			background: transparent;
+			border: none;
 			border-radius: 3rem;
 			color: $violet;
 			display: inline-block;

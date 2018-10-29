@@ -5258,23 +5258,23 @@ form .button-file #upload { cursor: pointer; font-size: 0; height: 100%; left: 0
 
 @media screen and (max-width: 768px) { .section-group { background-image: linear-gradient(33deg, #520596 0%, #fc486b 70%); } }
 
-.filter { margin-bottom: 8rem; text-align: center; }
+.filter { margin-bottom: 7rem; text-align: center; }
 
-@media screen and (max-width: 768px) { .filter { margin-bottom: 5.5rem; } }
+@media screen and (max-width: 768px) { .filter { margin-bottom: 4.5rem; } }
 
 @media screen and (max-width: 425px) { .filter { overflow: hidden; padding: 1rem 3rem; } }
 
-.filter li { display: inline-block; font-family: "Open Sans", sans-serif; font-size: 1.4rem; font-weight: 600; margin: 0 2rem; }
+.filter li { display: inline-block; font-family: "Open Sans", sans-serif; font-size: 1.4rem; font-weight: 600; margin: 0 2rem 1rem; }
 
-@media screen and (max-width: 425px) { .filter li { float: left; margin: 0; text-align: left; width: 50%; } }
+@media screen and (max-width: 425px) { .filter li { float: left; margin: 0 0 1rem; text-align: left; width: 50%; } }
 
-.filter li a { border-radius: 3rem; color: #520596; display: inline-block; padding: .5rem 1.5rem; }
+.filter li button { background: transparent; border: none; border-radius: 3rem; color: #520596; display: inline-block; padding: .5rem 1.5rem; }
 
-.filter li a.active { background: #8A00F4; color: #fff; }
+.filter li button.active { background: #8A00F4; color: #fff; }
 
-.filter li a.active:hover { background: #520596; }
+.filter li button.active:hover { background: #520596; }
 
-.filter li a:hover { background: #eee; }
+.filter li button:hover { background: #eee; }
 
 .breadcrumbs { background: #EDECEC; font-family: "Open Sans", sans-serif; padding: 0 1.2rem; }
 
@@ -5547,25 +5547,25 @@ svg.icon-satellite { fill: transparent; height: 14.5rem; -webkit-transform: rota
 
 .section-projects .projects-list .project .button svg { position: static; -webkit-transition: position 0s, opacity linear .2s, -webkit-transform linear .2s; transition: position 0s, opacity linear .2s, -webkit-transform linear .2s; transition: position 0s, opacity linear .2s, transform linear .2s; transition: position 0s, opacity linear .2s, transform linear .2s, -webkit-transform linear .2s; }
 
-.section-projects .projects-list .project:first-child { height: 56.4rem; -webkit-box-ordinal-group: 2; -webkit-order: 1; -ms-flex-order: 1; order: 1; }
+.home .section-projects .projects-list .project:first-child { height: 56.4rem; -webkit-box-ordinal-group: 2; -webkit-order: 1; -ms-flex-order: 1; order: 1; }
 
-.section-projects .projects-list .project:nth-child(2) { height: 43.9rem; -webkit-box-ordinal-group: 4; -webkit-order: 3; -ms-flex-order: 3; order: 3; }
+.home .section-projects .projects-list .project:nth-child(2) { height: 43.9rem; -webkit-box-ordinal-group: 4; -webkit-order: 3; -ms-flex-order: 3; order: 3; }
 
-.section-projects .projects-list .project:nth-child(3) { height: 61.4rem; -webkit-box-ordinal-group: 6; -webkit-order: 5; -ms-flex-order: 5; order: 5; }
+.home .section-projects .projects-list .project:nth-child(3) { height: 61.4rem; -webkit-box-ordinal-group: 6; -webkit-order: 5; -ms-flex-order: 5; order: 5; }
 
-@media screen and (max-width: 375px) { .section-projects .projects-list .project:nth-child(3) { display: none; } }
+@media screen and (max-width: 375px) { .home .section-projects .projects-list .project:nth-child(3) { display: none; } }
 
-.section-projects .projects-list .project:nth-child(4) { height: 56.4rem; -webkit-box-ordinal-group: 3; -webkit-order: 2; -ms-flex-order: 2; order: 2; }
+.home .section-projects .projects-list .project:nth-child(4) { height: 56.4rem; -webkit-box-ordinal-group: 3; -webkit-order: 2; -ms-flex-order: 2; order: 2; }
 
-@media screen and (max-width: 375px) { .section-projects .projects-list .project:nth-child(4) { display: none; } }
+@media screen and (max-width: 375px) { .home .section-projects .projects-list .project:nth-child(4) { display: none; } }
 
-.section-projects .projects-list .project:nth-child(5) { height: 61.4rem; -webkit-box-ordinal-group: 5; -webkit-order: 4; -ms-flex-order: 4; order: 4; }
+.home .section-projects .projects-list .project:nth-child(5) { height: 61.4rem; -webkit-box-ordinal-group: 5; -webkit-order: 4; -ms-flex-order: 4; order: 4; }
 
-@media screen and (max-width: 1170px) { .section-projects .projects-list .project:nth-child(5) { display: none; } }
+@media screen and (max-width: 1170px) { .home .section-projects .projects-list .project:nth-child(5) { display: none; } }
 
-.section-projects .projects-list .project:nth-child(6) { height: 43.9rem; -webkit-box-ordinal-group: 7; -webkit-order: 6; -ms-flex-order: 6; order: 6; }
+.home .section-projects .projects-list .project:nth-child(6) { height: 43.9rem; -webkit-box-ordinal-group: 7; -webkit-order: 6; -ms-flex-order: 6; order: 6; }
 
-@media screen and (max-width: 1170px) { .section-projects .projects-list .project:nth-child(6) { display: none; } }
+@media screen and (max-width: 1170px) { .home .section-projects .projects-list .project:nth-child(6) { display: none; } }
 
 .section-projects .button { margin: auto; }
 
@@ -5615,9 +5615,9 @@ body:not(.home) .section-projects .projects-list .project { -webkit-box-ordinal-
 
 .section-single-project .project-sample-container .project-footer .socials a { display: inline-block; margin: 0 5%; padding: 1rem; }
 
-.section-single-project .project-sample-container .project-footer .socials a:hover svg { fill: #8A00F4; }
+.section-single-project .project-sample-container .project-footer .socials a:hover svg { opacity: 1; }
 
-.section-single-project .project-sample-container .project-footer .socials svg { fill: #fff; height: 2.3rem; width: 2.2rem; }
+.section-single-project .project-sample-container .project-footer .socials svg { fill: #fff; height: 2.3rem; opacity: .5; width: 2.2rem; }
 
 .section-single-project .project-sample-container .project-footer .socials svg.icon-instagram { height: 2.5rem; width: 2.5rem; }
 
@@ -6072,9 +6072,13 @@ body:not(.home) .section-services .section-body .service-text { margin-bottom: 2
 
 @media screen and (max-width: 425px) { .section-venture .group-field { display: none; } }
 
-@media screen and (max-width: 768px) { body:not(.home) .section-venture { background: linear-gradient(33deg, #520596 0%, #fc486b 70%); } }
+body:not(.home) .section-venture { position: relative; }
 
-@media screen and (max-width: 425px) { body:not(.home) .section-venture { background: linear-gradient(50deg, #520596 0%, #fc486b 80%); } }
+@media screen and (max-width: 768px) { body:not(.home) .section-venture { background: linear-gradient(33deg, #520596 0%, #fc486b 70%); }
+  body:not(.home) .section-venture:before { background: url(../img/planets_form_768.png) no-repeat center -4.5rem; position: absolute; top: 0; bottom: 0; left: 0; content: ''; width: 100%; } }
+
+@media screen and (max-width: 425px) { body:not(.home) .section-venture { background: linear-gradient(50deg, #520596 0%, #fc486b 80%); }
+  body:not(.home) .section-venture:before { content: none; } }
 
 body:not(.home) .section-venture .section-title { margin: 0; padding: 7.5rem 0 9.5rem; position: relative; z-index: 1; }
 
@@ -6088,7 +6092,7 @@ body:not(.home) .section-venture .left:before { background: url(../img/planets_f
 
 @media screen and (max-width: 1024px) { body:not(.home) .section-venture .left:before { background-size: contain; } }
 
-@media screen and (max-width: 768px) { body:not(.home) .section-venture .left:before { background: url(../img/planets_form_768.png) no-repeat center -4.5rem; } }
+@media screen and (max-width: 768px) { body:not(.home) .section-venture .left:before { background: url(../img/planets_form_768.png) no-repeat center -4.5rem; content: none; } }
 
 @media screen and (max-width: 425px) { body:not(.home) .section-venture .left:before { background-image: none; } }
 

@@ -121,56 +121,57 @@
         }
       }//.button
 
-      &:first-child {
-        height: 56.4rem;
-        order: 1;
-        //.project-info {background-image: url(../img/path_1.png);}
-        @media screen and (max-width: 1024px) {
-          //order: 1;
-        }
-      }
-      &:nth-child(2) {
-        height: 43.9rem;
-        order: 3;
-        //.project-info {background-image: url(../img/path_2.png);}
-        @media screen and (max-width: 1024px) {
-          //order: 3;
-        }
-      }
-      &:nth-child(3) {
-        height: 61.4rem;
-        order: 5;
-        //.project-info {background-image: url(../img/path_3.png);}
-        @media screen and (max-width: 375px) {
-          display: none;
-        }
-      }
-      &:nth-child(4) {
-        height: 56.4rem;
-        order: 2;
-        //.project-info {background-image: url(../img/path_4.png);}
-        @media screen and (max-width: 375px) {
-          display: none;
-        }
-      }
-      &:nth-child(5) {
-        height: 61.4rem;
-        order: 4;
-        //.project-info {background-image: url(../img/path_5.png);}
-        @media screen and (max-width: 1170px) {
-          display: none;
-        }
-      }
-      &:nth-child(6) {
-        height: 43.9rem;
-        order: 6;
-        //.project-info {background-image: url(../img/path_6.png);}
-        @media screen and (max-width: 1170px) {
-          display: none;
-        }
-      }
+      .home & {
 
-
+        &:first-child {
+          height: 56.4rem;
+          order: 1;
+          //.project-info {background-image: url(../img/path_1.png);}
+          @media screen and (max-width: 1024px) {
+            //order: 1;
+          }
+        }
+        &:nth-child(2) {
+          height: 43.9rem;
+          order: 3;
+          //.project-info {background-image: url(../img/path_2.png);}
+          @media screen and (max-width: 1024px) {
+            //order: 3;
+          }
+        }
+        &:nth-child(3) {
+          height: 61.4rem;
+          order: 5;
+          //.project-info {background-image: url(../img/path_3.png);}
+          @media screen and (max-width: 375px) {
+            display: none;
+          }
+        }
+        &:nth-child(4) {
+          height: 56.4rem;
+          order: 2;
+          //.project-info {background-image: url(../img/path_4.png);}
+          @media screen and (max-width: 375px) {
+            display: none;
+          }
+        }
+        &:nth-child(5) {
+          height: 61.4rem;
+          order: 4;
+          //.project-info {background-image: url(../img/path_5.png);}
+          @media screen and (max-width: 1170px) {
+            display: none;
+          }
+        }
+        &:nth-child(6) {
+          height: 43.9rem;
+          order: 6;
+          //.project-info {background-image: url(../img/path_6.png);}
+          @media screen and (max-width: 1170px) {
+            display: none;
+          }
+        }
+      }
     }//.project
 
   }//.projects-list

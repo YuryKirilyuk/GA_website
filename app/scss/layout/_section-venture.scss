@@ -108,13 +108,24 @@
 
 
 body:not(.home) .section-venture {
+  position:relative;
   @media screen and (max-width: 768px) {
     background: -webkit-linear-gradient(33deg, $violet 0%, $pink 70%);
     background: linear-gradient(33deg, $violet 0%, $pink 70%);
+    &:before {
+      background: url(../img/planets_form_768.png) no-repeat center -4.5rem;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      content: '';
+      width: 100%;
+    }
   }
   @media screen and (max-width: 425px) {
     background: -webkit-linear-gradient(50deg, $violet 0%, $pink 80%);
     background: linear-gradient(50deg, #520596 0%, #fc486b 80%);
+    &:before {content: none;}
   }
   .section-title {
     margin: 0;
@@ -140,7 +151,7 @@ body:not(.home) .section-venture {
       z-index: 0;
       @media screen and (max-width: 1100px) {content: '';}
       @media screen and (max-width: 1024px) {background-size: contain;}
-      @media screen and (max-width: 768px) {background: url(../img/planets_form_768.png) no-repeat center -4.5rem;}
+      @media screen and (max-width: 768px) {background: url(../img/planets_form_768.png) no-repeat center -4.5rem; content: none;}
       @media screen and (max-width: 425px) {background-image: none;}
     }
     @media screen and (max-width: 768px) {
