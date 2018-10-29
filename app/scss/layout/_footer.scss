@@ -55,18 +55,18 @@ footer {
 			&:hover {
 				svg {fill: $white;}
 			}
-			svg {fill: $violet;}
+			svg {fill: $pink;}
 		}
 		@media screen and (max-width: 375px) {display: none;}
 	}//.footer-social
 
 
 	.copyright {
-		border-top: 2px solid $violet;
+		border-top: 2px solid $pink;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		color: $violet;
+		color: $pink;
 		height: 14rem;
 		font-size: 1.4rem;
 		font-weight: 600;
@@ -81,7 +81,7 @@ footer {
 		span {
 			position: relative;
 			&:before, &:after {
-				background: $violet;
+				background: $pink;
 				border-radius: 50%;
 				height: 3px;
 				content: '';

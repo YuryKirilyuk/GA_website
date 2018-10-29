@@ -189,11 +189,12 @@ form {
 
 }//form
 
-#amount {
+#amount,
+#amountOnPage {
   opacity: 0;
   visibility: hidden;
 }
-#slider.ui-slider {
+.ui-slider {
   background: #d1d1d1;
   border: none;
   border-radius: 5px;
@@ -249,7 +250,8 @@ form {
     }
   }//.ui-slider-handle
 
-  div#value {
+  .value,
+  .valueOnPage {
     background: #ececec ;
     color: #636363;
     font-weight: 600;

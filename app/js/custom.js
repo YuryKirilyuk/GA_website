@@ -102,12 +102,29 @@ $(function(){
         step: 500,
         slide: function( event, ui ) {
             $( "#amount" ).val( ui.value );
-            $( "#value" ).text( ui.value + "$" );
+            $( ".value" ).text( ui.value + "$" );
         }
     });
-    $('.ui-slider-handle').append('<div id="value"></div>');
+    $('#slider .ui-slider-handle').append('<div class="value"></div>');
     $( "#amount" ).val( $( "#slider" ).slider( "value" ) );
-    $( "#value" ).text( $( "#slider" ).slider( "value" ) + "$");
+    $( ".value" ).text( $( "#slider" ).slider( "value" ) + "$");
+
+
+    $( "#sliderOnPage" ).slider({
+        animate: "slow",
+        range: "min",
+        value: 1500,
+        min: 0,
+        max: 10000,
+        step: 500,
+        slide: function( event, ui ) {
+            $( "#amountOnPage" ).val( ui.value );
+            $( ".valueOnPage" ).text( ui.value + "$" );
+        }
+    });
+    $('#sliderOnPage .ui-slider-handle').append('<div class="valueOnPage"></div>');
+    $( "#amountOnPage" ).val( $( "#sliderOnPage" ).slider( "value" ) );
+    $( ".valueOnPage" ).text( $( "#sliderOnPage" ).slider( "value" ) + "$");
 
 
 
