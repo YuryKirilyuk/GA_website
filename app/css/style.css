@@ -5420,6 +5420,8 @@ svg.icon-satellite { fill: transparent; height: 14.5rem; -webkit-transform: rota
 
 .modal#modalJoinUs form .form-group { margin-bottom: 3rem; }
 
+.modal#modalGetInTouch { padding-right: 0 !important; }
+
 .modal#modalGetInTouch .modal-dialog { width: 100%; }
 
 @media screen and (max-width: 768px) { .modal#modalGetInTouch .modal-dialog { margin: 0; } }
@@ -5432,6 +5434,8 @@ svg.icon-satellite { fill: transparent; height: 14.5rem; -webkit-transform: rota
 
 @media screen and (max-width: 768px) { .modal#modalGetInTouch .section-venture .wrapper { display: block; } }
 
+.modal#modalGetInTouch .section-venture:before { content: none; }
+
 .modal#modalGetInTouch .left { background: transparent; border: none; }
 
 .modal#modalGetInTouch .left:before { content: none; }
@@ -5439,9 +5443,13 @@ svg.icon-satellite { fill: transparent; height: 14.5rem; -webkit-transform: rota
 @media screen and (max-width: 768px) { .modal#modalGetInTouch .left { display: block; margin: 0 auto 2rem; padding: 0; }
   .modal#modalGetInTouch .left h2 { display: block; margin: auto; text-align: center !important; } }
 
+@media screen and (min-width: 769px) { .modal#modalGetInTouch .right { margin-right: -.4rem; } }
+
 .modal#modalGetInTouch form .form-group { margin-bottom: 5.5rem; }
 
 .modal#modalGetInTouch .checkbox-container .form-group { margin-bottom: 1rem; }
+
+body.modal-open .main-wrapper { -webkit-filter: blur(3px); filter: blur(3px); }
 
 .section-header { background: #fc486b; background: linear-gradient(50deg, #fc486b 0%, #520596 85%); background-size: cover; -webkit-clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%); clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%); height: 828px; margin-top: -12rem; padding: 12rem 1.2rem 0; position: relative; }
 

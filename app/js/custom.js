@@ -56,15 +56,6 @@ $(function(){
 		return false;
 	});
 
-/*
-
-	$('.filter button').click(function(){
-		$(this).toggleClass('active');
-		$(this).parent().siblings().find('button').removeClass('active');
-		return false;
-	});
-
-*/
 
     videoInPopup();
 
@@ -140,11 +131,14 @@ $(function(){
     });*/
 
     $('.filter').on( 'click', 'button', function() {
-        $(this).toggleClass('active');
-        $(this).parent().siblings().find('button').removeClass('active');
+        var $button = $(this);
 
         var filterValue = $(this).attr('data-filter');
-        $grid.isotope({ filter: filterValue });
+        if($button.hasClass('active')) {$grid.isotope({ filter: '*' });}
+        else {$grid.isotope({ filter: filterValue });}
+
+        $(this).toggleClass('active');
+        $(this).parent().siblings().find('button').removeClass('active');
 
     });
 

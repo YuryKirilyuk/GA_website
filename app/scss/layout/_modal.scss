@@ -169,6 +169,7 @@
 }//.modal#modalJoinUs
 
 .modal#modalGetInTouch {
+  padding-right: 0 !important;
   .modal-dialog {
     width: 100%;
     @media screen and (max-width: 768px) {
@@ -187,6 +188,7 @@
     @media screen and (max-width: 768px) {
       .wrapper {display: block;}
     }
+    &:before {content: none;}
   }//.section-venture
 
   .left {
@@ -205,6 +207,10 @@
     }
   }//.left
 
+  .right {
+    @media screen and (min-width: 769px) {margin-right: -.4rem;}
+  }
+
   form .form-group {
     margin-bottom: 5.5rem;
   }
@@ -212,3 +218,7 @@
     margin-bottom: 1rem;
   }
 }//.modal#modalGetInTouch
+
+body.modal-open .main-wrapper {
+  filter: blur(3px);
+}
