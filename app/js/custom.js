@@ -36,16 +36,16 @@ $(window).on('load', function () {
 $(function(){
 
 
-    /*$('nav a[href^="#"]').click(function(){
+    $('.sections-navigation a[href^="#"]').click(function(){
         var target = $(this).attr('href');
-        $(this).parent().siblings().removeClass('current');
-        $(this).parent().addClass('current');
+        //$(this).parent().siblings().removeClass('current');
+        //$(this).parent().addClass('current');
         $('html, body').animate(
-            {scrollTop: $(target).offset().top -100}, 500
+            {scrollTop: $(target).offset().top -120}, 500
         );
         //console.log(target);
         return false;
-    });*/
+    });
 
 
 	$('header .actions').click(function(){

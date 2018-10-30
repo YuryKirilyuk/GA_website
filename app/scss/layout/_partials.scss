@@ -96,7 +96,37 @@
 }//.breadcrumbs
 
 
-
+.sections-navigation {
+	align-items: flex-end;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	right: 1.2rem;
+	text-align: left;
+	top: 0;
+	@media screen and (max-width: 768px) {display: none;}
+	a {
+		display: block;
+		padding: .9rem 0;
+		position: relative;
+		width: 1.6rem;
+		&:before {
+			border: 1px solid #A203D8;
+			bottom: 0;
+			content: '';
+			height: 1px;
+			margin: auto;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+		.section-header &:before {border-color: #fff;}
+		&.current,
+		&:hover {width: 3.2rem;}
+	}//a
+	.section-header & {right: 0; top: 25%;}
+	.section-services & {top: 4%;}
+}//.sections-navigation
 
 
 

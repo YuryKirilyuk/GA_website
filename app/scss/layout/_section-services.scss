@@ -20,6 +20,10 @@
       top: 0;
       width: 100%;
     }
+    @media screen and (min-width: 769px) {
+      padding-left: 7%;
+      width: 93%;
+    }
     @media screen and (max-width: 375px) {
       margin-bottom: 12.5rem;
       padding-bottom: 1rem;

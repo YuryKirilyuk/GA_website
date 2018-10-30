@@ -5294,6 +5294,22 @@ form .button-file #upload { cursor: pointer; font-size: 0; height: 100%; left: 0
 
 .breadcrumbs .icon-arrow { margin: 0 1rem; stroke: #8e02f1; -webkit-transform: rotateZ(180deg); -ms-transform: rotate(180deg); transform: rotateZ(180deg); }
 
+.sections-navigation { -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; position: absolute; right: 1.2rem; text-align: left; top: 0; }
+
+@media screen and (max-width: 768px) { .sections-navigation { display: none; } }
+
+.sections-navigation a { display: block; padding: .9rem 0; position: relative; width: 1.6rem; }
+
+.sections-navigation a:before { border: 1px solid #A203D8; bottom: 0; content: ''; height: 1px; margin: auto; position: absolute; top: 0; width: 100%; }
+
+.section-header .sections-navigation a:before { border-color: #fff; }
+
+.sections-navigation a.current, .sections-navigation a:hover { width: 3.2rem; }
+
+.section-header .sections-navigation { right: 0; top: 25%; }
+
+.section-services .sections-navigation { top: 4%; }
+
 .truncate { display: inline-block; max-width: 100%; overflow: hidden; -webkit-text-overflow: ellipsis; -ms-text-overflow: ellipsis; text-overflow: ellipsis; vertical-align: top; white-space: nowrap; width: 100%; }
 
 .tooltip { position: relative; }
@@ -5866,6 +5882,8 @@ body:not(.home) .section-team .section-title { margin-bottom: 12rem; }
 .section-services .section-title { background: #fff; color: #8A00F4; margin-bottom: 20rem; margin-top: 0; padding-bottom: 7rem; padding-top: 4.3rem; }
 
 .section-services .section-title:before { background: #fff; content: ''; height: 100%; right: 100%; position: absolute; top: 0; width: 100%; }
+
+@media screen and (min-width: 769px) { .section-services .section-title { padding-left: 7%; width: 93%; } }
 
 @media screen and (max-width: 375px) { .section-services .section-title { margin-bottom: 12.5rem; padding-bottom: 1rem; } }
 
