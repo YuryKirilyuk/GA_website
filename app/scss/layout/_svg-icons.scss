@@ -91,7 +91,14 @@ svg[class*="service-icon"] {
     height: 22.3rem;
     width: 22.3rem;
   }
+  path.fire {
+    opacity: 0;
+    transition: $default-transition;
+    .done & {opacity: 1;}
+  }
 }
+
+
 
 svg.icon-satellite {
   fill: transparent;

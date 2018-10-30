@@ -5378,6 +5378,10 @@ svg[class*="service-icon"] { background: #520596; border-radius: 50%; fill: tran
 
 @media screen and (max-width: 375px) { svg[class*="service-icon"] { height: 22.3rem; width: 22.3rem; } }
 
+svg[class*="service-icon"] path.fire { opacity: 0; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
+
+.done svg[class*="service-icon"] path.fire { opacity: 1; }
+
 svg.icon-satellite { fill: transparent; height: 14.5rem; -webkit-transform: rotateZ(-45deg); -ms-transform: rotate(-45deg); transform: rotateZ(-45deg); width: 17.8rem; }
 
 .modal .close { opacity: 1; }

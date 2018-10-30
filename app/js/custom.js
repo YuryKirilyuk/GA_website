@@ -36,14 +36,23 @@ $(window).on('load', function () {
 $(function(){
 
 
+
+    $("[id^='icon']").each(function(index){
+        index += 1;
+        new Vivus('icon_' + index + '', {duration: 200, file: "img/serviceIcon_"  + index + ".svg"}, function() {
+            $("[id='icon_" + index + "']").addClass('done');
+        });
+    });
+
+
+
+
+
     $('.sections-navigation a[href^="#"]').click(function(){
         var target = $(this).attr('href');
-        //$(this).parent().siblings().removeClass('current');
-        //$(this).parent().addClass('current');
         $('html, body').animate(
             {scrollTop: $(target).offset().top -120}, 500
         );
-        //console.log(target);
         return false;
     });
 
