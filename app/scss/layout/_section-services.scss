@@ -172,6 +172,7 @@ body:not(.home) .section-services {
 
         .service-icon {
           background: transparent;
+          overflow: visible;
         }
         .icon-3:before {width: 700px;}
         .icon-5 .icon-wrapper {

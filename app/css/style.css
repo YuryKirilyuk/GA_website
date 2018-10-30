@@ -5941,7 +5941,7 @@ body:not(.home) .section-services .section-body .service-item:hover:before { opa
 
 body:not(.home) .section-services .section-body .service-item:hover .service-title { color: #fff; }
 
-body:not(.home) .section-services .section-body .service-item:hover .service-icon { background: transparent; }
+body:not(.home) .section-services .section-body .service-item:hover .service-icon { background: transparent; overflow: visible; }
 
 body:not(.home) .section-services .section-body .service-item:hover .icon-3:before { width: 700px; }
 
