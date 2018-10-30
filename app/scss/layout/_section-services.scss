@@ -76,11 +76,14 @@
   }//.service-item
 
   .service-icon {
+    height: 24.2rem;
     left: 0;
     margin: auto;
+    overflow: hidden;
     position: absolute;
     right: 0;
     transform: translateY(-50%);
+    width: 24.2rem;
   }
   .service-title {
     color: #8a00f4;

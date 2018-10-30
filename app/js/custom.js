@@ -33,18 +33,24 @@ $(window).on('load', function () {
 
 
 
-$(function(){
+$(function() {
 
 
 
-    $("[id^='icon']").each(function(index){
+    $(".service-icon").each(function(index){
+        var vivus = [];
         index += 1;
-        new Vivus('icon_' + index + '', {duration: 200, file: "img/serviceIcon_"  + index + ".svg"}, function() {
-            $("[id='icon_" + index + "']").addClass('done');
+        vivus[index] = new Vivus('icon_' + index + '', {
+            duration: 80,
+            file: "img/serviceIcon_"  + index + ".svg"},
+            function() {
+                $("[id='icon_" + index + "']").addClass('done');
+            });
+        $(this).mouseenter(function(){
+            $(this).removeClass('done');
+            vivus[index].setFrameProgress(0).play(2);
         });
     });
-
-
 
 
 
