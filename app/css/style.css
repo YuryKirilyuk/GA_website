@@ -4962,9 +4962,9 @@ header.active .blur, header.active .site-menu { visibility: visible !important; 
 
 .home header .logo { height: 2.5rem; }
 
-.home header:not(.transparent) { background: rgba(252, 72, 107, 0.85); }
+.home header:not(.transparent) { background: rgba(252, 72, 107, 0.95); }
 
-.home header.active { background: rgba(252, 72, 107, 0.85); }
+.home header.active { background: rgba(252, 72, 107, 0.95); }
 
 @media screen and (max-width: 768px) { .home header.active nav { bottom: -5rem; opacity: 1; visibility: visible; } }
 
@@ -4972,11 +4972,11 @@ header.active .blur, header.active .site-menu { visibility: visible !important; 
 
 @media screen and (max-width: 580px) { .home header.active .socials { opacity: 1; visibility: visible; } }
 
-@media screen and (max-width: 768px) { .home header nav { background: rgba(252, 72, 107, 0.85); left: 0; height: 5rem; position: absolute; width: 100%; opacity: 0; visibility: hidden; bottom: 0; } }
+@media screen and (max-width: 768px) { .home header nav { background: rgba(252, 72, 107, 0.95); left: 0; height: 5rem; position: absolute; width: 100%; opacity: 0; visibility: hidden; bottom: 0; } }
 
 @media screen and (max-width: 580px) { .home header nav { background: transparent; height: 0; position: static; } }
 
-@media screen and (max-width: 580px) { .home header nav ul { background: rgba(252, 72, 107, 0.85); } }
+@media screen and (max-width: 580px) { .home header nav ul { background: rgba(252, 72, 107, 0.95); } }
 
 @media screen and (max-width: 580px) { .home header nav ul li { border-top: 1px solid #fff; } }
 
@@ -5022,7 +5022,7 @@ header.active .blur, header.active .site-menu { visibility: visible !important; 
 @media screen and (min-width: 581px) { .site-menu .mobile { display: none !important; } }
 
 @media screen and (max-width: 580px) { .site-menu .mobile { border-bottom: 1px solid; -webkit-box-ordinal-group: 2; -webkit-order: 1; -ms-flex-order: 1; order: 1; padding: 0; }
-  .site-menu .button { background: #fff; border: none; color: #520596 !important; display: block; height: 6.2rem; line-height: 6.2rem; max-width: 100%; padding: 0; } }
+  .site-menu .button { background: #fc486b; border: none; color: #fff !important; display: block; height: 6.2rem; line-height: 6.2rem; max-width: 100%; padding: 0; } }
 
 /*
 ================================================================================
@@ -5294,21 +5294,17 @@ form .button-file #upload { cursor: pointer; font-size: 0; height: 100%; left: 0
 
 .breadcrumbs .icon-arrow { margin: 0 1rem; stroke: #8e02f1; -webkit-transform: rotateZ(180deg); -ms-transform: rotate(180deg); transform: rotateZ(180deg); }
 
-.sections-navigation { -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; position: absolute; right: 1.2rem; text-align: left; top: 0; }
+.sections-navigation { -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; position: fixed; right: 3%; text-align: left; top: 35%; z-index: 10; }
 
-@media screen and (max-width: 768px) { .sections-navigation { display: none; } }
+@media screen and (max-width: 768px) { .sections-navigation { opacity: 0; visibility: hidden; } }
 
 .sections-navigation a { display: block; padding: .9rem 0; position: relative; width: 1.6rem; }
 
-.sections-navigation a:before { border: 1px solid #A203D8; bottom: 0; content: ''; height: 1px; margin: auto; position: absolute; top: 0; width: 100%; }
-
-.section-header .sections-navigation a:before { border-color: #fff; }
+.sections-navigation a:before { border: 1px solid #A203D8; bottom: 0; content: ''; height: 1px; margin: auto; position: absolute; top: 0; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; width: 100%; }
 
 .sections-navigation a.current, .sections-navigation a:hover { width: 3.2rem; }
 
-.section-header .sections-navigation { right: 0; top: 25%; }
-
-.section-services .sections-navigation { top: 4%; }
+.sections-navigation.white a:before { border-color: #fff; }
 
 .truncate { display: inline-block; max-width: 100%; overflow: hidden; -webkit-text-overflow: ellipsis; -ms-text-overflow: ellipsis; text-overflow: ellipsis; vertical-align: top; white-space: nowrap; width: 100%; }
 

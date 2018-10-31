@@ -100,11 +100,15 @@
 	align-items: flex-end;
 	display: flex;
 	flex-direction: column;
-	position: absolute;
-	right: 1.2rem;
+	position: fixed;
+	right: 3%;
 	text-align: left;
-	top: 0;
-	@media screen and (max-width: 768px) {display: none;}
+	top: 35%;
+	z-index: 10;
+	@media screen and (max-width: 768px) {
+		opacity: 0;
+		visibility: hidden;
+	}
 	a {
 		display: block;
 		padding: .9rem 0;
@@ -118,14 +122,16 @@
 			margin: auto;
 			position: absolute;
 			top: 0;
+			transition: $default-transition;
 			width: 100%;
 		}
-		.section-header &:before {border-color: #fff;}
 		&.current,
 		&:hover {width: 3.2rem;}
+
 	}//a
-	.section-header & {right: 0; top: 25%;}
-	.section-services & {top: 4%;}
+	&.white a:before {border-color: #fff;}
+	//.section-header & {right: 0; top: 25%;}
+	//.section-services & {top: 4%;}
 }//.sections-navigation
 
 

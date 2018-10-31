@@ -250,10 +250,10 @@ header {
 
 		.logo {height: 2.5rem;}
 
-		&:not(.transparent) {background: rgba(252,72,107,.85);}
+		&:not(.transparent) {background: rgba(252,72,107,.95);}
 
 		&.active {
-			background: rgba(252,72,107,.85);
+			background: rgba(252,72,107,.95);
 
 			nav {
 				@media screen and (max-width: 768px) {
@@ -276,7 +276,7 @@ header {
 
 		nav {
 			@media screen and (max-width: 768px) {
-				background: rgba(252,72,107,.85);
+				background: rgba(252,72,107,.95);
 				left: 0;
 				height: 5rem;
 				position: absolute;
@@ -292,7 +292,7 @@ header {
 			}
 			ul {
 				@media screen and (max-width: 580px) {
-					background: rgba(252, 72, 107, 0.85);
+					background: rgba(252, 72, 107, 0.95);
 				}
 				li {
 					@media screen and (max-width: 580px) {
@@ -386,9 +386,9 @@ header {
 			padding: 0;
 		}
 		.button {
-			background: #fff;
+			background: $pink;
 			border: none;
-			color: $violet !important;
+			color: #fff !important;
 			display: block;
 			height: 6.2rem;
 			line-height: 6.2rem;
