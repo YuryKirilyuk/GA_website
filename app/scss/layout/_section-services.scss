@@ -167,7 +167,7 @@ body:not(.home) .section-services {
       position: relative;
       text-align: left;
 
-      &:hover {
+      &.visible {
         color: #fff;
         &:before {opacity: 0;}
 

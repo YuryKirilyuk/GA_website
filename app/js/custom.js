@@ -1,4 +1,7 @@
-var isMobile = false;
+var windowHeight = $(window).height(),
+    isMobile = false,
+    serviceItems = getServiceItems();
+
 
 $(window).on('load', function () {
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
@@ -9,7 +12,10 @@ $(window).on('load', function () {
 	$('body').removeClass('loaded');
 
     headerColor();
+
     sectionsNavigation();
+
+    getServiceItems();
 
 });
 
@@ -27,6 +33,8 @@ $(window).on('load', function () {
         sectionsNavigation();
 
         projectsAnimation();
+
+        serviceItemInViewport();
 
 	});
 
@@ -47,7 +55,6 @@ $(function() {
     if ($('body').width() <= 768) {
         isMobile = true;
     }
-
 
 
     $('header .actions').click(function(){
@@ -79,7 +86,6 @@ $(function() {
     }
 
 
-
     $('.sections-navigation a[href^="#"]').click(function(){
         var target = $(this).attr('href');
         $(this).siblings().removeClass('current');
@@ -89,9 +95,6 @@ $(function() {
         );
         return false;
     });
-
-
-
 
 
     videoInPopup();
@@ -164,9 +167,6 @@ $(function() {
     $( ".valueOnPage" ).text( $( "#sliderOnPage" ).slider( "value" ) + "$");
 
 
-
-
-
     var $grid = $('.grid').isotope({
         itemSelector: '.project',
         masonry: {
@@ -188,13 +188,7 @@ $(function() {
 
     });
 
-
-
-
 });
-
-
-
 
 
 
@@ -215,7 +209,6 @@ $(".button-file input").change(function() {
 });
 
 
-
 function headerColor() {
     var headerOffset = $('header').offset().top;
     if (headerOffset >= 50) $('.home header').removeClass('transparent');
@@ -231,11 +224,13 @@ function sectionsNavigation() {
 }
 
 function projectsAnimation() {
-    var projectsOffset = $('.section-projects').offset().top;
-    //console.log(projectsOffset);
-    //console.log(window.pageYOffset);
-    if (window.pageYOffset >= 600) $('.section-projects .project').addClass('fadeInUp');
-    //else $('.section-projects .project').removeClass('fadeInUp');
+    if($('.section-projects').length) {
+        var projectsOffset = $('.section-projects').offset().top;
+        //console.log(projectsOffset);
+        //console.log(window.pageYOffset);
+        if (window.pageYOffset >= 600) $('.section-projects .project').addClass('fadeInUp');
+        //else $('.section-projects .project').removeClass('fadeInUp');
+    }
 }
 
 function videoInPopup() {
@@ -252,7 +247,7 @@ function videoInPopup() {
 
 }
 
-
+///////// SECTIONS NAVIGATION ON HOME PAGE
 function getSections() {
     var sections = [];
 
@@ -270,8 +265,6 @@ function getSections() {
 
     return sections;
 }
-
-
 function scrollSections() {
     var offset = getSections();
 
@@ -284,3 +277,44 @@ function scrollSections() {
 
     }
 }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+///////// SERVICE ITEMS ON SERVICE PAGE
+function getServiceItems() {
+    var serviceItems = [];
+
+    $('.service-item').each(function(index){
+        var item = $(this),
+            itemId = item.attr('id'),
+            itemHeight = item.height(),
+            itemOffTop = item.offset().top;
+
+        serviceItems[index] = {
+            'el': item,
+            'itemId': itemId,
+            'itemOffTop': itemOffTop,
+            'height': itemHeight,
+            'center': itemOffTop + item.height()/2 - windowHeight/2
+        }
+
+    });
+
+    return serviceItems;
+}
+function serviceItemInViewport() {
+
+    for( var i=0; i < serviceItems.length; i++) {
+
+        if (serviceItems[i].height >= windowHeight) {
+            serviceItems[i].center = serviceItems[i].itemOffTop + windowHeight - 400;
+        } else {
+            serviceItems[i].center = serviceItems[i].itemOffTop + serviceItems[i].height;
+        }
+        if ($(document).scrollTop() + windowHeight >= serviceItems[i].center) {
+            serviceItems[i].el.addClass('visible').siblings().removeClass('visible');
+        }
+
+    }
+}
+//////////////////////////////////////////////////////////////

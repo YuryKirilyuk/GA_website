@@ -5016,7 +5016,7 @@ header.active .blur, header.active .site-menu { visibility: visible !important; 
 
 @media screen and (max-width: 1220px) and (min-width: 1024px) { .site-menu { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; }
   .site-menu nav { width: 100%; }
-  .site-menu ul { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; width: 100%; }
+  .site-menu ul { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; width: 100%; }
   .site-menu li { padding: 0 !important; } }
 
 @media screen and (min-width: 581px) { .site-menu .mobile { display: none !important; } }
@@ -5955,25 +5955,25 @@ body:not(.home) .section-services .section-body { -webkit-box-align: center; -we
 
 body:not(.home) .section-services .section-body .service-item { background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #520596), to(#fc486b)); background: linear-gradient(#520596 80%, #fc486b 100%); color: #520596; font-size: 1.8rem; margin: 0; max-width: 100%; overflow: hidden; padding: 7rem 0; position: relative; text-align: left; }
 
-body:not(.home) .section-services .section-body .service-item:hover { color: #fff; }
+body:not(.home) .section-services .section-body .service-item.visible { color: #fff; }
 
-body:not(.home) .section-services .section-body .service-item:hover:before { opacity: 0; }
+body:not(.home) .section-services .section-body .service-item.visible:before { opacity: 0; }
 
-body:not(.home) .section-services .section-body .service-item:hover .service-title { color: #fff; }
+body:not(.home) .section-services .section-body .service-item.visible .service-title { color: #fff; }
 
-body:not(.home) .section-services .section-body .service-item:hover .service-icon { background: transparent; overflow: visible; }
+body:not(.home) .section-services .section-body .service-item.visible .service-icon { background: transparent; overflow: visible; }
 
-body:not(.home) .section-services .section-body .service-item:hover .icon-3:before { width: 700px; }
+body:not(.home) .section-services .section-body .service-item.visible .icon-3:before { width: 700px; }
 
-body:not(.home) .section-services .section-body .service-item:hover .icon-5 .icon-wrapper { left: -8rem; top: -8rem; }
+body:not(.home) .section-services .section-body .service-item.visible .icon-5 .icon-wrapper { left: -8rem; top: -8rem; }
 
-body:not(.home) .section-services .section-body .service-item:hover .icon-5 .icon-wrapper .service-icon-5 { left: 1.3rem; top: 6.4rem; }
+body:not(.home) .section-services .section-body .service-item.visible .icon-5 .icon-wrapper .service-icon-5 { left: 1.3rem; top: 6.4rem; }
 
-body:not(.home) .section-services .section-body .service-item:hover .icon-wrapper { border-radius: 0; height: 200%; width: 200%; }
+body:not(.home) .section-services .section-body .service-item.visible .icon-wrapper { border-radius: 0; height: 200%; width: 200%; }
 
-body:not(.home) .section-services .section-body .service-item:hover .button { background: #fff; color: #8A00F4; visibility: visible; }
+body:not(.home) .section-services .section-body .service-item.visible .button { background: #fff; color: #8A00F4; visibility: visible; }
 
-body:not(.home) .section-services .section-body .service-item:hover .button:hover { background: transparent; color: #fff; }
+body:not(.home) .section-services .section-body .service-item.visible .button:hover { background: transparent; color: #fff; }
 
 body:not(.home) .section-services .section-body .service-item:before { background: #fff; content: ''; bottom: 0; left: 0; right: 0; top: 0; position: absolute; opacity: 1; -webkit-transition: all ease-in .3s; transition: all ease-in .3s; width: 100%; z-index: 1; }
 
