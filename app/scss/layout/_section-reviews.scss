@@ -1,5 +1,5 @@
 .section-reviews {
-  padding: 13rem 0 0;
+  padding: 13rem 0 29rem;
   @media screen and (max-width: 1024px) {
     padding: 4rem 0 10.5rem;
   }
@@ -108,6 +108,7 @@
       margin: 0 1.3rem;
       @media screen and (min-width: 769px) {stroke: #8800f6;}
       @media screen and (max-width: 768px) {stroke: #fff;}
+      @media screen and (max-width: 425px) {width: 7rem;}
       @media screen and (max-width: 320px) {width: 5.5rem;}
     }//.icon-arrow
     .arrow-right {

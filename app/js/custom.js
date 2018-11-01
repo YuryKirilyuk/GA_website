@@ -1,3 +1,5 @@
+var isMobile = false;
+
 $(window).on('load', function () {
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 		$('body').addClass('ios');
@@ -6,7 +8,6 @@ $(window).on('load', function () {
 	};
 	$('body').removeClass('loaded');
 
-    //getSections();
     headerColor();
     sectionsNavigation();
 
@@ -41,6 +42,10 @@ $(window).on('load', function () {
 
 $(function() {
 
+    if ($('body').width() <= 768) {
+        isMobile = true;
+    }
+
 
 
     $('header .actions').click(function(){
@@ -52,20 +57,24 @@ $(function() {
     });
 
 
-    $(".service-icon").each(function(index){
-        var vivus = [];
-        index += 1;
-        vivus[index] = new Vivus('icon_' + index + '', {
-            duration: 80,
-            file: "img/serviceIcon_"  + index + ".svg"},
-            function() {
-                $("[id='icon_" + index + "']").addClass('done');
+    if (!isMobile) {
+
+        $(".service-icon").each(function(index){
+            var vivus = [];
+            index += 1;
+            vivus[index] = new Vivus('icon_' + index + '', {
+                    duration: 80,
+                    file: "img/serviceIcon_"  + index + ".svg"},
+                function() {
+                    $("[id='icon_" + index + "']").addClass('done');
+                });
+            $(this).mouseenter(function(){
+                $(this).removeClass('done');
+                vivus[index].setFrameProgress(0).play(2);
             });
-        $(this).mouseenter(function(){
-            $(this).removeClass('done');
-            vivus[index].setFrameProgress(0).play(2);
         });
-    });
+
+    }
 
 
 
