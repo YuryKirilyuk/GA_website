@@ -26,6 +26,8 @@ $(window).on('load', function () {
 
         sectionsNavigation();
 
+        projectsAnimation();
+
 	});
 
 /* ==========================================================================
@@ -226,6 +228,14 @@ function sectionsNavigation() {
         if (sectionsNavigation <= 650) $('.sections-navigation').addClass('white');
         else $('.sections-navigation').removeClass('white');
     }
+}
+
+function projectsAnimation() {
+    var projectsOffset = $('.section-projects').offset().top;
+    //console.log(projectsOffset);
+    //console.log(window.pageYOffset);
+    if (window.pageYOffset >= 600) $('.section-projects .project').addClass('fadeInUp');
+    //else $('.section-projects .project').removeClass('fadeInUp');
 }
 
 function videoInPopup() {
