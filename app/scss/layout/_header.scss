@@ -4,7 +4,7 @@ header {
 	min-width: $min-width;
 	order: 1;
 	position: fixed;
-	transition: $default-transition;
+	transition: all .5s linear;;
 	width: 100%;
 	z-index: 999;
 	@media screen and (max-width: 1024px) {
@@ -17,6 +17,9 @@ header {
 		//border-bottom: 1px solid #fff;
 		height: $headerHeightMobile;
 	}
+
+	&.scrollUp {transform: translateY(0)};
+	&.scrollDown {transform: translateY(-100%)};
 
 	.logo {
 		svg.desktop {

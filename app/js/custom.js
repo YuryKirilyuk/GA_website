@@ -1,6 +1,8 @@
 var windowHeight = $(window).height(),
     isMobile = false,
+    lastScrollTop = 0,
     serviceItems = getServiceItems();
+
 
 
 $(window).on('load', function () {
@@ -16,6 +18,7 @@ $(window).on('load', function () {
         isMobile = true;
     }
 
+
     headerColor();
 
     sectionsNavigation();
@@ -30,6 +33,8 @@ $(window).on('load', function () {
    ========================================================================== */
    
 	$(window).scroll(function() {
+
+        showHeaderOnScroll();
 
         scrollSections();
 
@@ -56,7 +61,6 @@ $(window).on('load', function () {
 
 
 $(function() {
-
 
 
     $('header .actions').click(function(){
@@ -199,6 +203,7 @@ $(function() {
 
 
 
+
 $(".button-file input").change(function() {
 
     var getPath = $(this).val();
@@ -219,6 +224,18 @@ function headerColor() {
     else $('header').addClass('transparent');
 }
 
+function showHeaderOnScroll() {
+    var st = $(this).scrollTop(),
+        header = $('#site-header');
+
+    if (st > lastScrollTop){
+        header.removeClass('scrollUp active').addClass('scrollDown');
+    } else {
+        header.removeClass('scrollDown').addClass('scrollUp');
+    }
+    lastScrollTop = st;
+}
+
 function sectionsNavigation() {
     if($('.sections-navigation').length) {
         var sectionsNavigation = $('.sections-navigation').offset().top;
@@ -226,6 +243,8 @@ function sectionsNavigation() {
         else $('.sections-navigation').removeClass('white');
     }
 }
+
+
 
 function projectsAnimation() {
     if($('#projects').length) {
@@ -236,6 +255,7 @@ function projectsAnimation() {
         //else $('.section-projects .project').removeClass('fadeInUp');
     }
 }
+
 
 function videoInPopup() {
 
@@ -250,6 +270,7 @@ function videoInPopup() {
     })
 
 }
+
 
 ///////// SECTIONS NAVIGATION ON HOME PAGE
 function getSections() {

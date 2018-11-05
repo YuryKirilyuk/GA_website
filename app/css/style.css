@@ -4867,13 +4867,17 @@ img { height: auto; max-width: 100%; }
   40% { -webkit-transform: translate(-30px, 20px) rotateZ(-55deg); transform: translate(-30px, 20px) rotateZ(-55deg); }
   60% { -webkit-transform: translate(15px, 20px) rotateZ(-155deg); transform: translate(15px, 20px) rotateZ(-155deg); } }
 
-header { height: 12rem; margin-bottom: -12rem; min-width: 0; -webkit-box-ordinal-group: 2; -webkit-order: 1; -ms-flex-order: 1; order: 1; position: fixed; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; width: 100%; z-index: 999; }
+header { height: 12rem; margin-bottom: -12rem; min-width: 0; -webkit-box-ordinal-group: 2; -webkit-order: 1; -ms-flex-order: 1; order: 1; position: fixed; -webkit-transition: all .5s linear; transition: all .5s linear; width: 100%; z-index: 999; }
 
 @media screen and (max-width: 1024px) { header { height: 10rem; } }
 
 @media screen and (max-width: 768px) { header { height: 9rem; } }
 
 @media screen and (max-width: 320px) { header { height: 7rem; } }
+
+header.scrollUp { -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+
+header.scrollDown { -webkit-transform: translateY(-100%); -ms-transform: translateY(-100%); transform: translateY(-100%); }
 
 @media screen and (max-width: 580px) { header .logo svg.desktop { display: none; } }
 
@@ -5914,8 +5918,6 @@ body:not(.home) .section-team .section-title { margin-bottom: 12rem; }
 .section-services .section-body { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: -7rem; }
 
 @media screen and (max-width: 1290px) { .section-services .section-body { -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; } }
-
-@media screen and (min-width: 1025px) { .section-services .section-body { margin-bottom: -20rem; } }
 
 @media screen and (max-width: 1023px) { .section-services .section-body { -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; } }
 
