@@ -4976,6 +4976,8 @@ header.active .blur, header.active .site-menu { visibility: visible !important; 
 
 @media screen and (max-width: 580px) { .home header.active .socials { opacity: 1; visibility: visible; } }
 
+.home header nav { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; }
+
 @media screen and (max-width: 768px) and (min-width: 581px) { .home header nav { bottom: -5rem; opacity: 1; visibility: visible; } }
 
 @media screen and (max-width: 768px) { .home header nav { background: rgba(252, 72, 107, 0.95); left: 0; height: 5rem; position: absolute; width: 100%; opacity: 0; visibility: hidden; bottom: 0; } }
@@ -4996,7 +4998,7 @@ header.active .blur, header.active .site-menu { visibility: visible !important; 
 
 @media screen and (max-width: 580px) { .home header nav ul li a { -webkit-animation: none; animation: none; } }
 
-.home header .site-menu { -webkit-transition: all 2s; transition: all 2s; }
+.home header .site-menu { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; -webkit-transition: all 2s; transition: all 2s; }
 
 @media screen and (max-width: 768px) { .home header .site-menu { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; -webkit-box-pack: end; -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; opacity: 1; visibility: visible; top: 100%; } }
 
@@ -5027,7 +5029,8 @@ header.active .blur, header.active .site-menu { visibility: visible !important; 
 
 @media screen and (min-width: 581px) { .site-menu .mobile { display: none !important; } }
 
-@media screen and (max-width: 580px) { .site-menu .mobile { border-bottom: 1px solid; -webkit-box-ordinal-group: 2; -webkit-order: 1; -ms-flex-order: 1; order: 1; padding: 0; }
+@media screen and (max-width: 580px) { .site-menu .mobile { border-bottom: 1px solid; border-top: 0; -webkit-box-ordinal-group: 2; -webkit-order: 1; -ms-flex-order: 1; order: 1; padding: 0; }
+  .home .site-menu .mobile { border-color: #fff; border-top: 1px solid #fff; }
   .site-menu .button { background: #fc486b; border: none; color: #fff !important; display: block; height: 6.2rem; line-height: 6.2rem; max-width: 100%; padding: 0; } }
 
 /*
@@ -5494,12 +5497,14 @@ svg.icon-satellite { fill: transparent; height: 14.5rem; -webkit-transform: rota
 
 .modal#modalGetInTouch .section-venture:before { content: none; }
 
-.modal#modalGetInTouch .left { background: transparent; border: none; }
+.modal#modalGetInTouch .left { -webkit-animation-duration: .7s; animation-duration: .7s; background: transparent; border: none; }
 
 .modal#modalGetInTouch .left:before { content: none; }
 
 @media screen and (max-width: 768px) { .modal#modalGetInTouch .left { display: block; margin: 0 auto 2rem; padding: 0; }
   .modal#modalGetInTouch .left h2 { display: block; margin: auto; text-align: center !important; } }
+
+.modal#modalGetInTouch .right { -webkit-animation-duration: .7s; animation-duration: .7s; }
 
 @media screen and (min-width: 769px) { .modal#modalGetInTouch .right { margin-right: -.4rem; } }
 

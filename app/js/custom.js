@@ -228,8 +228,9 @@ function showHeaderOnScroll() {
     var st = $(this).scrollTop(),
         header = $('#site-header');
 
-    if (st > lastScrollTop){
+    if (st > lastScrollTop && st > 120){
         header.removeClass('scrollUp active').addClass('scrollDown');
+        $('.navigation-button').removeClass('active')
     } else {
         header.removeClass('scrollDown').addClass('scrollUp');
     }

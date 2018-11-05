@@ -205,6 +205,7 @@
   }//.section-venture
 
   .left {
+    animation-duration: .7s;
     background: transparent;
     border: none;
     &:before {content: none;}
@@ -221,6 +222,7 @@
   }//.left
 
   .right {
+    animation-duration: .7s;
     @media screen and (min-width: 769px) {margin-right: -.4rem;}
   }
 

@@ -278,6 +278,8 @@ header {
 
 
 		nav {
+
+			flex: 1;
 			@media screen and (max-width: 768px) and (min-width: 581px) {
 				bottom: -5rem;
 				opacity: 1;
@@ -325,6 +327,8 @@ header {
 
 
 		.site-menu {
+
+			flex: 1;
 			transition: all 2s;
 
 			@media screen and (min-width: 769px) {
@@ -399,8 +403,13 @@ header {
 	@media screen and (max-width: 580px) {
 		.mobile {
 			border-bottom: 1px solid;
+			border-top: 0;
 			order: 1;
 			padding: 0;
+			.home & {
+				border-color: #fff;
+				border-top: 1px solid #fff;
+			}
 		}
 		.button {
 			background: $pink;
