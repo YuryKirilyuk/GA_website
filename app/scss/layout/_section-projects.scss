@@ -61,23 +61,23 @@
 
       &-info {
         align-items: center;
-        background-image: url(../img/path_5.png);
+        background-image: url(../img/shape.png);
         background-repeat: no-repeat;
         background-position: center bottom;
         bottom: 0;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        height: 26.3rem;
+        height: 23.3rem;
         left: 0;
-        padding: 0 3rem 3rem;
+        padding: 0 3rem 2rem;
         position: absolute;
         width: 100%;
       }
       &-brand {
         color: #fff;
         letter-spacing: 3px;
-        margin-bottom: .8rem;
+        margin-bottom: .3rem;
         position: relative;
         text-transform: uppercase;
         &:before {
@@ -99,13 +99,13 @@
         font-size: 1.8rem;
         font-weight: 900;
         height: 7rem;
-        line-height: 2.3rem;
+        line-height: 2.2rem;
         max-width: 24.5rem;
         text-align: center;
       }
 
       .button {
-        margin: 1rem 0 0;
+        margin: .5rem 0 0;
         width: 100%;
         @media screen and (max-width: 1024px) {
           height: 7.5rem;
@@ -235,7 +235,11 @@ body:not(.home) .section-projects {
       margin-bottom: 3rem;
     }
     .grid {margin: auto;}
-    .project {order: initial;}
+    .project {
+      opacity: 1;
+      order: initial;
+      transition: none;
+    }
   }
 
 }//body:not(.home) .section-projects

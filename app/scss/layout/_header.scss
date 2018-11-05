@@ -275,6 +275,12 @@ header {
 
 
 		nav {
+			@media screen and (max-width: 768px) and (min-width: 581px) {
+				bottom: -5rem;
+				opacity: 1;
+				visibility: visible;
+			}
+
 			@media screen and (max-width: 768px) {
 				background: rgba(252,72,107,.95);
 				left: 0;
@@ -316,14 +322,18 @@ header {
 
 
 		.site-menu {
-			opacity: 0;
 			transition: all 2s;
-			visibility: hidden;
+
+			@media screen and (min-width: 769px) {
+				//opacity: 0;
+				//visibility: hidden;
+			}
 			@media screen and (max-width: 768px) {
 				flex: 1;
 				justify-content: flex-end;
 				opacity: 1;
 				visibility: visible;
+				top: 100%;
 			}
 			li:nth-child(1) a {animation-delay: .1s;}
 			li:nth-child(2) a {animation-delay: .2s;}
@@ -353,7 +363,12 @@ header {
 		}//.button.button-sm
 
 
-		.actions {  display: flex;  }
+		.actions {
+			@media screen and (max-width: 768px) {
+				display: flex;
+			}
+
+		}
 
 	}//.home header
 
@@ -361,7 +376,6 @@ header {
 
 
 .site-menu {
-
 
 	@media screen and (max-width: 1220px) and (min-width: 1024px){
 		flex: 1;

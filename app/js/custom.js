@@ -11,6 +11,11 @@ $(window).on('load', function () {
 	};
 	$('body').removeClass('loaded');
 
+
+    if ($('body').width() <= 768) {
+        isMobile = true;
+    }
+
     headerColor();
 
     sectionsNavigation();
@@ -52,9 +57,6 @@ $(window).on('load', function () {
 
 $(function() {
 
-    if ($('body').width() <= 768) {
-        isMobile = true;
-    }
 
 
     $('header .actions').click(function(){
@@ -67,7 +69,6 @@ $(function() {
 
 
     if (!isMobile) {
-
         $(".service-icon").each(function(index){
             var vivus = [];
             index += 1;
@@ -82,7 +83,18 @@ $(function() {
                 vivus[index].setFrameProgress(0).play(2);
             });
         });
+    }
 
+
+    if($('.grid').length) {
+        var $grid = $('.grid').isotope({
+            itemSelector: '.project',
+            masonry: {
+                fitWidth: true,
+                horizontalOrder: true,
+                gutter: 30
+            }
+        });
     }
 
 
@@ -167,14 +179,6 @@ $(function() {
     $( ".valueOnPage" ).text( $( "#sliderOnPage" ).slider( "value" ) + "$");
 
 
-    var $grid = $('.grid').isotope({
-        itemSelector: '.project',
-        masonry: {
-            fitWidth: true,
-            horizontalOrder: true,
-            gutter: 30
-        }
-    });
 
     $('.filter').on( 'click', 'button', function() {
         var $button = $(this);
@@ -224,11 +228,11 @@ function sectionsNavigation() {
 }
 
 function projectsAnimation() {
-    if($('.section-projects').length) {
-        var projectsOffset = $('.section-projects').offset().top;
+    if($('#projects').length) {
+        var projectsOffset = $('#projects').offset().top;
         //console.log(projectsOffset);
         //console.log(window.pageYOffset);
-        if (window.pageYOffset >= 600) $('.section-projects .project').addClass('fadeInUp');
+        if (window.pageYOffset >= 600) $('#projects .project').addClass('fadeInUp');
         //else $('.section-projects .project').removeClass('fadeInUp');
     }
 }
