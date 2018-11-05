@@ -70,7 +70,7 @@
       max-width: 36rem;
     }
     @media screen and (max-width: 375px) {
-      margin-bottom: 12.2rem;
+      margin-bottom: 14rem;
     }
 
   }//.service-item
@@ -84,10 +84,14 @@
     right: 0;
     transform: translateY(-50%);
     width: 24.2rem;
+    .desktop {
+      @media screen and (max-width: 768px) {display: none;}
+    }
     .mobile {
       @media screen and (min-width: 769px) {display: none;}
     }
-  }
+  }//.service-icon
+
   .service-title {
     color: #8a00f4;
     font-size: 1.8rem;
@@ -193,9 +197,11 @@ body:not(.home) .section-services {
         }
 
         .button {
-          background: #fff;
-          color: #8A00F4;
           visibility: visible;
+          @media screen and (min-width: 501px) {
+            background: #fff;
+            color: #8A00F4;
+          }
           &:hover {
             background: transparent;
             color: #fff;
@@ -212,7 +218,7 @@ body:not(.home) .section-services {
         top: 0;
         position: absolute;
         opacity: 1;
-        transition: all ease-in .3s;
+        transition: all ease-in .5s;
         width: 100%;
         z-index: 1;
         @media screen and (max-width: 500px) {  content: none;  }

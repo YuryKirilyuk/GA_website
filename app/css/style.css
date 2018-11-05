@@ -5600,7 +5600,7 @@ body.modal-open .main-wrapper { -webkit-filter: blur(3px); filter: blur(3px); }
 
 .section-projects .projects-list .project.fadeInUp { opacity: 1; }
 
-@media screen and (max-width: 768px) { .section-projects .projects-list .project { width: 35.5rem; } }
+@media screen and (max-width: 768px) { .section-projects .projects-list .project { -webkit-animation: none; animation: none; opacity: 1; width: 35.5rem; } }
 
 @media screen and (max-width: 425px) { .section-projects .projects-list .project { margin-bottom: 2rem; max-width: 32rem; width: 100%; } }
 
@@ -5730,7 +5730,7 @@ body:not(.home) .section-projects .projects-list .project { opacity: 1; -webkit-
 
 @media screen and (max-width: 425px) { .section-team .section-body { padding: 0 1rem; } }
 
-.section-team .member-list { -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; font-size: 1.8rem; font-weight: 600; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; list-style: none; margin-bottom: 0; text-align: center; text-transform: uppercase; /*li:nth-child(3n + 1) { .member-image {background-color: $violet-light;} } li:nth-child(3n + 2) { .member-image {background-color: $blue;} } li:nth-child(3n + 3) { .member-image {background-color: $pink;} }*/ }
+.section-team .member-list { -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; font-size: 1.8rem; font-weight: 600; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; list-style: none; margin-bottom: 0; text-align: center; text-transform: uppercase; }
 
 .section-team .member-list:after { content: ''; width: 27.2rem; }
 
@@ -5750,6 +5750,8 @@ body:not(.home) .section-projects .projects-list .project { opacity: 1; -webkit-
 
 @media screen and (max-width: 768px) { .section-team .member-list li { margin-bottom: 4rem; } }
 
+@media screen and (max-width: 500px) { .section-team .member-list li { width: 50%; } }
+
 @media screen and (max-width: 425px) { .section-team .member-list li { margin-bottom: 1.5rem; } }
 
 .section-team .member-image { background-color: #D8D8D8; border-radius: 2rem; height: 27.2rem; margin-bottom: 2rem; width: 27.2rem; }
@@ -5757,6 +5759,8 @@ body:not(.home) .section-projects .projects-list .project { opacity: 1; -webkit-
 @media screen and (max-width: 1024px) { .section-team .member-image { height: 24.3rem; width: 23.5rem; } }
 
 @media screen and (max-width: 768px) { .section-team .member-image { height: 15rem; width: 15rem; } }
+
+@media screen and (max-width: 500px) { .section-team .member-image { margin: 0 auto 1.3rem; } }
 
 @media screen and (max-width: 375px) { .section-team .member-image { height: 13rem; margin-bottom: 1.3rem; width: 13rem; } }
 
@@ -5936,9 +5940,11 @@ body:not(.home) .section-team .section-title { margin-bottom: 12rem; }
 
 @media screen and (max-width: 768px) { .section-services .service-item { max-width: 36rem; } }
 
-@media screen and (max-width: 375px) { .section-services .service-item { margin-bottom: 12.2rem; } }
+@media screen and (max-width: 375px) { .section-services .service-item { margin-bottom: 14rem; } }
 
 .section-services .service-icon { height: 24.2rem; left: 0; margin: auto; overflow: hidden; position: absolute; right: 0; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); width: 24.2rem; }
+
+@media screen and (max-width: 768px) { .section-services .service-icon .desktop { display: none; } }
 
 @media screen and (min-width: 769px) { .section-services .service-icon .mobile { display: none; } }
 
@@ -5980,11 +5986,13 @@ body:not(.home) .section-services .section-body .service-item.visible .icon-5 .i
 
 body:not(.home) .section-services .section-body .service-item.visible .icon-wrapper { border-radius: 0; height: 200%; width: 200%; }
 
-body:not(.home) .section-services .section-body .service-item.visible .button { background: #fff; color: #8A00F4; visibility: visible; }
+body:not(.home) .section-services .section-body .service-item.visible .button { visibility: visible; }
+
+@media screen and (min-width: 501px) { body:not(.home) .section-services .section-body .service-item.visible .button { background: #fff; color: #8A00F4; } }
 
 body:not(.home) .section-services .section-body .service-item.visible .button:hover { background: transparent; color: #fff; }
 
-body:not(.home) .section-services .section-body .service-item:before { background: #fff; content: ''; bottom: 0; left: 0; right: 0; top: 0; position: absolute; opacity: 1; -webkit-transition: all ease-in .3s; transition: all ease-in .3s; width: 100%; z-index: 1; }
+body:not(.home) .section-services .section-body .service-item:before { background: #fff; content: ''; bottom: 0; left: 0; right: 0; top: 0; position: absolute; opacity: 1; -webkit-transition: all ease-in .5s; transition: all ease-in .5s; width: 100%; z-index: 1; }
 
 @media screen and (max-width: 500px) { body:not(.home) .section-services .section-body .service-item:before { content: none; } }
 

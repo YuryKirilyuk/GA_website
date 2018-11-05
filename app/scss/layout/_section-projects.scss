@@ -47,6 +47,8 @@
       width: 39rem;
       &.fadeInUp {opacity: 1;}
       @media screen and (max-width: 768px) {
+        animation: none;
+        opacity: 1;
         width: 35.5rem;
       }
       @media screen and (max-width: 425px) {
