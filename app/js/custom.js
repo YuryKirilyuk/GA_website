@@ -83,8 +83,11 @@ $(function() {
                     $("[id='icon_" + index + "']").addClass('done');
                 });
             $(this).mouseenter(function(){
-                $(this).removeClass('done');
-                vivus[index].setFrameProgress(0).play(2);
+                if($(this).hasClass('done')) {
+                    $(this).removeClass('done');
+                    vivus[index].setFrameProgress(0).play(2);
+                }
+
             });
         });
     }
@@ -153,7 +156,7 @@ $(function() {
         animate: "slow",
         range: "min",
         value: 1500,
-        min: 0,
+        min: 500,
         max: 10000,
         step: 500,
         slide: function( event, ui ) {
@@ -170,7 +173,7 @@ $(function() {
         animate: "slow",
         range: "min",
         value: 1500,
-        min: 0,
+        min: 500,
         max: 10000,
         step: 500,
         slide: function( event, ui ) {

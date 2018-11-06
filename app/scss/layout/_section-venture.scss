@@ -80,6 +80,10 @@
     .form-group .col-sm-6 {
       margin-bottom: 2.5rem;
     }
+    .checkbox-container .col-sm-6 {
+      margin-bottom: 0;
+    }
+
     .button {
       max-width: 39rem;
       width: 100%;
@@ -228,6 +232,14 @@ body:not(.home) .section-venture {
 
 
   }//.left
+
+  .right {
+    .form-title + .form-group {
+      @media screen and (max-width: 768px) {
+        margin-bottom: 0;
+      }
+    }
+  }
 
 }//body:not(.home) .section-venture
 

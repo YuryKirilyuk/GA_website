@@ -46,7 +46,7 @@
     position: absolute;
     top: 0;
     transition: $default-transition;
-    @media screen and (max-width: 425px) {  position: static;  }
+    @media screen and (max-width: 768px) {  position: static;  }
   }//.icon-arrow
 
   &:not(.button-back) {
