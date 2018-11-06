@@ -5441,8 +5441,6 @@ svg.icon-satellite { fill: transparent; height: 14.5rem; -webkit-transform: rota
 
 .modal#modalVideo { padding: 0 !important; }
 
-.modal#modalVideo .close { background: #000; height: 100%; margin: 0; width: 4.5rem; }
-
 .modal#modalVideo .modal-dialog { padding-top: 4.5rem; }
 
 @media (min-width: 768px) { .modal#modalVideo .modal-dialog { max-width: 95%; margin: 30px auto; width: 100%; } }
@@ -5540,9 +5538,13 @@ body.modal-open .main-wrapper { -webkit-filter: blur(3px); filter: blur(3px); }
 
 @media screen and (max-width: 768px) { .section-header .video-container { max-width: 35rem; } }
 
-.section-header .video-wrapper { background: #520596; box-shadow: 0px 40px 30px -5px #fb476c; cursor: pointer; height: 30rem; margin-bottom: 3rem; position: relative; width: 100%; }
+.section-header .video-wrapper { background: #520596; box-shadow: 0px 40px 30px -5px #fb476c; cursor: pointer; height: 30rem; margin-bottom: 3rem; position: relative; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; width: 100%; }
 
-.section-header .video-wrapper:before { border-left: 6.4rem solid #fff; border-top: 3.2rem solid transparent; border-bottom: 3.2rem solid transparent; bottom: 0; content: ''; height: 0; left: 0; margin: auto; position: absolute; right: 0; top: 0; width: 0; }
+.section-header .video-wrapper:before { border-left: 6.4rem solid #fff; border-top: 3.2rem solid transparent; border-bottom: 3.2rem solid transparent; bottom: 0; content: ''; height: 0; left: 0; margin: auto; position: absolute; right: 0; top: 0; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; width: 0; }
+
+.section-header .video-wrapper:hover { -webkit-transform: scale(1.05); -ms-transform: scale(1.05); transform: scale(1.05); }
+
+.section-header .video-wrapper:hover:before { border-left-color: #fc486b; }
 
 @media screen and (max-width: 768px) { .section-header .video-wrapper { height: 23rem; }
   .section-header .video-wrapper:before { border-left-width: 4.7rem; border-top-width: 2.75rem; border-bottom-width: 2.75rem; } }

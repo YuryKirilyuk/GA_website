@@ -59,6 +59,7 @@
     height: 30rem;
     margin-bottom: 3rem;
     position: relative;
+    transition: $default-transition;
     width: 100%;
     &:before {
       border-left: 6.4rem solid #fff;
@@ -72,7 +73,12 @@
       position: absolute;
       right: 0;
       top: 0;
+      transition: $default-transition;
       width: 0;
+    }
+    &:hover {
+      transform: scale(1.05);
+      &:before {  border-left-color: $pink;  }
     }
     @media screen and (max-width: 1024px) {
 
