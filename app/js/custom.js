@@ -63,6 +63,7 @@ $(window).on('load', function () {
 $(function() {
 
 
+
     $('header .actions').click(function(){
         $(this).find('.navigation-button').toggleClass('active'),
             $('header').toggleClass('active');
@@ -73,7 +74,7 @@ $(function() {
 
 
     if (!isMobile) {
-        $(".service-icon").each(function(index){
+        $(".home .service-icon").each(function(index){
             var vivus = [];
             index += 1;
             vivus[index] = new Vivus('icon_' + index + '', {
@@ -119,37 +120,40 @@ $(function() {
     videoInPopup();
 
 
-    $('.slick-slider').slick({
-		arrows: false,
-        dots: true,
-        infinite: true,
-        speed: 300,
-        centerMode: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        swipeToSlide: true,
-        responsive: [
-            {
-                breakpoint: 769,
-                settings: {
-                    slidesToShow: 1
+    if($('.slick-slider').length) {
+
+        $('.slick-slider').slick({
+            arrows: false,
+            dots: true,
+            infinite: true,
+            speed: 300,
+            centerMode: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            swipeToSlide: true,
+            responsive: [
+                {
+                    breakpoint: 769,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 376,
+                    settings: {
+                        slidesToShow: 1,
+                        centerMode: false
+                    }
                 }
-            },
-            {
-                breakpoint: 376,
-                settings: {
-                    slidesToShow: 1,
-                    centerMode: false
-                }
-            }
-        ]
-    });
-    $('.arrow-left').click(function() {
-        $('.slick-slider').slick('slickPrev');
-    });
-    $('.arrow-right').click(function() {
-        $('.slick-slider').slick('slickNext');
-    });
+            ]
+        });
+        $('.arrow-left').click(function() {
+            $('.slick-slider').slick('slickPrev');
+        });
+        $('.arrow-right').click(function() {
+            $('.slick-slider').slick('slickNext');
+        });
+    }
 
 
     $( "#slider" ).slider({

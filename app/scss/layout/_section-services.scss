@@ -477,86 +477,33 @@ body:not(.home) .section-services {
 
 
 .service-item.test {
-  background: #fff !important;
+  background: linear-gradient(#fff 25%, rgba(82, 5, 150, .7) 50%, #520596 85%, #520596 95%, #fc486b 100%) !important;
+  background-size: 100% 400% !important;
+  background-position: center 0;
+  transition: all ease-out .9s;
+  &:hover {
+    //background-position: center 100%;
+  }
   &:before {content: none !important;}
 
   .planet-xs {
     opacity: 0;
   }
 
-  .left {
-    background: -webkit-linear-gradient($violet 80%, $pink 100%);
-    background: linear-gradient($violet 80%, $pink 100%);
-    border-radius: 50%;
-    height: 33rem;
-    top: 0;
-    bottom: 0;
-    left: 1rem;
-    overflow: hidden;
-    position: absolute;
-    transition: height .3s linear,
-                padding .3s linear,
-                left .3s linear,
-                width .3s linear,
-                border-radius .5s linear;
-    width: 33rem;
-    margin-top: auto;
-    margin-bottom: auto;
-    @media screen and (min-width: 1031px) {
-      left: calc((100% - 1029px)/2);
-    }
+  .service-text {
+    transition: none !important;
   }
 
-  .service-icon {
-    top: 0 !important;
-    margin: auto 0 !important;
-    overflow: visible;
-    //transition: all .6s linear .5s;
-  }
-  .wrapper {
-    &:before {
-      content: '';
-      height: 33rem;
-      min-width: 35rem;
-      width: 35rem;
-    }
-  }
 
   &.visible {
-    .left {
-      border-radius: 0;
-      height: 100%;
-      left: 0;
-      padding-left: 1rem;
-      width: 100%;
-      @media screen and (min-width: 1031px) {
-        padding-left: calc((100% - 1030px)/2);
-      }
+    background-position: center 100% !important;
+    .service-icon {
+      transition: background .7s linear .3s;
     }
     .planet-xs {
       opacity: 1;
-      transition: all .5s ease-in .3s;
+      transition: opacity .5s linear 1s;
     }
-    .icon-wrapper {
-      //height: 100% !important;
-      .service-icon-1 {
-        //bottom: 0;
-        //top: auto !important;
-      }
-    }
-    .service-icon {
-      //height: 100% !important;
-      .service-icon-1 {
-        //bottom: 0;
-        //top: auto !important;
-      }
-    }
-
-    .button {
-      opacity: 1 !important;
-      transition: opacity .4s linear .3s;
-    }
-
   }// &.visible
 
 }
