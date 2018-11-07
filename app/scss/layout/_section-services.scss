@@ -160,8 +160,12 @@ body:not(.home) .section-services {
     margin: 0;
 
     .service-item {
-      background: -webkit-linear-gradient($violet 80%, $pink 100%);
-      background: linear-gradient($violet 80%, $pink 100%);
+      //background: -webkit-linear-gradient($violet 80%, $pink 100%);
+      //background: linear-gradient($violet 80%, $pink 100%);
+      background: linear-gradient(#fff 25%, rgba(82, 5, 150, .7) 50%, #520596 85%, #520596 95%, #fc486b 100%);
+      background-size: 100% 400%;
+      background-position: center 0;
+      transition: all ease-out .9s;
       color: $violet;
       font-size: 1.8rem;
       margin: 0;
@@ -170,17 +174,45 @@ body:not(.home) .section-services {
       padding: 7rem 0;
       position: relative;
       text-align: left;
+      &:before {
+        background: #fff;
+        content: none;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        position: absolute;
+        opacity: 1;
+        transition: all ease-in .5s;
+        width: 100%;
+        z-index: 1;
+        @media screen and (max-width: 500px) {  content: none;  }
+      }
+      @media screen and (max-width: 768px) {  padding: 5.5rem 0;  }
+      @media screen and (max-width: 500px) {
+        background-position: center 100%;
+        color: #fff;
+        .service-title {color: #fff;}
+      }//@media screen and (max-width: 500px)
 
       &.visible {
+        background-position: center 100%;
         color: #fff;
-        &:before {opacity: 0;}
+        //&:before {opacity: 0;}
 
         .service-title {color: #fff;}
 
         .service-icon {
           background: transparent;
-          overflow: visible;
+          //overflow: visible;
+          //transition: background .7s linear .3s;
         }
+
+        .planet-xs {
+          opacity: 1;
+          transition: opacity .5s linear 1s;
+        }
+
         .icon-3:before {width: 700px;}
         .icon-5 .icon-wrapper {
           left: -8rem;
@@ -210,25 +242,12 @@ body:not(.home) .section-services {
         }//.button
       }//.service-item:hover
 
-      &:before {
-        background: #fff;
-        content: '';
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: 0;
-        position: absolute;
-        opacity: 1;
-        transition: all ease-in .5s;
-        width: 100%;
-        z-index: 1;
-        @media screen and (max-width: 500px) {  content: none;  }
+      .planet-xs {
+        opacity: 0;
+        @media screen and (max-width: 500px) {
+          opacity: 1;
+        }
       }
-      @media screen and (max-width: 768px) {  padding: 5.5rem 0;  }
-      @media screen and (max-width: 500px) {
-        color: #fff;
-        .service-title {color: #fff;}
-      }//@media screen and (max-width: 500px)
 
       .button {
         color: #fff;
@@ -265,8 +284,9 @@ body:not(.home) .section-services {
       border-radius: 50%;
       height: 33rem;
       margin: 0 1rem;
-      //overflow: hidden;
+      overflow: visible;
       position: relative;
+      transition: all .7s linear .3s;
       transform: none;
       width: 33rem;
 
@@ -388,7 +408,10 @@ body:not(.home) .section-services {
       padding: 0 2.5rem;
       position: relative;
       z-index: 1;
-      @media screen and (max-width: 500px) {  font-size: 1.4rem;  }
+      @media screen and (max-width: 500px) {
+        font-size: 1.4rem;
+        min-height: 10rem;
+      }
     }
     .service-title {
       color: $violet;
@@ -402,7 +425,7 @@ body:not(.home) .section-services {
     }//.service-title
     .service-text {
       margin-bottom: 2rem;
-      transition: $default-transition;
+      //transition: $default-transition;
     }
   }//.section-body
 
@@ -469,48 +492,3 @@ body:not(.home) .section-services {
     }
   }//.planet-xs
 }
-
-
-
-
-
-
-
-.service-item.test {
-  background: linear-gradient(#fff 25%, rgba(82, 5, 150, .7) 50%, #520596 85%, #520596 95%, #fc486b 100%) !important;
-  background-size: 100% 400% !important;
-  background-position: center 0;
-  transition: all ease-out .9s;
-  &:hover {
-    //background-position: center 100%;
-  }
-  &:before {content: none !important;}
-
-  .planet-xs {
-    opacity: 0;
-  }
-
-  .service-text {
-    transition: none !important;
-  }
-
-
-  &.visible {
-    background-position: center 100% !important;
-    .service-icon {
-      transition: background .7s linear .3s;
-    }
-    .planet-xs {
-      opacity: 1;
-      transition: opacity .5s linear 1s;
-    }
-  }// &.visible
-
-}
-
-
-
-
-
-
-

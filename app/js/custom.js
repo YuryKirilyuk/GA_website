@@ -337,6 +337,8 @@ function getServiceItems() {
 }
 function serviceItemInViewport() {
 
+    var visible = true;
+
     for( var i=0; i < serviceItems.length; i++) {
 
         if (serviceItems[i].height >= windowHeight) {
@@ -345,9 +347,15 @@ function serviceItemInViewport() {
             serviceItems[i].center = serviceItems[i].itemOffTop + serviceItems[i].height;
         }
         if ($(document).scrollTop() + windowHeight >= serviceItems[i].center) {
-            serviceItems[i].el.addClass('visible').siblings().removeClass('visible');
+            serviceItems[i].el.addClass('visible');
+            if(i != 0) {
+                serviceItems[i-1].el.removeClass('visible');
+            }
+        }
+        else {
+            serviceItems[i].el.removeClass('visible');
         }
 
     }
 }
-//////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////// .siblings().removeClass('visible')
