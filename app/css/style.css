@@ -6136,6 +6136,12 @@ body:not(.home) .section-services .section-body .service-text { margin-bottom: 2
 
 .service-ankor { left: 0; top: -50%; position: absolute; }
 
+@media screen and (max-width: 1024px) { .service-ankor { top: -35%; } }
+
+@media screen and (max-width: 768px) { .service-ankor { top: -25%; } }
+
+@media screen and (max-width: 580px) { .service-ankor { top: 0; } }
+
 @media screen and (max-width: 768px) { .section-venture { padding-bottom: 9rem; }
   .section-venture.gray-bg { background: transparent !important; } }
 

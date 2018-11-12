@@ -497,4 +497,7 @@ body:not(.home) .section-services {
   left: 0;
   top: -50%;
   position: absolute;
+  @media screen and (max-width: 1024px) {  top: -35%;  }
+  @media screen and (max-width: 768px) {  top: -25%;  }
+  @media screen and (max-width: 580px) {  top: 0;  }
 }
