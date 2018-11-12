@@ -4,7 +4,8 @@ header {
 	min-width: $min-width;
 	order: 1;
 	position: fixed;
-	transition: all .5s linear;;
+	top: 0;
+	transition: all .5s linear;
 	width: 100%;
 	z-index: 999;
 	@media screen and (max-width: 1024px) {

@@ -42,6 +42,7 @@
     .project {
       margin-bottom: 3rem;
       opacity: 0;
+      overflow: hidden;
       position: relative;
       transition: $default-transition;
       width: 39rem;
