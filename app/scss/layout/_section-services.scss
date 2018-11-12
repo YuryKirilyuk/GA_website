@@ -397,7 +397,7 @@ body:not(.home) .section-services {
         width: 33rem;
       }
     }//.service-icon
-    #intmark .icon-wrapper {transition: $default-transition;}
+    #digitMark .icon-wrapper {transition: $default-transition;}
 
     .service-description {
       display: flex;
@@ -491,4 +491,10 @@ body:not(.home) .section-services {
       @media screen and (max-width: 1024px) {  top: 50%;  }
     }
   }//.planet-xs
+}
+
+.service-ankor {
+  left: 0;
+  top: -50%;
+  position: absolute;
 }

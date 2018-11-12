@@ -108,6 +108,10 @@
       position: absolute;
       top: -4.5rem;
       width: 100%;
+      @media screen and (max-width: 580px) {
+        text-align: center;
+        .close {display: none;}
+      }
     }
     .modal-body {
       height: 85vh;

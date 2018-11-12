@@ -319,13 +319,13 @@ function getServiceItems() {
 
     $('.service-item').each(function(index){
         var item = $(this),
-            itemId = item.attr('id'),
+            //itemId = item.attr('id'),
             itemHeight = item.height(),
             itemOffTop = item.offset().top;
 
         serviceItems[index] = {
             'el': item,
-            'itemId': itemId,
+            //'itemId': itemId,
             'itemOffTop': itemOffTop,
             'height': itemHeight,
             'center': itemOffTop + item.height()/2 - windowHeight/2

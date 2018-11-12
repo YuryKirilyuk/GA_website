@@ -5447,6 +5447,9 @@ svg.icon-satellite { fill: transparent; height: 14.5rem; -webkit-transform: rota
 
 .modal#modalVideo .modal-dialog .modal-header { border: none; height: 4.5rem; left: 0; padding: 0; position: absolute; top: -4.5rem; width: 100%; }
 
+@media screen and (max-width: 580px) { .modal#modalVideo .modal-dialog .modal-header { text-align: center; }
+  .modal#modalVideo .modal-dialog .modal-header .close { display: none; } }
+
 .modal#modalVideo .modal-dialog .modal-body { height: 85vh; padding: 0; }
 
 .modal#modalVideo .modal-dialog iframe { display: block; }
@@ -6081,7 +6084,7 @@ body:not(.home) .section-services .section-body .service-icon .service-icon-5 { 
 
 body:not(.home) .section-services .section-body .service-icon .service-icon-6 { height: 33rem; left: 0; width: 33rem; }
 
-body:not(.home) .section-services .section-body #intmark .icon-wrapper { -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
+body:not(.home) .section-services .section-body #digitMark .icon-wrapper { -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
 
 body:not(.home) .section-services .section-body .service-description { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; max-width: 68rem; min-height: 36rem; padding: 0 2.5rem; position: relative; z-index: 1; }
 
@@ -6130,6 +6133,8 @@ body:not(.home) .section-services .section-body .service-text { margin-bottom: 2
 @media screen and (max-width: 1024px) { .service-item .planet-xs.xs-6 { top: 35%; } }
 
 @media screen and (max-width: 1024px) { .service-item .planet-xs.xs-6 { top: 50%; } }
+
+.service-ankor { left: 0; top: -50%; position: absolute; }
 
 @media screen and (max-width: 768px) { .section-venture { padding-bottom: 9rem; }
   .section-venture.gray-bg { background: transparent !important; } }
